@@ -1,0 +1,12 @@
+{
+  "book": "Eternity - Buch 1",
+  "chapters": [
+    {
+      "id": "ch001",
+      "file": "Eternity_Buch_1.pdf",
+      "status": "processed",
+      "wordcount": 748000,
+      "entities_file": "meta/chapter_001_entities.json"
+    }
+  ]
+}
