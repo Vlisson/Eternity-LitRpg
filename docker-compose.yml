@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: eternity-postgres
+    environment:
+      POSTGRES_DB: wiki
+      POSTGRES_USER: wiki
+      POSTGRES_PASSWORD: wikijsrocks
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  wiki:
+    image: ghcr.io/requarks/wiki:2
+    container_name: eternity-wiki
+    ports:
+      - "3000:3000"
+    environment:
+      DB_TYPE: postgres
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USER: wiki
+      DB_PASS: wikijsrocks
+      DB_NAME: wiki
+      DB_SSL: "false"
+      JWT_SECRET: eternity-jwt-secret-key-2026
+      SERVER_URL: http://localhost:3000
+    depends_on:
+      - postgres
+    volumes:
+      - wikidata:/var/lib/wiki
+
+volumes:
+  pgdata:
+  wikidata:

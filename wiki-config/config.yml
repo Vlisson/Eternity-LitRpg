@@ -1,0 +1,20 @@
+# Wiki.js Configuration
+auth:
+  type: local
+  local:
+    users:
+      - email: admin@eternity-litrpg.local
+        password: admin-eternity-2026
+        role: admin
+database:
+  type: postgres
+  host: 127.0.0.1
+  port: 5432
+  user: wiki
+  pass: wikijsrocks
+  db: wiki
+  ssl: false
+jwtSecret: eternity-jwt-secret-key-2026
+features:
+  featurePageComments: true
+  featureUserAccounts: true
