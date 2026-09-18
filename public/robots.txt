@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://eternitylitrpg.netlify.app/sitemap.xml
