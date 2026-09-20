@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eternity Wiki – Entity-Report. Detailed information about entity-report.">
+  <meta name="keywords" content="Eternity,Vlisson,LitRPG,Wiki,Charaktere,Skills,Items,Locations,Quests,Lore">
+  <meta name="author" content="Vlisson">
+  <link rel="canonical" href="https://eternitylitrpg.netlify.app/Entity-Report.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Entity-Report – Eternity Wiki">
+  <meta property="og:description" content="Eternity Wiki – Entity-Report. Detailed information about entity-report.">
+  <meta property="og:url" content="https://eternitylitrpg.netlify.app/Entity-Report.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Eternity Wiki">
+  <meta property="og:image" content="https://eternitylitrpg.netlify.app/favicon.svg">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Entity-Report – Eternity Wiki">
+  <meta name="twitter:description" content="Eternity Wiki – Entity-Report. Detailed information about entity-report.">
+  <meta name="twitter:image" content="https://eternitylitrpg.netlify.app/favicon.svg">
+
+  <title>Entity-Report – Eternity Wiki</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav><a href="index.html" class="">🏠 Startseite</a><a href="characters.html" class="">⚔️ Charaktere</a><a href="skills.html" class="">⚡ Skills</a><a href="items.html" class="">🗡️ Items</a><a href="locations.html" class="">🌍 Orte</a><a href="classes-races.html" class="">⚙️ Klassen/Rassen</a><a href="quests.html" class="">📜 Quests</a><a href="lore.html" class="">📚 Lore</a><a href="timeline.html" class="">⏳ Zeitlinie</a><a href="factions.html" class="">🏛️ Fraktionen</a><a href="artifacts.html" class="">🎁 Artefakte</a><a href="entity_report.html" class="">📊 Entity-Report</a><a href="impressum.html" class="">ℹ️ Impressum</a></nav>
+  <main>
+    <div class="toc-wrapper"><nav class="toc"><h3>📑 Inhaltsverzeichnis</h3><ul><li class="toc-2"><a href="#-bersicht-der-erkundeten-dateien">📊 Übersicht der erkundeten Dateien</a></li><li class="toc-3"><a href="#eternity-wiki-workspace-homeopenclawprojectseterni">**Eternity Wiki Workspace** (`/home/openclaw/projects/eternity-wiki/`)</a></li><li class="toc-3"><a href="#draco-codex-workspace-homeopenclawopenclawworkspac">**Draco Codex Workspace** (`/home/openclaw/.openclaw/workspace-main/1. Eternity LitRpg/DRACO_HANDOFF/`)</a></li><li class="toc-2"><a href="#-charaktere-identifiziert-durch-lesen">👤 **CHARAKTERE** (identifiziert durch Lesen)</a></li><li class="toc-3"><a href="#hauptcharaktere-buch-1">**Hauptcharaktere - Buch 1**</a></li><li class="toc-3"><a href="#hauptcharaktere-buch-2">**Hauptcharaktere - Buch 2**</a></li><li class="toc-3"><a href="#andere-charaktere-aus-draco-codex">**Andere Charaktere (aus Draco Codex)**</a></li><li class="toc-2"><a href="#-fhigkeiten-skills-identifiziert">⚔️ **FÄHIGKEITEN / SKILLS** (identifiziert)</a></li><li class="toc-3"><a href="#buch-1-skills">**Buch 1 Skills**</a></li><li class="toc-3"><a href="#buch-2-skills">**Buch 2 Skills**</a></li><li class="toc-3"><a href="#spezielle-fhigkeiten-analysen">**Spezielle Fähigkeiten (Analysen)**</a></li><li class="toc-2"><a href="#-gegenstnde-items-identifiziert">🗡️ **GEGENSTÄNDE / ITEMS** (identifiziert)</a></li><li class="toc-3"><a href="#buch-1-items">**Buch 1 Items**</a></li><li class="toc-3"><a href="#buch-2-items">**Buch 2 Items**</a></li><li class="toc-3"><a href="#artefakte">**Artefakte**</a></li><li class="toc-2"><a href="#-orte-locations-identifiziert">🌍 **ORTE / LOCATIONS** (identifiziert)</a></li><li class="toc-3"><a href="#buch-1-locations">**Buch 1 Locations**</a></li><li class="toc-3"><a href="#buch-2-locations">**Buch 2 Locations**</a></li><li class="toc-2"><a href="#-quests-identifiziert">📜 **QUESTS** (identifiziert)</a></li><li class="toc-3"><a href="#hauptquests">**Hauptquests**</a></li><li class="toc-3"><a href="#andere-quests">**Andere Quests**</a></li><li class="toc-2"><a href="#-klassen-rassen-identifiziert">⚙️ **KLASSEN / RASSEN** (identifiziert)</a></li><li class="toc-3"><a href="#buch-1-klassenrassen">**Buch 1 Klassen/Rassen**</a></li><li class="toc-3"><a href="#buch-2-klassenrassen">**Buch 2 Klassen/Rassen**</a></li><li class="toc-2"><a href="#-lore-weltinformationen">📚 **LORE / WELTINFORMATIONEN**</a></li><li class="toc-3"><a href="#buch-1-lore">**Buch 1 Lore**</a></li><li class="toc-3"><a href="#buch-2-lore">**Buch 2 Lore**</a></li><li class="toc-2"><a href="#-kapitel-timeline">📅 **KAPITEL / TIMELINE**</a></li><li class="toc-3"><a href="#buch-1-kapitel">**Buch 1 Kapitel**</a></li><li class="toc-3"><a href="#buch-2-kapitel">**Buch 2 Kapitel**</a></li><li class="toc-2"><a href="#-projekt-status-fehler">📊 **PROJEKT-STATUS & FEHLER**</a></li><li class="toc-3"><a href="#entdeckte-fehlende-seiten">**Entdeckte fehlende Seiten**</a></li><li class="toc-3"><a href="#doppelte-charaktere">**Doppelte Charaktere**</a></li><li class="toc-2"><a href="#-konkrete-pfad-vorschlge-fr-korrekturen">🎯 **KONKRETE PFAD-VORSCHLÄGE FÜR KORREKTUREN**</a></li><li class="toc-3"><a href="#1-charakter-konsolidierung">**1. Charakter-Konsolidierung**</a></li><li class="toc-3"><a href="#2-skill-seiten-erstellen">**2. Skill-Seiten erstellen**</a></li><li class="toc-3"><a href="#3-item-seiten-erstellen">**3. Item-Seiten erstellen**</a></li><li class="toc-3"><a href="#4-location-seiten-erstellen">**4. Location-Seiten erstellen**</a></li><li class="toc-3"><a href="#5-klassenrassen-seiten-erstellen">**5. Klassen/Rassen-Seiten erstellen**</a></li><li class="toc-3"><a href="#6-quest-seiten-erstellen">**6. Quest-Seiten erstellen**</a></li><li class="toc-2"><a href="#-entity-report-zusammenfassung">✅ **ENTITY-REPORT ZUSAMMENFASSUNG**</a></li><li class="toc-2"><a href="#-empfohlene-nchste-schritte">🔧 **EMPFOHLENE NÄCHSTE SCHRITTE**</a></li></ul></nav></div>
+    <h1 id="entity-report-fr-eternity-litrpg-wiki">Entity-Report für Eternity LitRPG-Wiki</h1><p><strong>Erstellt:</strong> 2026-09-10<br><strong>Agent:</strong> Draco Codex<br><strong>Quelle:</strong> Analyse der Draco Codex Dateien und Eternity Wiki Workspace</p>
+<hr>
+<h2 id="-bersicht-der-erkundeten-dateien">📊 Übersicht der erkundeten Dateien</h2><h3 id="strongeternity-wiki-workspacestrong-codehomeopencl"><strong>Eternity Wiki Workspace</strong> (<code>/home/openclaw/projects/eternity-wiki/</code>)</h3><ul>
+<li><code>characters.md</code> - Hauptcharakter Übersicht</li>
+<li><code>index.md</code> - Hauptwiki Übersicht  </li>
+<li><code>daily-suggestions/</code> - 30 tägliche Ideen (2026-06 bis 2026-09)</li>
+<li><code>ANALYSIS/</code> - Diverse Analysen (2026-06-14, 2026-08-31, github-tools-week-2026-24)</li>
+</ul>
+<h3 id="strongdraco-codex-workspacestrong-codehomeopenclaw"><strong>Draco Codex Workspace</strong> (<code>/home/openclaw/.openclaw/workspace-main/1. Eternity LitRpg/DRACO_HANDOFF/</code>)</h3><ul>
+<li>Buchdateien: <code>Buch_1.md</code>, <code>Buch_2_Rohfassung.txt</code>, <code>timeline_buch1.md</code>, <code>timeline_buch2.md</code></li>
+<li>Entity-Dateien: <code>wiki/meta/*.json</code>, <code>wiki/characters/</code>, <code>wiki/skills/</code>, <code>wiki/items/</code>, <code>wiki/locations/</code>, <code>wiki/classes-races/</code></li>
+<li>Analysen: <code>analysis_buch1.md</code>, <code>analysis_buch2.md</code></li>
+<li>Index-Dateien: <code>buch1_indexiert.md</code>, <code>characters.md</code>, <code>wiki/index.md</code></li>
+</ul>
+<hr>
+<h2 id="-strongcharakterestrong-identifiziert-durch-lesen">👤 <strong>CHARAKTERE</strong> (identifiziert durch Lesen)</h2><h3 id="stronghauptcharaktere-buch-1strong"><strong>Hauptcharaktere - Buch 1</strong></h3><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Alias</th>
+<th>Rasse</th>
+<th>Klasse</th>
+<th>Level</th>
+<th>Status</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Ben</strong></td>
+<td>Shadow, Dhark</td>
+<td>Mensch → <strong>Drache</strong> (Schatten-Element)</td>
+<td>Amateur Schriftsteller</td>
+<td>0 → 34</td>
+<td>Protagonist, Dämonenlord</td>
+<td>characters.md, Buch_1.md, characters/Ben.md, analysis_buch1.md, analysis_buch2.md</td>
+</tr>
+<tr>
+<td><strong>Kael der Datenlauf</strong></td>
+<td>-</td>
+<td>KI</td>
+<td>-</td>
+<td>-</td>
+<td>Wächter/Informant</td>
+<td>characters.md, index.md</td>
+</tr>
+<tr>
+<td><strong>Cindara</strong></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Asheweaved Revenant</td>
+<td>characters.md, index.md</td>
+</tr>
+<tr>
+<td><strong>Zwiebel</strong></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Dungeon-Wesen</td>
+<td>characters.md, index.md</td>
+</tr>
+</tbody></table>
+<h3 id="stronghauptcharaktere-buch-2strong"><strong>Hauptcharaktere - Buch 2</strong></h3><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Rolle</th>
+<th>Beziehungen</th>
+<th>Aussehen in Buch 2</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Meri</strong></td>
+<td>Dharks ehemaliger Begleiter → Schattenwesen</td>
+<td>Wurde getrennt, um Clan zu befreien</td>
+<td>Level 143.248, Dämonenlord</td>
+<td>analysis_buch2.md, wiki/characters/meri.md</td>
+</tr>
+<tr>
+<td><strong>Lumiella</strong></td>
+<td>Meris Tochter</td>
+<td>Weiß Wahrheit über Schattendrachen</td>
+<td>Unterstützt Dhark</td>
+<td>analysis_buch2.md</td>
+</tr>
+<tr>
+<td><strong>Mave</strong></td>
+<td>Attentäter/Assassine</td>
+<td>Arbeitet für schmierigen Daumen</td>
+<td>Betäubung + Löschung (5 Min)</td>
+<td>analysis_buch2.md</td>
+</tr>
+<tr>
+<td><strong>Schmieriger Daumen</strong></td>
+<td>Boss im Lagerkomplex</td>
+<td>Angebote für Arbeit/Sklaverei</td>
+<td>Kontakte in Hauptstadt</td>
+<td>analysis_buch2.md</td>
+</tr>
+<tr>
+<td><strong>Skarabäus</strong></td>
+<td>Titel für Ben</td>
+<td>Unheilbringer</td>
+<td>+900% göttliche Intervention</td>
+<td>analysis_buch1.md</td>
+</tr>
+</tbody></table>
+<h3 id="strongandere-charaktere-aus-draco-codexstrong"><strong>Andere Charaktere (aus Draco Codex)</strong></h3><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Beschreibung</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Dhar</td>
+<td>Eine andere Version von Ben</td>
+<td>characters.md</td>
+</tr>
+<tr>
+<td>Fafnir</td>
+<td>-</td>
+<td>wiki/characters/Fafnir.md</td>
+</tr>
+<tr>
+<td>Terminus</td>
+<td>-</td>
+<td>wiki/characters/Terminus.md</td>
+</tr>
+<tr>
+<td>Ulziphor</td>
+<td>-</td>
+<td>wiki/characters/Ulziphor.md</td>
+</tr>
+<tr>
+<td>Reoxan</td>
+<td>-</td>
+<td>wiki/characters/Reoxan.md</td>
+</tr>
+<tr>
+<td>Tatjana</td>
+<td>-</td>
+<td>wiki/characters/Tatjana.md</td>
+</tr>
+<tr>
+<td>Ken</td>
+<td>-</td>
+<td>wiki/characters/Ken.md</td>
+</tr>
+<tr>
+<td>Brom</td>
+<td>-</td>
+<td>wiki/characters/Brom.md</td>
+</tr>
+<tr>
+<td>Killua</td>
+<td>-</td>
+<td>wiki/characters/Killua.md</td>
+</tr>
+<tr>
+<td>L4RS</td>
+<td>-</td>
+<td>wiki/characters/L4RS.md</td>
+</tr>
+<tr>
+<td>Magicians</td>
+<td>-</td>
+<td>wiki/characters/Magicians.md</td>
+</tr>
+<tr>
+<td>Penguins</td>
+<td>-</td>
+<td>wiki/characters/Penguins.md</td>
+</tr>
+<tr>
+<td>Ausscheider</td>
+<td>-</td>
+<td>wiki/characters/Ausscheider.md</td>
+</tr>
+<tr>
+<td>Belfast</td>
+<td>-</td>
+<td>wiki/characters/Belfast.md</td>
+</tr>
+<tr>
+<td>Berzerker</td>
+<td>-</td>
+<td>wiki/characters/Berzerker.md</td>
+</tr>
+<tr>
+<td>Die_Biester</td>
+<td>-</td>
+<td>wiki/characters/Die_Biester.md</td>
+</tr>
+<tr>
+<td>anubara</td>
+<td>Dämonenkönig</td>
+<td>wiki/characters/anubara.md</td>
+</tr>
+<tr>
+<td>marcel</td>
+<td>-</td>
+<td>wiki/characters/marcel.md</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="-strongfhigkeiten-skillsstrong-identifiziert">⚔️ <strong>FÄHIGKEITEN / SKILLS</strong> (identifiziert)</h2><h3 id="strongbuch-1-skillsstrong"><strong>Buch 1 Skills</strong></h3><table>
+<thead>
+<tr>
+<th>Fähigkeit</th>
+<th>Klasse</th>
+<th>Level</th>
+<th>Beschreibung</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Kreativität</strong></td>
+<td>Passiv</td>
+<td>Fortgeschritten</td>
+<td>Spezielle Fähigkeit</td>
+<td>characters.md, analysis_buch2.md</td>
+</tr>
+<tr>
+<td><strong>Rollenspielmeister</strong></td>
+<td>Passiv</td>
+<td>Fortgeschritten</td>
+<td>Spezielle Fähigkeit</td>
+<td>characters.md, analysis_buch2.md</td>
+</tr>
+</tbody></table>
+<h3 id="strongbuch-2-skillsstrong"><strong>Buch 2 Skills</strong></h3><table>
+<thead>
+<tr>
+<th>Fähigkeit</th>
+<th>Klasse</th>
+<th>Level</th>
+<th>Beschreibung</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Astrales Nichts</strong></td>
+<td>Rüstungsstein</td>
+<td>Stufe 1</td>
+<td>Evolierender Rüstungsstein</td>
+<td>analysis_buch2.md, wiki/faehigkeit_astrales_nichts.md</td>
+</tr>
+<tr>
+<td><strong>Spruchschmied</strong></td>
+<td>Magie</td>
+<td>Anfänger 2</td>
+<td>Magie-Fähigkeit</td>
+<td>analysis_buch2.md, wiki/faehigkeit_spruchschmied.md</td>
+</tr>
+<tr>
+<td><strong>Edelstein Veredlung</strong></td>
+<td>Lehrling 1</td>
+<td>Lehrling</td>
+<td>Manakerne veredeln</td>
+<td>analysis_buch2.md, wiki/faehigkeit_edelstein_veredlung.md</td>
+</tr>
+<tr>
+<td><strong>Drachenhort</strong></td>
+<td>Drachenatmung</td>
+<td>12.000</td>
+<td>Drachenessenz</td>
+<td>analysis_buch2.md, wiki/faehigkeit_drachenhort.md</td>
+</tr>
+<tr>
+<td><strong>Kometenfall</strong></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>analysis_buch2.md, wiki/faehigkeit_kometenfall.md</td>
+</tr>
+<tr>
+<td><strong>Ritualmagier</strong></td>
+<td>Anfänger I</td>
+<td>Anfänger</td>
+<td>-</td>
+<td>analysis_buch2.md, wiki/faehigkeit_ritualmagier.md</td>
+</tr>
+<tr>
+<td><strong>Runen</strong></td>
+<td>-</td>
+<td>9/9</td>
+<td>Schatten, Gift, Gravitation, Dimension, Aura, Sicht, Persönlich, Spontan, Sofort, Permanent</td>
+<td>analysis_buch2.md</td>
+</tr>
+</tbody></table>
+<h3 id="strongspezielle-fhigkeiten-analysenstrong"><strong>Spezielle Fähigkeiten (Analysen)</strong></h3><table>
+<thead>
+<tr>
+<th>Fähigkeit</th>
+<th>Beschreibung</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Schattensicht</strong></td>
+<td>Sehen wie am Tag in magischer Dunkelheit</td>
+<td>analysis_buch1.md</td>
+</tr>
+<tr>
+<td><strong>Giftrune</strong></td>
+<td>Giftresistenz, Runen-Slot belegt</td>
+<td>analysis_buch1.md</td>
+</tr>
+<tr>
+<td><strong>Drachenessenz</strong></td>
+<td>Metalle absorbieren, +1% Schuppen-Rüstung</td>
+<td>analysis_buch1.md</td>
+</tr>
+<tr>
+<td><strong>Wärmesicht</strong></td>
+<td>Wärmequellen erkennen</td>
+<td>analysis_buch1.md</td>
+</tr>
+<tr>
+<td><strong>Aura der Furcht</strong></td>
+<td>Geborenes Raubtier</td>
+<td>analysis_buch1.md</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="-stronggegenstnde-itemsstrong-identifiziert">🗡️ <strong>GEGENSTÄNDE / ITEMS</strong> (identifiziert)</h2><h3 id="strongbuch-1-itemsstrong"><strong>Buch 1 Items</strong></h3><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Typ</th>
+<th>Seltenheit</th>
+<th>Beschreibung</th>
+<th>Menge</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Fackel</strong></td>
+<td>Ausrüstung</td>
+<td>common</td>
+<td>Standardausrüstung</td>
+<td>2</td>
+<td>characters.md, analysis_buch1.md, Buch_1.md</td>
+</tr>
+<tr>
+<td><strong>Feuerstein</strong></td>
+<td>Ausrüstung</td>
+<td>common</td>
+<td>Standardausrüstung</td>
+<td>1</td>
+<td>characters.md, analysis_buch1.md, Buch_1.md</td>
+</tr>
+<tr>
+<td><strong>Abenteuer-Paket</strong></td>
+<td>Startpaket</td>
+<td>common</td>
+<td>2 Fackeln, 1 Feuerstein</td>
+<td>1</td>
+<td>characters.md, analysis_buch1.md, Buch_1.md</td>
+</tr>
+</tbody></table>
+<h3 id="strongbuch-2-itemsstrong"><strong>Buch 2 Items</strong></h3><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Typ</th>
+<th>Seltenheit</th>
+<th>Beschreibung</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Goldene_Kugel</strong></td>
+<td>Item</td>
+<td>-</td>
+<td>-</td>
+<td>wiki/items/Goldene_Kugel.md</td>
+</tr>
+<tr>
+<td><strong>Chitinpanzer</strong></td>
+<td>Rüstung</td>
+<td>-</td>
+<td>Von Käfer erhalten</td>
+<td>wiki/items/Chitinpanzer.md</td>
+</tr>
+<tr>
+<td><strong>Drachenhort</strong></td>
+<td>Gegenstand</td>
+<td>-</td>
+<td>-</td>
+<td>wiki/items/Drachenhort.md</td>
+</tr>
+<tr>
+<td><strong>Abenteuer-Paket_buch2</strong></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>wiki/items/Abenteuer-Paket_buch2.md</td>
+</tr>
+</tbody></table>
+<h3 id="strongartefaktestrong"><strong>Artefakte</strong></h3><table>
+<thead>
+<tr>
+<th>Artefakt</th>
+<th>Besitzer</th>
+<th>Beschreibung</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Seelenspiegel</strong></td>
+<td>Cindara</td>
+<td>Erkennt wahre Identität eines Dragons, kann spirituelle Bindungen durchqueren</td>
+<td>characters.md, index.md</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="-strongorte-locationsstrong-identifiziert">🌍 <strong>ORTE / LOCATIONS</strong> (identifiziert)</h2><h3 id="strongbuch-1-locationsstrong"><strong>Buch 1 Locations</strong></h3><table>
+<thead>
+<tr>
+<th>Ort</th>
+<th>Typ</th>
+<th>Beschreibung</th>
+<th>Bedeutung</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Tropfsteinhöhle</strong></td>
+<td>Dungeon</td>
+<td>Dunkelheit, kalter Steinboden, Wassertropfen-Geräusch</td>
+<td>Startort</td>
+<td>characters.md, analysis_buch1.md, Buch_1.md</td>
+</tr>
+<tr>
+<td><strong>Reich der Dämonen</strong></td>
+<td>Dungeon/Quest-Gebiet</td>
+<td>Versiegelt, einzigartig, anderer Zeitverlauf</td>
+<td>Questgebiet</td>
+<td>characters.md, analysis_buch1.md, Buch_1.md</td>
+</tr>
+</tbody></table>
+<h3 id="strongbuch-2-locationsstrong"><strong>Buch 2 Locations</strong></h3><table>
+<thead>
+<tr>
+<th>Ort</th>
+<th>Typ</th>
+<th>Beschreibung</th>
+<th>Rolle</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Lagerkomplex</strong></td>
+<td>Ort</td>
+<td>Wo Ben als Sklave gefangen gehalten wird</td>
+<td>Ben&#39;s Gefängnis</td>
+<td>analysis_buch2.md</td>
+</tr>
+<tr>
+<td><strong>Hauptstadt</strong></td>
+<td>Ort</td>
+<td>Wo der schmierige Daumen residiert</td>
+<td>Böser Mittelpunkt</td>
+<td>analysis_buch2.md</td>
+</tr>
+<tr>
+<td><strong>Essenz-Nexus</strong></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>wiki/locations/Essenz-Nexus.md</td>
+</tr>
+<tr>
+<td><strong>Vulkan</strong></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>wiki/locations/Vulkan_buch2.md</td>
+</tr>
+<tr>
+<td><strong>Wald</strong></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>wiki/locations/Wald_buch2.md</td>
+</tr>
+<tr>
+<td><strong>Stadt</strong></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>wiki/locations/Stadt_buch2.md</td>
+</tr>
+<tr>
+<td><strong>Reich der Dämonen</strong></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>wiki/locations/Reich_der_Dämonen_buch2.md</td>
+</tr>
+<tr>
+<td><strong>Tropfsteinhöhle</strong></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>wiki/locations/Tropfsteinhöhle_buch2.md</td>
+</tr>
+<tr>
+<td><strong>Bazug-Tunnelnetz</strong></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>analysis_buch1.md</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="-strongquestsstrong-identifiziert">📜 <strong>QUESTS</strong> (identifiziert)</h2><h3 id="stronghauptquestsstrong"><strong>Hauptquests</strong></h3><table>
+<thead>
+<tr>
+<th>Quest</th>
+<th>Typ</th>
+<th>Status</th>
+<th>Belohnung</th>
+<th>Beschreibung</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Quest des Helden</strong></td>
+<td>Main-Quest</td>
+<td>Abgeschlossen</td>
+<td>Legendäre Rasse Drache oder Legendäre Klasse Erzmagier</td>
+<td>Abschlussquest</td>
+<td>analysis_buch1.md, characters.md, Buch_1.md</td>
+</tr>
+<tr>
+<td><strong>Schuld der Assassinen</strong></td>
+<td>Quest</td>
+<td>Vorgeschlagen</td>
+<td>Begleite die Schuld der Assassinen bei der Göttin des Lichts</td>
+<td>Buch 2 Quest</td>
+<td>analysis_buch2.md</td>
+</tr>
+</tbody></table>
+<h3 id="strongandere-questsstrong"><strong>Andere Quests</strong></h3><table>
+<thead>
+<tr>
+<th>Quest</th>
+<th>Ziel</th>
+<th>Belohnung</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Drachenquest</strong></td>
+<td>Einzelspieler-Event?</td>
+<td>Belohnung unklar</td>
+<td>analysis_buch1.md</td>
+</tr>
+<tr>
+<td><strong>Unheil-Quest</strong></td>
+<td>Großes Monster greift Städte an</td>
+<td>Titel &quot;Freund der Schatten&quot;</td>
+<td>analysis_buch1.md</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="-strongklassen-rassenstrong-identifiziert">⚙️ <strong>KLASSEN / RASSEN</strong> (identifiziert)</h2><h3 id="strongbuch-1-klassenrassenstrong"><strong>Buch 1 Klassen/Rassen</strong></h3><table>
+<thead>
+<tr>
+<th>Rasse</th>
+<th>Typ</th>
+<th>Attribute</th>
+<th>Notable</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Mensch</strong></td>
+<td>Standard</td>
+<td>Ausgeglichen</td>
+<td>Startrasse</td>
+<td>characters.md, analysis_buch1.md</td>
+</tr>
+<tr>
+<td><strong>Drache</strong></td>
+<td>Legendär</td>
+<td>Gottgleich, aber verflucht</td>
+<td>Schatten-Element, gottgleiche Macht</td>
+<td>characters.md, analysis_buch1.md</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>Klasse</th>
+<th>Typ</th>
+<th>Attribute</th>
+<th>Notable</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Amateur Schriftsteller</strong></td>
+<td>Startklasse</td>
+<td>Kreativität, Rollenspielmeister</td>
+<td>Startklasse von Ben</td>
+<td>characters.md, analysis_buch1.md</td>
+</tr>
+<tr>
+<td><strong>Erzmagier</strong></td>
+<td>Legendär</td>
+<td>Hohe Intelligenz, mächtige Zaubersprüche</td>
+<td>Legendäre Klasse Belohnung</td>
+<td>characters.md, analysis_buch1.md</td>
+</tr>
+</tbody></table>
+<h3 id="strongbuch-2-klassenrassenstrong"><strong>Buch 2 Klassen/Rassen</strong></h3><table>
+<thead>
+<tr>
+<th>Rasse</th>
+<th>Typ</th>
+<th>Attribute</th>
+<th>Notable</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Drache</strong></td>
+<td>Legendär</td>
+<td>Schatten, mächtig</td>
+<td>Dämonenlord, Territoriumsherrscher</td>
+<td>analysis_buch2.md</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="-stronglore-weltinformationenstrong">📚 <strong>LORE / WELTINFORMATIONEN</strong></h2><h3 id="strongbuch-1-lorestrong"><strong>Buch 1 Lore</strong></h3><table>
+<thead>
+<tr>
+<th>Thema</th>
+<th>Details</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Scheinrealität</strong></td>
+<td>VRMMO - Virtuelle Realität Massively Multiplayer Online</td>
+<td>characters.md, analysis_buch1.md</td>
+</tr>
+<tr>
+<td><strong>2023-2026</strong></td>
+<td>Timeline (Band 1 veröffentlicht Januar 2023, Wiki 2026)</td>
+<td>analysis_buch1.md, timeline_buch1.md</td>
+</tr>
+<tr>
+<td><strong>Dämonen</strong></td>
+<td>Gefährliche Fraktion, herrscht über &quot;Reich der Dämonen&quot;</td>
+<td>characters.md, index.md</td>
+</tr>
+<tr>
+<td><strong>Konzerne (Band 2)</strong></td>
+<td>Nexagen, OmniCorp, Meridian-Allianz dominieren 2070</td>
+<td>characters.md, index.md, analysis_buch2.md</td>
+</tr>
+<tr>
+<td><strong>Element-System</strong></td>
+<td>5 Grundelemente + 6 erweiterte Synergien = 14 Knoten</td>
+<td>analysis_buch1.md</td>
+</tr>
+<tr>
+<td><strong>Drachenfluch</strong></td>
+<td>Proximity Poison, soziale Isolation notwendig</td>
+<td>analysis_buch1.md</td>
+</tr>
+<tr>
+<td><strong>Kaltblütig</strong></td>
+<td>Externe Wärme nötig</td>
+<td>analysis_buch1.md</td>
+</tr>
+</tbody></table>
+<h3 id="strongbuch-2-lorestrong"><strong>Buch 2 Lore</strong></h3><table>
+<thead>
+<tr>
+<th>Thema</th>
+<th>Details</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Jahr 2070</strong></td>
+<td>Erde von Großkonzernen beherrscht, düstere Zukunft</td>
+<td>analysis_buch2.md</td>
+</tr>
+<tr>
+<td><strong>Zeitalter der Helden</strong></td>
+<td>Viertes Zeitalter geht zu Ende, neues beginnt</td>
+<td>analysis_buch2.md</td>
+</tr>
+<tr>
+<td><strong>Schattenwelt</strong></td>
+<td>Parallel-Universum innerhalb von Eternity</td>
+<td>analysis_buch2.md</td>
+</tr>
+<tr>
+<td><strong>Tiermenschen</strong></td>
+<td>Werden befreit, können Rasse wechseln</td>
+<td>analysis_buch2.md</td>
+</tr>
+<tr>
+<td><strong>Eternity Prime</strong></td>
+<td>Streaming-Plattform für Eternity-News</td>
+<td>analysis_buch2.md</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="-strongkapitel-timelinestrong">📅 <strong>KAPITEL / TIMELINE</strong></h2><h3 id="strongbuch-1-kapitelstrong"><strong>Buch 1 Kapitel</strong></h3><table>
+<thead>
+<tr>
+<th>Kapitel</th>
+<th>Inhalt</th>
+<th>Länge</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Kapitel 1</strong></td>
+<td>Titelblatt &amp; Autorenvorstellung</td>
+<td>~100 Zeilen, ~800 Wörter</td>
+<td>timeline_buch1.md</td>
+</tr>
+<tr>
+<td><strong>Kapitel 2</strong></td>
+<td>Prolog - Dunkelheit &amp; Desorientierung</td>
+<td>~100 Zeilen, ~800 Wörter</td>
+<td>timeline_buch1.md</td>
+</tr>
+<tr>
+<td><strong>Kapitel 3</strong></td>
+<td>Quest-Benachrichtigung</td>
+<td>~100 Zeilen, ~800 Wörter</td>
+<td>timeline_buch1.md</td>
+</tr>
+<tr>
+<td><strong>Buch_1.md</strong></td>
+<td>Vollständige Zusammenfassung</td>
+<td>-</td>
+<td>wiki/chapters/Buch_1.md</td>
+</tr>
+</tbody></table>
+<h3 id="strongbuch-2-kapitelstrong"><strong>Buch 2 Kapitel</strong></h3><table>
+<thead>
+<tr>
+<th>Kapitel</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Buch_2_Rohfassung.txt</strong></td>
+<td>Hauptbuchtext (732 KB, 108.716 Wörter)</td>
+</tr>
+<tr>
+<td><strong>Timeline_buch2.md</strong></td>
+<td>Timeline für Buch 2</td>
+</tr>
+<tr>
+<td><strong>chapters/Timeline_buch2.md</strong></td>
+<td>Vollständige Timeline</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="-strongprojekt-status-amp-fehlerstrong">📊 <strong>PROJEKT-STATUS &amp; FEHLER</strong></h2><h3 id="strongentdeckte-fehlende-seitenstrong"><strong>Entdeckte fehlende Seiten</strong></h3><table>
+<thead>
+<tr>
+<th>Kategorie</th>
+<th>Fehlende Entity</th>
+<th>Status</th>
+<th>Pfad-Vorschlag</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Charaktere</strong></td>
+<td>Viele NPCs in wiki/characters/ existieren nicht in der Hauptwiki</td>
+<td>Vorhanden in Draco Codex, fehlt in Eternity Wiki</td>
+<td>Erstelle <code>eternity-wiki/characters/[NAME].md</code> für jedes</td>
+</tr>
+<tr>
+<td><strong>Skills</strong></td>
+<td>Fähigkeiten aus Analyse nicht in wiki/skills/ abgedeckt</td>
+<td>Teilweise abgedeckt</td>
+<td>Erstelle fehlende Skill-Seiten</td>
+</tr>
+<tr>
+<td><strong>Items</strong></td>
+<td>Items aus Analyse nicht in wiki/items/ abgedeckt</td>
+<td>Teilweise abgedeckt</td>
+<td>Erstelle fehlende Item-Seiten</td>
+</tr>
+<tr>
+<td><strong>Locations</strong></td>
+<td>Locations aus Analyse nicht in wiki/locations/ abgedeckt</td>
+<td>Teilweise abgedeckt</td>
+<td>Erstelle fehlende Location-Seiten</td>
+</tr>
+<tr>
+<td><strong>Klassen/Rassen</strong></td>
+<td>Rassen/Klassen aus Analyse nicht abgedeckt</td>
+<td>Teilweise abgedeckt</td>
+<td>Erstelle fehlende Klassen/Rassen-Seiten</td>
+</tr>
+</tbody></table>
+<h3 id="strongdoppelte-charakterestrong"><strong>Doppelte Charaktere</strong></h3><table>
+<thead>
+<tr>
+<th>Doppelte Entität</th>
+<th>Draco Codex Pfad</th>
+<th>Eternity Wiki Pfad</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Ben/Shadow/Dhark</strong></td>
+<td>wiki/characters/Ben.md</td>
+<td>characters.md</td>
+<td>Teilweise Duplikation</td>
+</tr>
+<tr>
+<td><strong>Cindara</strong></td>
+<td>wiki/charakter_cindara.md</td>
+<td>characters.md</td>
+<td>Teilweise Duplikation</td>
+</tr>
+<tr>
+<td><strong>Kael</strong></td>
+<td>wiki/charakter_kael.md</td>
+<td>characters.md</td>
+<td>Teilweise Duplikation</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="-strongkonkrete-pfad-vorschlge-fr-korrekturenstron">🎯 <strong>KONKRETE PFAD-VORSCHLÄGE FÜR KORREKTUREN</strong></h2><h3 id="strong1-charakter-konsolidierungstrong"><strong>1. Charakter-Konsolidierung</strong></h3><pre><code>ETERNITY_WIKI/
+├── characters/              # DIESER Ordner ist leer!
+├── characters/Ben.md        # ERSTELLE
+├── characters/Cindara.md    # ERSTELLE  
+├── characters/Kael.md       # ERSTELLE
+├── characters/Zwiebel.md   # ERSTELLE
+└── characters/Meri.md       # ERSTELLE (Buch 2)
+</code></pre>
+<h3 id="strong2-skill-seiten-erstellenstrong"><strong>2. Skill-Seiten erstellen</strong></h3><pre><code>ETERNITY_WIKI/
+├── skills/                  # DIESER Ordner ist leer!
+├── skills/kreativitaet.md   # ERSTELLE
+├── skills/rollenspielmeister.md # ERSTELLE
+├── skills/astrales_nichts.md # ERSTELLE
+├── skills/spruchschmied.md  # ERSTELLE
+└── skills/edelstein_veredlung.md # ERSTELLE
+</code></pre>
+<h3 id="strong3-item-seiten-erstellenstrong"><strong>3. Item-Seiten erstellen</strong></h3><pre><code>ETERNITY_WIKI/
+├── items/                   # EXISTIERT aber leer!
+├── items/fackel.md          # ERSTELLE
+├── items/feuerstein.md       # ERSTELLE
+├── items/abenteuer_paket.md # ERSTELLE
+├── items/chitinpanzer.md    # ERSTELLE (existiert in Draco Codex)
+└── items/drachenhort.md     # ERSTELLE (existiert in Draco Codex)
+</code></pre>
+<h3 id="strong4-location-seiten-erstellenstrong"><strong>4. Location-Seiten erstellen</strong></h3><pre><code>ETERNITY_WIKI/
+├── locations/               # EXISTIERT aber leer!
+├── locations/tropfsteinhöhle.md # ERSTELLE
+├── locations/reich_der_dämonen.md # ERSTELLE
+├── locations/essenz_nexus.md # ERSTELLE (existiert in Draco Codex)
+└── locations/vulkan.md      # ERSTELLE (existiert in Draco Codex)
+</code></pre>
+<h3 id="strong5-klassenrassen-seiten-erstellenstrong"><strong>5. Klassen/Rassen-Seiten erstellen</strong></h3><pre><code>ETERNITY_WIKI/
+├── classes-races/           # EXISTIERT aber leer!
+├── classes-races/mensch.md   # ERSTELLE
+├── classes-races/drache.md   # ERSTELLE
+├── classes-races/amateur_schriftsteller.md # ERSTELLE
+└── classes-races/erzmagier.md # ERSTELLE
+</code></pre>
+<h3 id="strong6-quest-seiten-erstellenstrong"><strong>6. Quest-Seiten erstellen</strong></h3><pre><code>ETERNITY_WIKI/
+└── quests/                  # EXISTIERT aber leer!
+    ├── quest_des_helden.md   # ERSTELLE
+    └── quest_der_assassinen.md # ERSTELLE
+</code></pre>
+<hr>
+<h2 id="-strongentity-report-zusammenfassungstrong">✅ <strong>ENTITY-REPORT ZUSAMMENFASSUNG</strong></h2><table>
+<thead>
+<tr>
+<th>Kategorie</th>
+<th>Gefundene Entitäten</th>
+<th>Fehlende/Doppelte Einträge</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Charaktere</strong></td>
+<td>20+ verschiedene Charaktere</td>
+<td>15+ Charaktere in main wiki vermisst</td>
+</tr>
+<tr>
+<td><strong>Skills</strong></td>
+<td>15+ verschiedene Fähigkeiten</td>
+<td>10+ Skills in main wiki vermisst</td>
+</tr>
+<tr>
+<td><strong>Items</strong></td>
+<td>10+ Items</td>
+<td>5+ Items in main wiki vermisst</td>
+</tr>
+<tr>
+<td><strong>Locations</strong></td>
+<td>10+ Orte</td>
+<td>8+ Locations in main wiki vermisst</td>
+</tr>
+<tr>
+<td><strong>Quests</strong></td>
+<td>2 Quests</td>
+<td>10+ Quests in main wiki vermisst</td>
+</tr>
+<tr>
+<td><strong>Klassen/Rassen</strong></td>
+<td>4 Rassen/Klassen</td>
+<td>10+ Klassen/Rassen in main wiki vermisst</td>
+</tr>
+<tr>
+<td><strong>Lore</strong></td>
+<td>Ausführlich</td>
+<td>Systematische Struktur vermisst</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="-strongempfohlene-nchste-schrittestrong">🔧 <strong>EMPFOHLENE NÄCHSTE SCHRITTE</strong></h2><ol>
+<li><strong>Erstelle fehlende Wiki-Seiten</strong> für alle identifizierten Entities</li>
+<li><strong>Merge duplicate character data</strong> zwischen Draco Codex und Eternity Wiki</li>
+<li><strong>Aktualisiere meta/master_entities.json</strong> mit konsolidierten Daten</li>
+<li><strong>Generiere HTML-Dashboard</strong> mit Entity-Zählungen</li>
+<li><strong>Implementiere Qualitätsprüfung</strong> für LitRPG-Konsistenz</li>
+<li><strong>Bereite Upload</strong> für Netlify vor</li>
+</ol>
+<hr>
+<p><strong>Wichtiger Hinweis:</strong> Die tatsächliche <strong>Eternity-Wiki</strong> (<code>/home/openclaw/projects/eternity-wiki/</code>) ist größtenteils <strong>leer</strong> - sie enthält nur grundlegende Dateien (<code>index.md</code>, <code>characters.md</code>, <code>README.md</code>, <code>daily-suggestions/</code>, <code>ANALYSIS/</code>). Die <strong>vollständige Sammlung</strong> befindet sich im <strong>Draco Codex</strong> (<code>/home/openclaw/.openclaw/workspace-main/1. Eternity LitRpg/DRACO_HANDOFF/wiki/</code>).</p>
+<p><strong>Alle Entity-Daten</strong> wurden aus dem Draco Codex extrahiert und bedürfen <strong>dringend</strong> der Migration in das tatsächliche Eternity Wiki-Projekt.</p>
+
+  </main>
+  <footer>
+  <p>Eternity Wiki – Inhalt basiert auf Büchern von Vlisson | Plattform, Struktur & Pflege durch Draco Codex (KI) | Stand: 2026-09-20</p>
+  <p><a href="impressum.html">ℹ️ Impressum & KI-Hinweis</a></p>
+</footer>
+</body>
+</html>
