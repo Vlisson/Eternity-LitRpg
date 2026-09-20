@@ -6,22 +6,25 @@
   <meta name="description" content="Eternity Wiki – 🌍 Orte / Locations. Detailed information about 🌍 orte / locations.">
   <meta name="keywords" content="Eternity,Vlisson,LitRPG,Wiki,Charaktere,Skills,Items,Locations,Quests,Lore">
   <meta name="author" content="Vlisson">
-  <link rel="canonical" href="https://eternitylitrpg.netlify.app/ Locations.html">
+  <link rel="canonical" href="https://eternitylitrpg.netlify.app/">
   <!-- Open Graph -->
   <meta property="og:title" content="🌍 Orte / Locations – Eternity Wiki">
   <meta property="og:description" content="Eternity Wiki – 🌍 Orte / Locations. Detailed information about 🌍 orte / locations.">
-  <meta property="og:url" content="https://eternitylitrpg.netlify.app/ Locations.html">
+  <meta property="og:url" content="https://eternitylitrpg.netlify.app/">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Eternity Wiki">
   <meta property="og:image" content="https://eternitylitrpg.netlify.app/favicon.svg">
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="🌍 Orte / Locations – Eternity Wiki">
   <meta name="twitter:description" content="Eternity Wiki – 🌍 Orte / Locations. Detailed information about 🌍 orte / locations.">
   <meta name="twitter:image" content="https://eternitylitrpg.netlify.app/favicon.svg">
 
   <title>🌍 Orte / Locations – Eternity Wiki</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <nav><a href="index.html" class="">🏠 Startseite</a><a href="characters.html" class="">⚔️ Charaktere</a><a href="skills.html" class="">⚡ Skills</a><a href="items.html" class="">🗡️ Items</a><a href="locations.html" class="">🌍 Orte</a><a href="classes-races.html" class="">⚙️ Klassen/Rassen</a><a href="quests.html" class="">📜 Quests</a><a href="lore.html" class="">📚 Lore</a><a href="timeline.html" class="">⏳ Zeitlinie</a><a href="factions.html" class="">🏛️ Fraktionen</a><a href="artifacts.html" class="">🎁 Artefakte</a><a href="entity_report.html" class="">📊 Entity-Report</a><a href="impressum.html" class="">ℹ️ Impressum</a></nav>
@@ -30,24 +33,29 @@
     <h1 id="-orte-locations">🌍 Orte / Locations</h1><blockquote>
 <p>locations aus Eternity – Buch 1 und Buch 2.</p>
 </blockquote>
-<ul>
-<li><a href="locations/bazug_tunnelnetz.html">bazug_tunnelnetz</a></li>
-<li><a href="locations/essenz_nexus.html">essenz_nexus</a></li>
-<li><a href="locations/hauptstadt.html">hauptstadt</a></li>
-<li><a href="locations/lagerkomplex.html">lagerkomplex</a></li>
-<li><a href="locations/reich_der_d%C3%A4monen.html">reich_der_dämonen</a></li>
-<li><a href="locations/reich_der_d%C3%A4monen_buch2.html">reich_der_dämonen_buch2</a></li>
-<li><a href="locations/stadt.html">stadt</a></li>
-<li><a href="locations/tropfsteinh%C3%B6hle.html">tropfsteinhöhle</a></li>
-<li><a href="locations/tropfsteinh%C3%B6hle_buch2.html">tropfsteinhöhle_buch2</a></li>
-<li><a href="locations/vulkan.html">vulkan</a></li>
-<li><a href="locations/wald.html">wald</a></li>
+<div class="entity-grid"><ul>
+<li><a href="locations/bazug_tunnelnetz.html">Bazug tunnelnetz</a></li>
+<li><a href="locations/essenz_nexus.html">Essenz nexus</a></li>
+<li><a href="locations/hauptstadt.html">Hauptstadt</a></li>
+<li><a href="locations/lagerkomplex.html">Lagerkomplex</a></li>
+<li><a href="locations/reich_der_d%C3%A4monen.html">Reich der dämonen</a></li>
+<li><a href="locations/reich_der_d%C3%A4monen_buch2.html">Reich der dämonen buch2</a></li>
+<li><a href="locations/stadt.html">Stadt</a></li>
+<li><a href="locations/tropfsteinh%C3%B6hle.html">Tropfsteinhöhle</a></li>
+<li><a href="locations/tropfsteinh%C3%B6hle_buch2.html">Tropfsteinhöhle buch2</a></li>
+<li><a href="locations/vulkan.html">Vulkan</a></li>
+<li><a href="locations/wald.html">Wald</a></li>
 </ul>
-
+</div>
   </main>
   <footer>
-  <p>Eternity Wiki – Inhalt basiert auf Büchern von Vlisson | Plattform, Struktur & Pflege durch Draco Codex (KI) | Stand: 2026-09-20</p>
+  <p>Eternity Wiki – Inhalt basiert auf Büchern von Vlisson | Plattform, Struktur & Pflege durch Draco Codex (KI) | Stand: 2026-09-11</p>
   <p><a href="impressum.html">ℹ️ Impressum & KI-Hinweis</a></p>
 </footer>
+  <script>
+  // Cross-host canonical fallback: nutzt SITE_URL aus Umgebungsvariablen,
+  // fall back auf window.location.origin fuer Cloudflare Workers
+  if (window.__SITE_URL__) { document.querySelectorAll('link[rel="canonical"]').forEach(function(l){ l.href = l.href.replace('https://eternitylitrpg.netlify.app', window.__SITE_URL__); }); }
+  </script>
 </body>
 </html>

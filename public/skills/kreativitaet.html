@@ -6,22 +6,25 @@
   <meta name="description" content="Eternity Wiki – Fähigkeit – Kreativitaet. Detailed information about fähigkeit – kreativitaet.">
   <meta name="keywords" content="Eternity,Vlisson,LitRPG,Wiki,Charaktere,Skills,Items,Locations,Quests,Lore">
   <meta name="author" content="Vlisson">
-  <link rel="canonical" href="https://eternitylitrpg.netlify.app/Fähigkeit – Kreativitaet.html">
+  <link rel="canonical" href="https://eternitylitrpg.netlify.app/">
   <!-- Open Graph -->
   <meta property="og:title" content="Fähigkeit – Kreativitaet – Eternity Wiki">
   <meta property="og:description" content="Eternity Wiki – Fähigkeit – Kreativitaet. Detailed information about fähigkeit – kreativitaet.">
-  <meta property="og:url" content="https://eternitylitrpg.netlify.app/Fähigkeit – Kreativitaet.html">
+  <meta property="og:url" content="https://eternitylitrpg.netlify.app/">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Eternity Wiki">
   <meta property="og:image" content="https://eternitylitrpg.netlify.app/favicon.svg">
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Fähigkeit – Kreativitaet – Eternity Wiki">
   <meta name="twitter:description" content="Eternity Wiki – Fähigkeit – Kreativitaet. Detailed information about fähigkeit – kreativitaet.">
   <meta name="twitter:image" content="https://eternitylitrpg.netlify.app/favicon.svg">
 
   <title>Fähigkeit – Kreativitaet – Eternity Wiki</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <nav><a href="index.html" class="">🏠 Startseite</a><a href="characters.html" class="">⚔️ Charaktere</a><a href="skills.html" class="">⚡ Skills</a><a href="items.html" class="">🗡️ Items</a><a href="locations.html" class="">🌍 Orte</a><a href="classes-races.html" class="">⚙️ Klassen/Rassen</a><a href="quests.html" class="">📜 Quests</a><a href="lore.html" class="">📚 Lore</a><a href="timeline.html" class="">⏳ Zeitlinie</a><a href="factions.html" class="">🏛️ Fraktionen</a><a href="artifacts.html" class="">🎁 Artefakte</a><a href="entity_report.html" class="">📊 Entity-Report</a><a href="impressum.html" class="">ℹ️ Impressum</a></nav>
@@ -186,8 +189,13 @@ EOF</li>
 
   </main>
   <footer>
-  <p>Eternity Wiki – Inhalt basiert auf Büchern von Vlisson | Plattform, Struktur & Pflege durch Draco Codex (KI) | Stand: 2026-09-20</p>
+  <p>Eternity Wiki – Inhalt basiert auf Büchern von Vlisson | Plattform, Struktur & Pflege durch Draco Codex (KI) | Stand: 2026-09-11</p>
   <p><a href="impressum.html">ℹ️ Impressum & KI-Hinweis</a></p>
 </footer>
+  <script>
+  // Cross-host canonical fallback: nutzt SITE_URL aus Umgebungsvariablen,
+  // fall back auf window.location.origin fuer Cloudflare Workers
+  if (window.__SITE_URL__) { document.querySelectorAll('link[rel="canonical"]').forEach(function(l){ l.href = l.href.replace('https://eternitylitrpg.netlify.app', window.__SITE_URL__); }); }
+  </script>
 </body>
 </html>

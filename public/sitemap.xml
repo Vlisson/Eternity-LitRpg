@@ -2,85 +2,103 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://eternitylitrpg.netlify.app/analysis_buch1.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://eternitylitrpg.netlify.app/analysis_buch2.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://eternitylitrpg.netlify.app/artifacts.html</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://eternitylitrpg.netlify.app/characters.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://eternitylitrpg.netlify.app/classes-races.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://eternitylitrpg.netlify.app/entity_report.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://eternitylitrpg.netlify.app/factions.html</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://eternitylitrpg.netlify.app/impressum.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://eternitylitrpg.netlify.app/</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://eternitylitrpg.netlify.app/items.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://eternitylitrpg.netlify.app/locations.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://eternitylitrpg.netlify.app/lore.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://eternitylitrpg.netlify.app/quests.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://eternitylitrpg.netlify.app/skills.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://eternitylitrpg.netlify.app/timeline.html</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://eternitylitrpg.netlify.app/timeline_buch1.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://eternitylitrpg.netlify.app/timeline_buch2.html</loc>
-    <lastmod>2026-09-20</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
