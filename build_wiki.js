@@ -9,8 +9,21 @@ const path = require('path');
 // Konfiguration
 const SOURCE_DIR = __dirname;
 const OUTPUT_DIR = path.join(__dirname, 'public');
-const SITE_URL = 'https://eternitylitrpg.netlify.app';
+const SITE_URL = process.env.SITE_URL || 'https://eternitylitrpg.netlify.app';
 const SITE_NAME = 'Eternity Wiki';
+
+// Pfad-Hilfe: relativen CSS-Pfad basierend auf Tiefe der Output-Datei
+function cssPath(outputFilename) {
+  const depth = (outputFilename.match(/\//g) || []).length;
+  return `${'../'.repeat(depth)}css/style.css`;
+}
+
+function siteUrl(outputFilename) {
+  const base = SITE_URL.replace(/\/$/, '');
+  const depth = (outputFilename.match(/\//g) || []).length;
+  const suffix = depth === 0 ? '/' : '/' + outputFilename;
+  return base + suffix;
+}
 
 // Navigation-Items
 const NAVIGATION_ITEMS = [
@@ -83,11 +96,11 @@ renderer.heading = function(token) {
 };
 
 // SEO-Metadaten für jede Seite
-function getSeoMeta(title, isIndex = false) {
+function getSeoMeta(title, isIndex = false, canonicalUrl) {
   const description = isIndex
     ? 'Eternity Wiki – Comprehensive LitRPG resource with characters, skills, items, locations, quests and lore from the books of Vlisson'
     : `Eternity Wiki – ${title}. Detailed information about ${title.toLowerCase()}.`;
-  const url = isIndex ? SITE_URL + '/' : SITE_URL + '/' + path.basename(title) + '.html';
+  const url = canonicalUrl || (isIndex ? SITE_URL + '/' : SITE_URL + '/' + title + '.html');
   return `
   <meta name="description" content="${description}">
   <meta name="keywords" content="Eternity,Vlisson,LitRPG,Wiki,Charaktere,Skills,Items,Locations,Quests,Lore">
@@ -101,7 +114,7 @@ function getSeoMeta(title, isIndex = false) {
   <meta property="og:site_name" content="${SITE_NAME}">
   <meta property="og:image" content="${SITE_URL}/favicon.svg">
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${title} – ${SITE_NAME}">
   <meta name="twitter:description" content="${description}">
   <meta name="twitter:image" content="${SITE_URL}/favicon.svg">
@@ -115,14 +128,19 @@ function mdToHtml(md, title, isIndex = false) {
   const currentPage = path.basename(title) + '.html';
   const nav = getNavigationHtml(currentPage);
   const tocBlock = toc ? `<div class="toc-wrapper">${toc}</div>` : '';
+  const cssHref = cssPath(currentPage);
+  const canonical = siteUrl(currentPage);
   
   return `<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">${getSeoMeta(title, isIndex)}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">${getSeoMeta(title, isIndex, canonical)}
   <title>${title} – ${SITE_NAME}</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="${cssHref}">
 </head>
 <body>
   ${nav}
@@ -131,6 +149,11 @@ function mdToHtml(md, title, isIndex = false) {
     ${body}
   </main>
   ${footer}
+  <script>
+  // Cross-host canonical fallback: nutzt SITE_URL aus Umgebungsvariablen,
+  // fall back auf window.location.origin fuer Cloudflare Workers
+  if (window.__SITE_URL__) { document.querySelectorAll('link[rel=\"canonical\"]').forEach(function(l){ l.href = l.href.replace('https://eternitylitrpg.netlify.app', window.__SITE_URL__); }); }
+  </script>
 </body>
 </html>`;
 }
@@ -169,13 +192,18 @@ function generateDirectoryPage(dirPath, pageName, title, entityFolder) {
     }
     let content = `# ${title}\n\n`;
     content += `> ${entityFolder} aus Eternity – Buch 1 und Buch 2.\n\n`;
+    content += `<div class="entity-grid">\n\n`;
     
     files.forEach(file => {
       const name = path.basename(file, '.md');
-      content += `- [${name}](${entityFolder}/${name}.html)\n`;
+      const displayName = name.charAt(0).toUpperCase() + name.slice(1).replace(/_/g, ' ');
+      content += `- [${displayName}](${entityFolder}/${name}.html)\n`;
     });
     
-    const html = mdToHtml(content, title);
+    content += `\n</div>`;
+    
+    const outputFilename = pageName;
+    const html = mdToHtml(content, title, false, outputFilename);
     fs.writeFileSync(path.join(OUTPUT_DIR, pageName), html);
     console.log(`✅ ${dirPath} → ${pageName}`);
     return true;
@@ -274,7 +302,7 @@ function build() {
   if (processMarkdownFile(path.join(SOURCE_DIR, 'wiki', 'analysis_buch2.md'), 'analysis_buch2.html', 'Analyse Buch 2')) successCount++; else errorCount++;
   
   console.log('\n📅 Zeitlinien...');
-  if (processMarkdownFile(path.join(SOURCE_DIR, 'wiki', 'timeline_buch1.md'), 'timeline_buch1.html', 'Zeitlinie Buch 1')) successCount++; else errorCount++;
+  if (processMarkdownFile(path.join(SOURCE_DIR, 'wiki', 'chapters', 'Timeline_buch1.md'), 'timeline_buch1.html', 'Zeitlinie Buch 1')) successCount++; else errorCount++;
   if (processMarkdownFile(path.join(SOURCE_DIR, 'wiki', 'chapters', 'Timeline_buch2.md'), 'timeline_buch2.html', 'Zeitlinie Buch 2')) successCount++; else errorCount++;
   
   console.log('\n📋 Entity-Report...');
