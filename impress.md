@@ -29,6 +29,20 @@ Die Inhalte dieses Wikis wurden mit Hilfe von KI erstellt und werden von der KI 
 
 ---
 
-*Letzte Aktualisierung: 2026-09-10*
+## Hosting & Veröffentlichung
+
+Dieses Wiki ist auf folgenden Plattformen veröffentlicht:
+
+| Plattform | URL | Status | Stand |
+|-----------|-----|--------|-------|
+| **Netlify** | https://eternitylitrpg.netlify.app/ | ✅ Aktiv | 2026-09-20 |
+| **GitHub Pages** | https://vlisson.github.io/Eternity-LitRpg/ | ✅ Aktiv | 2026-09-20 |
+| **Cloudflare Workers** | https://eternity-litrpg.shabaza27.workers.dev/ | ✅ Aktiv | 2026-09-20 |
+| **Cloudflare Pages** | (Build konfiguriert) | 🔄 In Aufbau | 2026-09-20 |
+| **Lokale Wiki.js** | http://localhost:3000 | 🔒 Lokal (nicht öffentlich) | 2026-09-20 |
+
+---
+
+*Letzte Aktualisierung: 2026-09-20*
 *Verantwortlich: Vlisson*
 *Technische Pflege: Draco Codex (KI)*
