@@ -1,0 +1,23 @@
+{
+  "name": "04_wiki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "marked": "^18.0.11",
+    "netlify-cli": "^27.4.2"
+  },
+  "devDependencies": {
+    "wrangler": "^4.137.0"
+  }
+}
