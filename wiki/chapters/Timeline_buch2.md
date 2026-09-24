@@ -1,0 +1,1 @@
+# Timeline Buch 2\n\n## Setting 2070\n- Die Welt im Jahr 2070\n\n## Hauptkonflikt\n- Nexagen vs. OmniCorp\n\n## Neue Charaktere\n- Neue Heldinnen und Helden\n\n## Plotpunkte\n- Wichtige Ereignisse im zweiten Buch

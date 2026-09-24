@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+# package-lock.json NOT ignored – needed for npm ci
+
+# Build output
+public/
+.netlify/
+.netlify/state.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Env
+.env
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example

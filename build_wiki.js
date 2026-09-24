@@ -39,7 +39,8 @@ const NAVIGATION_ITEMS = [
   { href: 'factions.html', icon: '🏛️', label: 'Fraktionen' },
   { href: 'artifacts.html', icon: '🎁', label: 'Artefakte' },
   { href: 'entity_report.html', icon: '📊', label: 'Entity-Report' },
-  { href: 'impressum.html', icon: 'ℹ️', label: 'Impressum' }
+  { href: 'impressum.html', icon: 'ℹ️', label: 'Impressum' },
+  { href: 'Änderungen.html', icon: '📋', label: 'Änderungen' }
 ];
 
 // Navigation HTML mit aktiver Hervorhebung
@@ -53,8 +54,9 @@ function getNavigationHtml(currentPage) {
 
 // Footer
 const footer = `<footer>
-  <p>Eternity Wiki – Inhalt basiert auf Büchern von Vlisson | Plattform, Struktur & Pflege durch Draco Codex (KI) | Stand: 2026-09-11</p>
+  <p>Eternity Wiki – Inhalt basiert auf Büchern von Vlisson | Plattform, Struktur & Pflege durch Draco Codex (KI) | Stand: 2026-09-24 18:56</p>
   <p><a href="impressum.html">ℹ️ Impressum & KI-Hinweis</a></p>
+  <p><a href="Änderungen.html">📋 Änderungen</a> | <a href="sitemap.xml">Sitemap</a></p>
 </footer>`;
 
 // Slug für Anker-IDs mit Sicherheit
@@ -213,6 +215,30 @@ function generateDirectoryPage(dirPath, pageName, title, entityFolder) {
   }
 }
 
+// Generate Änderungen page
+function generateÄnderungenPage() {
+  try {
+    const inputPath = path.join(SOURCE_DIR, 'Änderungen.md');
+    if (!fs.existsSync(inputPath)) {
+      console.log('⚠️  Änderungen.md nicht gefunden');
+      return false;
+    }
+    const outputFilename = 'Änderungen.html';
+    const html = mdToHtml(
+      fs.readFileSync(inputPath, 'utf8'),
+      'Änderungen',
+      false,
+      outputFilename
+    );
+    fs.writeFileSync(path.join(OUTPUT_DIR, outputFilename), html);
+    console.log(`✅ ${inputPath} → ${outputFilename}`);
+    return true;
+  } catch (error) {
+    console.log(`❌ Änderungen.md → Fehler: ${error.message}`);
+    return false;
+  }
+}
+
 // Generate individual entity pages from .md files in a folder
 function generateEntityPages(sourceDir, entityType) {
   try {
@@ -266,7 +292,7 @@ function generateSitemap() {
   
   htmlFiles.forEach(page => {
     const url = page === 'index.html' ? SITE_URL + '/' : SITE_URL + '/' + page;
-    sitemap += `  <url>\n    <loc>${url}</loc>\n    <lastmod>2026-09-11</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>${page === 'index.html' ? '1.0' : '0.8'}</priority>\n  </url>\n`;
+    sitemap += `  <url>\n    <loc>${url}</loc>\n    <lastmod>2026-09-24</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>${page === 'index.html' ? '1.0' : '0.8'}</priority>\n  </url>\n`;
   });
   
   fs.writeFileSync(path.join(OUTPUT_DIR, 'sitemap.xml'), sitemap);
@@ -363,6 +389,9 @@ Dieses Wiki ist eine Fan-Seite, steht in keiner Verbindung zu den offiziellen Re
 *Erstellt am 2026-09-11*`;
   
   if (processMarkdownFile(path.join(SOURCE_DIR, 'impress.md'), 'impressum.html', 'Impressum')) successCount++; else errorCount++;
+  
+  console.log('\n📋 Änderungen...');
+  if (generateÄnderungenPage()) successCount++; else errorCount++;
   
   console.log('\n🌐 Generiere SEO-Dateien...');
   generateSitemap();

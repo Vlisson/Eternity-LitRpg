@@ -1,0 +1,200 @@
+{
+  "chapter_id": "ch001",
+  "chapter_title": "Buch 1 - Der Anfang (Vollständig aus PDF 269 Seiten)",
+  "source_file": "Eternity_Buch_1.pdf",
+  "wordcount": 748000,
+  "extracted_at": "2026-09-10T12:09:55.896524",
+  "status": "processed",
+  "characters": [
+    {
+      "name": "Ben (Dhark)",
+      "aliases": [
+        "Ben",
+        "Shadow",
+        "Dhark",
+        "Drache"
+      ],
+      "role": "Protagonist",
+      "first_mention": "Kapitel 1",
+      "status": "active",
+      "start_name": "\"keiner\" (kein Name vergeben)",
+      "end_name": "Ben (im Text erwähnt als Spieler aus Deutschland)",
+      "race": "Wahrer Drache (Element: Schatten)",
+      "age_stage": "Frisch Geschlüpft → Jugendlich (Stufe 0→7)",
+      "class": "Keine (Questbelohnung Rasse gewählt, Klasse nicht gewählt)",
+      "titles": "erste Legende des fünften Zeitalters - verfluchter Held → Unheilsbringer, Freund der Schatten → Letzter seiner Art, legendärer Fressfeind der falschen Götter, Meister der Elemente, Meistermagier der verbotenen Elemente",
+      "unique_ability": "Aasfresser",
+      "status_desc": "Verwirrt, frustriert → selbstbewusst"
+    }
+  ],
+  "races": [
+    {
+      "name": "Wahrer Drache (Schatten)",
+      "type": "Legendär",
+      "element": "Schatten"
+    },
+    {
+      "name": "Drachenschnecke (Bazug)",
+      "type": "Dungeon-Wesen"
+    }
+  ],
+  "locations": [
+    {
+      "name": "Tropfsteinhöhle (Start)",
+      "type": "",
+      "description": ""
+    },
+    {
+      "name": "Reich der Dämonen",
+      "type": "",
+      "description": ""
+    },
+    {
+      "name": "Dungeon-Ebenen",
+      "type": "",
+      "description": ""
+    },
+    {
+      "name": "Schatzkammer Norcons",
+      "type": "",
+      "description": ""
+    }
+  ],
+  "items": [
+    {
+      "name": "Orb der Flamme",
+      "element": "Feuer",
+      "affinity": "Sehr hoch",
+      "status": "Aktiviert?",
+      "type": "Magischer Orb"
+    },
+    {
+      "name": "Orb des Metalls",
+      "element": "Erde",
+      "affinity": "Überdurchschnittlich",
+      "status": "Aktiviert?",
+      "type": "Magischer Orb"
+    },
+    {
+      "name": "Orb des Ozeans",
+      "element": "Wasser",
+      "affinity": "Ausreichend",
+      "status": "Aktiviert?",
+      "type": "Magischer Orb"
+    },
+    {
+      "name": "Orb des Donners",
+      "element": "Wind",
+      "affinity": "Sehr niedrig",
+      "status": "Aktiviert?",
+      "type": "Magischer Orb"
+    },
+    {
+      "name": "Orb der Schatten",
+      "element": "Schatten",
+      "affinity": "???",
+      "status": "Aktiviert ✅",
+      "type": "Magischer Orb"
+    },
+    {
+      "name": "Orbs-Konstrukt",
+      "type": "Magisches Konstrukt",
+      "description": "- **Anordnung:** 4 Grundelemente + 6 erweiterte Synergien = 14 Knoten - **Effekt:** Magische Harmonie, fruchtbarer Sandboden - **Verschwinden:** Nach Aktivierung des Schatten-Orbs"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Giftrune",
+      "type": "Aktiv/Passiv",
+      "description": "Giftresistenz, Runen-Slot belegt",
+      "cooldown": "N/A"
+    },
+    {
+      "name": "Drachenessenz",
+      "type": "Aktiv/Passiv",
+      "description": "Metalle absorbieren, +1% Schuppen-Rüstung",
+      "cooldown": "N/A"
+    },
+    {
+      "name": "Wärmesicht",
+      "type": "Aktiv/Passiv",
+      "description": "Wärmequellen erkennen",
+      "cooldown": "N/A"
+    },
+    {
+      "name": "Aura der Furcht",
+      "type": "Aktiv/Passiv",
+      "description": "Geborenes Raubtier",
+      "cooldown": "N/A"
+    }
+  ],
+  "quests": [
+    {
+      "name": "Quest des Helden",
+      "type": "Main-Quest"
+    }
+  ],
+  "classes": [],
+  "mechanics": [
+    {
+      "name": "Attribut-System",
+      "type": "System",
+      "description": "- **Startattribute:** Alle 1 (außer Intelligenz 31) - **Konstitution-Build:** 41 Punkte → 166 HP (statt 1025 erwartet) - **Abzug -90%:** Alle körperlichen Attribute - **Freie Punkte:** 40 nach Stufe 4"
+    },
+    {
+      "name": "Level-System",
+      "type": "Progression",
+      "description": "- **Start:** Stufe 0 (nach Quest) - **Stufe 1:** Nach erstem Kampf (Käfer) - **Stufe 4:** Nach 3 weiteren Kämpfen - **Stufe 7:** Nach Tausendfüßler-Kampf"
+    },
+    {
+      "name": "XP-System",
+      "type": "Progression",
+      "description": "- **Drachenfluch:** XP x2 benötigt - **Stufenaufstieg:** Durch Kampf, nicht durch Quest"
+    },
+    {
+      "name": "Inventar-System",
+      "type": "System",
+      "description": "- **Start:** Abenteurer-Paket - **Einschränkung:** Keine Taschen, keine Aufbewahrung der Orbs - **Orbs:** Nicht einlösbar, müssen aktiviert werden ---"
+    },
+    {
+      "name": "Enthüllung: Drachen sind die stärkste Rasse",
+      "type": "Lore",
+      "description": "gottgleich, aber verflucht"
+    },
+    {
+      "name": "Enthüllung: Schatten-Drache",
+      "type": "Lore",
+      "description": "Letzter seiner Art, vom Drachengott Bahamut abstammend"
+    },
+    {
+      "name": "Enthüllung: Orbs sind Quellen reiner Elemente",
+      "type": "Lore",
+      "description": "keine gewöhnlichen Artefakte"
+    },
+    {
+      "name": "Enthüllung: Konstrukt der Magie",
+      "type": "Lore",
+      "description": "14 Knoten, Zentrum ergründet"
+    },
+    {
+      "name": "Enthüllung: Aasfresser",
+      "type": "Lore",
+      "description": "Einzigartige Fähigkeit, Nahrung aus Insekten"
+    },
+    {
+      "name": "Enthüllung: Drachenfluch",
+      "type": "Lore",
+      "description": "Proximity-Poison, soziale Isolation notwendig"
+    },
+    {
+      "name": "Enthüllung: Kaltblütig",
+      "type": "Lore",
+      "description": "Temperatur-Überlebenschallenge"
+    },
+    {
+      "name": "Enthüllung: Titel \"Unheilsbringer\"",
+      "type": "Lore",
+      "description": "Göttliche Feindschaft, +900% Katastrophen"
+    }
+  ]
+}
