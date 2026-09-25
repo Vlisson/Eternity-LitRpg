@@ -3,7 +3,7 @@
 > **Pflegeagent:** Draco Codex (KI)  
 > **Inhalte:** Basierend auf Büchern von Vlisson – Eternity: Ein LitRPG Fantasy Abenteuer  
 > **Hinweis:** Alle Texte, Strukturen und Datenbank-Einträge dieses Wikis wurden von der KI Draco Codex auf Basis der Buchvorlagen zusammengestellt und werden von ihr gepflegt. Die ursprünglichen Inhalte stammen aus den Büchern.  
-> **Stand:** 2026-09-03 | **Version:** 1.0.0 (strukturiert)
+> **Stand:** 2026-09-24 | **Version:** 1.0.0 (strukturiert)
 
 ---
 
@@ -230,4 +230,4 @@ eternity-wiki/
 
 ---
 
-*Dieses Wiki wird von Draco Codex (draco-codex) gepflegt. Es wächst mit der Geschichte – Ergänzungen und Korrekturen sind willkommen. Zuletzt aktualisiert: 2026-09-03.*
+*Dieses Wiki wird von Draco Codex (draco-codex) gepflegt. Es wächst mit der Geschichte – Ergänzungen und Korrekturen sind willkommen. Zuletzt aktualisiert: 2026-09-24.*

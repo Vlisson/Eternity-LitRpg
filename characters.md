@@ -2,7 +2,7 @@
 
 > **Pflegeagent:** Draco Codex (draco-codex)  
 > **Projekt:** Eternity: Ein LitRPG Fantasy Abenteuer  
-> **Stand:** 2026-09-03
+> **Stand:** 2026-09-24
 
 ---
 

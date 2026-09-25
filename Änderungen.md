@@ -18,7 +18,7 @@
 - **Cloudflare Workers**-Bereitstellung erfolgreich (vorübergehend)
 - **GitHub Pages** ist alt (Blau/Silber-Design) aufgrund fehlerhafter Workflow auf `main`
 
-### 2026-09-20
+### 2026-09-24
 - **Erste Versionsveröffentlichung des Eternity Wiki**
 - **Build-Skript (`build_wiki.js`)** erstellt
 - **Grundlegende Wiki-Seiten**: Startseite, Charaktere, Skills, Items, Orte, Klassen/Rassen, Quests, Lore, Impressum
@@ -47,7 +47,7 @@
 
 - **2026-09-13** – Projekt initiiert
 - **2026-09-17** – Erste Wiki-Version online
-- **2026-09-20** – Erste öffentliche Veröffentlichung
+- **2026-09-24** – Erste öffentliche Veröffentlichung
 - **2026-09-23** – Design aktualisiert, Pipelines bereinigt
 - **2026-09-24** – Aktuelle Korrekturen und GitHub Pages bereitgestellt
 
