@@ -45,9 +45,11 @@ const NAVIGATION_ITEMS = [
 
 // Navigation HTML mit aktiver Hervorhebung
 function getNavigationHtml(currentPage) {
+  const depth = (currentPage.match(/\//g) || []).length;
+  const basePath = depth === 0 ? '' : '../'.repeat(depth);
   const items = NAVIGATION_ITEMS.map(item => {
     const active = item.href === currentPage ? ' active' : '';
-    return `<a href="${item.href}" class="${active}">${item.icon} ${item.label}</a>`;
+    return `<a href="${basePath}${item.href}" class="${active}">${item.icon} ${item.label}</a>`;
   }).join('');
   return `<nav>${items}</nav>`;
 }
