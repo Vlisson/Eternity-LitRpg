@@ -12,11 +12,12 @@
 - **Echter Name:** Ben (Spieler aus Deutschland)
 - **Spielername:** Shadow
 - **Alias:** Dhark (Dämonenlord), Drache
-- **Autor/Spieler:** Markus alias Vlisson (Amateur Schriftsteller, Stufe 1)
 - **Rasse (Start):** Mensch → **Rasse (nach Quest):** Drache (legendär, Schatten)
 - **Klasse (Start):** Amateur Schriftsteller
 - **Klasse (Option):** Erzmagier (legendär) — **NICHT gewählt**
 - **Stufe (Start):** 0 → nach Quest Stufe 1
+
+> **Hinweis:** Der Autor Markus alias Vlisson stellt sich im Vorwort als „Amateur Schriftsteller Stufe 1" vor. Das ist die reale Welt – **nicht** der Charakter Ben. Ben ist ein Spielercharakter im VRMMO Eternity, der die legendäre Rasse Drache (Schatten) als Questbelohnung wählt. Der Autor und der Charakter sind **nicht** dieselbe Person.
 
 #### Attribute (Start)
 | Attribut | Wert | Hinweis |
