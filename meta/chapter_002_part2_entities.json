@@ -1,0 +1,178 @@
+{
+  "chapter_id": "ch002",
+  "chapter_title": "Buch 2 - Als Drache (Fortsetzung - Teil 2)",
+  "source_file": "Buch_2_Rohfassung.txt",
+  "wordcount": 108716,
+  "extracted_at": "2026-09-07T08:45:00Z",
+  "section": "Zeilen 151-400 (Eternity Prime, Marcel als Feuergeist, Ben als Dämonenlord)",
+  "characters_appeared": [
+    {
+      "name": "Marcel",
+      "role": "Spieler / Feuergeist",
+      "first_mention": "Ein neuer Trend erfasste täglich mehr Spieler in Eternity... Marcel",
+      "status": "active",
+      "description": "Wählt den Weg des Feuers, erlebt Elementarkollektive, wird zu Kohle, wärmt ein Mädchen",
+      "abilities": ["Feuergeist-Form", "Flächenbrand", "Kohle-Form", "Elementarverschmelzung"]
+    },
+    {
+      "name": "Ben",
+      "aliases": ["Shadow", "Dhark", "Dämonenlord"],
+      "role": "Protagonist",
+      "first_mention": "Während Marcel als Feuergeist über die Wälder tobte... loggte sich... ein junger Mann ein... Sein Name war Ben",
+      "status": "active",
+      "description": "Neugeborener Dämonenlord in Drachengestalt, besiegt Anubara, Rang 143.248"
+    },
+    {
+      "name": "Anubara",
+      "role": "Dämonenkönig / Boss",
+      "first_mention": "[Gratulation: Dämonenlord Anubara besiegt",
+      "status": "defeated",
+      "description": "Dämonenkönig, bot Ben Posten an, wurde durch Duell besiegt"
+    }
+  ],
+  "factions_mentioned": [
+    {
+      "name": "Externals",
+      "type": "Gilde",
+      "description": "Gildenleiter Level 143, Elite dicht auf Fersen"
+    },
+    {
+      "name": "Skarabäus",
+      "type": "Fraktion / Feind",
+      "description": "Jagt Ben nun als Verräter"
+    },
+    {
+      "name": "Ratten und Käfer",
+      "type": "Dämonenminions",
+      "description": "Minions von Anubara, wechselten die Seite zu Ben"
+    }
+  ],
+  "locations_mentioned": [
+    {
+      "name": "Vulkan",
+      "type": "Ort",
+      "description": "Marcel's Startort als Feuergeist, schleudert Asche und Lava"
+    },
+    {
+      "name": "Wald",
+      "type": "Ort",
+      "description": "Marcel's Feuer verschlingt Büsche und Bäume, hinterlässt fruchtbare Asche"
+    },
+    {
+      "name": "Höhle (unter der Erde)",
+      "type": "Dungeon",
+      "description": "Ort des Kampfes gegen Anubara, Ben erwacht hier als Drache"
+    },
+    {
+      "name": "Schäbiges Apartment am Stadtrand",
+      "type": "Realwelt-Ort",
+      "description": "Bens Realwelt-Aufenthaltsort"
+    },
+    {
+      "name": "Eternity Prime",
+      "type": "Streaming-Kanal",
+      "description": "Kanal, der über serverweite Nachrichten diskutiert"
+    }
+  ],
+  "items_introduced": [
+    {
+      "name": "Goldene Kugel",
+      "quantity": 1,
+      "rarity": "legendary",
+      "description": "Gefunden in Anubaras Kadaver, strahlt hell, verdampft Schattenaura, doppelt so groß wie Drachenskopf",
+      "stats": {"effect": "verdampft Schattenaura", "size": "doppelt so groß wie Drachenkopf"}
+    },
+    {
+      "name": "Chitinpanzer",
+      "quantity": 1,
+      "rarity": "rare",
+      "description": "Anubaras Rüstung, unter der die goldene Kugel lag"
+    }
+  ],
+  "skills_used": [
+    {
+      "name": "Feuergeist-Form",
+      "class": "Elementar",
+      "description": "Marcel wird Feuergeist, kann brennen, fliegen, Flächenbrand erzeugen",
+      "cooldown": "N/A"
+    },
+    {
+      "name": "Schattenaura",
+      "class": "Passiv/Defensiv",
+      "description": "Bens Schattenaura wird von goldener Kugel verdampft",
+      "cooldown": "N/A"
+    },
+    {
+      "name": "Drachengier",
+      "class": "Passiv",
+      "description": "Drachengier in Ben erwacht bei Anblick der goldenen Kugel",
+      "cooldown": "N/A"
+    },
+    {
+      "name": "Elementarverschmelzung",
+      "class": "Elementar",
+      "description": "Feuer-, Wind-, Erdgeister verschmelzen zu Kollektiv"
+    }
+  ],
+  "events": [
+    {
+      "timestamp": "Buch 2",
+      "description": "Dämonenlord Anubara besiegt, Ben wird neuer Dämonenlord",
+      "consequences": "Rang 143.248, Titel 'Es kann nur einen geben', Titel 'Verräter' (Skarabäus jagt Ben)"
+    },
+    {
+      "timestamp": "Buch 2",
+      "description": "Ben findet goldene Kugel in Anubaras Kadaver",
+      "consequences": "Kugel verdampft Schattenaura, Drachengier erwacht"
+    },
+    {
+      "timestamp": "Buch 2",
+      "description": "Ratten und Käfer wechseln die Seiten zu Ben",
+      "consequences": "Ben erhält Verbündete aus Anubaras Minions"
+    },
+    {
+      "timestamp": "Buch 2",
+      "description": "Marcel als Feuergeist erlebt Elementarkollektive",
+      "consequences": "Versteht Feuer vs. Wind, verschmilzt zu Kollektiv, wird Kohle, wärmt Mädchen"
+    },
+    {
+      "timestamp": "Buch 2",
+      "description": "Unsichtbare Barriere hindert Elementarkollektiv am Verlassen des Kontinents",
+      "consequences": "Kollektiv kreist über bekannten Gebieten"
+    }
+  ],
+  "litrpg_mechanics": [
+    {
+      "type": "boss_defeat",
+      "character": "Ben",
+      "boss": "Anubara",
+      "rank_gained": 143248,
+      "achievements": ["Es kann nur einen geben"],
+      "titles": ["Verräter (Skarabäus)"]
+    },
+    {
+      "type": "guild_level",
+      "guild": "Externals",
+      "leader_level": 143,
+      "description": "Gildenleiter Level 143"
+    },
+    {
+      "type": "system_message",
+      "content": "Gratulation: Dämonenlord Anubara besiegt. Neuer Rang: 143.248. Errungenschaft 'Es kann nur einen geben' abgeschlossen. Titel: 'Verräter' — Skarabäus jagt dich nun."
+    },
+    {
+      "type": "elemental_progression",
+      "character": "Marcel",
+      "progression": "Feuergeist -> Flächenbrand -> Kohle -> Elementarkollektiv -> Barriere"
+    }
+  ],
+  "key_concepts": [
+    "Zeitalter der Helden",
+    "Serverweite Nachrichten",
+    "Eternity Prime",
+    "Elementarkollektive (Feuer, Wind, Erde)",
+    "Unsichtbare Barriere (Kontinent-Grenze)",
+    "Drachengier",
+    "Schattenaura-Verdampfung"
+  ]
+}

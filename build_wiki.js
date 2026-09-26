@@ -124,10 +124,10 @@ function getSeoMeta(title, isIndex = false, canonicalUrl) {
 }
 
 // HTML Template
-function mdToHtml(md, title, isIndex = false) {
+function mdToHtml(md, title, isIndex = false, outputFilename = '') {
   const toc = generateToc(md);
   const body = marked.parse(md, { renderer });
-  const currentPage = path.basename(title) + '.html';
+  const currentPage = outputFilename || path.basename(title) + '.html';
   const nav = getNavigationHtml(currentPage);
   const tocBlock = toc ? `<div class="toc-wrapper">${toc}</div>` : '';
   const cssHref = cssPath(currentPage);
@@ -160,11 +160,15 @@ function mdToHtml(md, title, isIndex = false) {
 </html>`;
 }
 
-// Process markdown file
+// Process markdown file - gracefully handles missing files
 function processMarkdownFile(inputPath, outputFilename, title, isIndex = false) {
   try {
+    if (!fs.existsSync(inputPath)) {
+      console.log(`⚠️  ${inputPath} nicht gefunden, überspringe`);
+      return false;
+    }
     const md = fs.readFileSync(inputPath, 'utf8');
-    const html = mdToHtml(md, title, isIndex);
+    const html = mdToHtml(md, title, isIndex, outputFilename);
     const outputPath = path.join(OUTPUT_DIR, outputFilename);
     // Ensure directory exists
     const outputDir = path.dirname(outputPath);
@@ -364,7 +368,8 @@ function build() {
   if (newCharCount > 0) successCount += newCharCount; else errorCount++;
   
   console.log('\nℹ️ Impressum...');
-  const impressum = `# Impressum & KI-Hinweis
+  // Write impressum directly from hardcoded string to avoid missing file
+  const impressumContent = `# Impressum & KI-Hinweis
 
 **Eternity Wiki**
 Eternity LitRPG Wiki
@@ -393,8 +398,16 @@ E-Mail: Eternity-LitRpg@online.de
 Dieses Wiki ist eine Fan-Seite, steht in keiner Verbindung zu den offiziellen Rechteinhabern.
 
 *Erstellt am 2026-09-11*`;
-  
-  if (processMarkdownFile(path.join(SOURCE_DIR, 'impress.md'), 'impressum.html', 'Impressum')) successCount++; else errorCount++;
+  try {
+    const impressumPath = path.join(OUTPUT_DIR, 'impressum.html');
+    const html = mdToHtml(impressumContent, 'Impressum', false, 'impressum.html');
+    fs.writeFileSync(impressumPath, html);
+    console.log(`✅ impressum.html generated from hardcoded content`);
+    successCount++;
+  } catch (error) {
+    console.log(`❌ impressum generation failed: ${error.message}`);
+    errorCount++;
+  }
   
   console.log('\n📋 Änderungen...');
   if (generateÄnderungenPage()) successCount++; else errorCount++;

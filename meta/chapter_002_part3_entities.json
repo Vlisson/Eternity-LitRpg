@@ -1,0 +1,173 @@
+{
+  "chapter_id": "ch002_part3",
+  "chapter_title": "Buch 2 - Als Drache (Teil 3: Territorium & Runen)",
+  "source_file": "Buch_2_Rohfassung.txt",
+  "wordcount": 108716,
+  "extracted_at": "2026-09-07T09:12:00Z",
+  "section": "Zeilen 401-600: Territoriumsaufbau, Runen, Mana-Probleme",
+  "characters_appeared": [
+    {
+      "name": "Ben",
+      "aliases": ["Shadow", "Dhark", "Dämonenlord"],
+      "role": "Protagonist",
+      "first_mention": "[Gratulation! Erstes Territorium beansprucht. +728 Verbündete, Drachenessenz +5.]",
+      "status": "active",
+      "description": "Neuer Dämonenlord mit Territorium, kämpft mit Mana-Armut und Runen-Integration",
+      "level": 143248,
+      "title": "Verräter (Skarabäus)",
+      "new_abilities": ["Territoriumsaufbau", "Runen-Integration", "Manakern-Veredelung"]
+    },
+    {
+      "name": "Marie-Claire",
+      "aliases": [],
+      "role": "Meisterin / Beschwörerin",
+      "first_mention": "Wie es ihrer Meisterin Marie Claire wohl gerade geht.",
+      "status": "mentioned",
+      "description": "Ben's Mentorin/Beschwörerin, wird erwähnt im Kontext von Bens neuem Status"
+    },
+    {
+      "name": "Schmieriger Daumen",
+      "aliases": [],
+      "role": "Antagonist",
+      "first_mention": "Mein unfreiwilliger Job in der Sklavenfabrik des Schmierigen Daumens",
+      "status": "mentioned",
+      "description": "Ben's ehemaliger Arbeitgeber in der Sklavenfabrik, wird im Kontext seiner Freiheit erwähnt"
+    }
+  ],
+  "locations_mentioned": [
+    {
+      "name": "Territorium",
+      "type": "Dämonen-Territorium",
+      "first_mention": "[Gratulation! Erstes Territorium beansprucht. +728 Verbündete, Drachenessenz +5.]",
+      "description": "Ben's neues Territorium mit +728 Verbündeten und +5 Drachenessenz",
+      "features": ["+728 Verbündete", "Drachemessenz +5", "Territoriumsherz"]
+    },
+    {
+      "name": "Sklavenfabrik des Schmierigen Daumens",
+      "type": "Realwelt-Ort",
+      "first_mention": "Mein unfreiwilliger Job in der Sklavenfabrik des Schmierigen Daumens",
+      "description": "Ben's ehemaliger Arbeitsort, aus dem er nun frei ist"
+    },
+    {
+      "name": "Manakern",
+      "type": "Magisches Objekt",
+      "first_mention": "[??? Manakern — Dämonenlord-Qualität. Kann weder magisch transportiert noch eingelagert werden.]",
+      "description": "Aussergewöhnlicher Manakern von Dämonenlord-Qualität, kann nicht magisch transportiert oder eingelagert werden",
+      "special_features": ["Dämonenlord-Qualität", "Kann nicht magisch transportiert werden", "Kann nicht eingelagert werden"]
+    }
+  ],
+  "items_introduced": [
+    {
+      "name": "Veredelter Manakern",
+      "quantity": 1,
+      "rarity": "Dämonenlord",
+      "first_mention": "[??? Manakern — Dämonenlord-Qualität]",
+      "description": "Aussergewöhnlicher Manakern von Dämonenlord-Qualität",
+      "special_properties": ["Kann nicht magisch transportiert werden", "Kann nicht eingelagert werden"],
+      "quest_decision": "Möchtest du diesen veredelten Manakern als neues Territoriumsherz einsetzen? Kosten: 5 Punkte Drachenessenz."
+    },
+    {
+      "name": "Runen (diverse)",
+      "quantity": "mehrere",
+      "rarity": "Runen",
+      "first_mention": "[Gratulation: Spruchschmied steigt auf Anfänger 2]",
+      "description": "Verschiedene Runen wurden in den Felsboden geritzt und untereinander verbunden",
+      "special_features": ["Wurden in Felsboden geritzt", "Untereinander verbunden", "Nach Instinkt des Charakters"]
+    }
+  ],
+  "skills_used": [
+    {
+      "name": "Spruchschmied",
+      "class": "Handwerklich",
+      "first_mention": "[Gratulation: Spruchschmied steigt auf Anfänger 2]",
+      "description": "Ben steigt auf Anfänger 2 im Spruchschmied auf, nachdem er Mikrofehler am Manakern ausgemerzt hat",
+      "level_progress": "Anfänger 2",
+      "mechanic": "Veredlung von Manakernen und Runen"
+    },
+    {
+      "name": "Edelstein Veredlung",
+      "class": "Handwerklich",
+      "first_mention": "[Gratulation: Edelstein Veredlung steigt auf Lehrling 1. Achtung: Fertigkeit durch Zustand \"Erschöpft\" temporär auf Anfänger reduziert.]",
+      "description": "Edelstein Veredlung steigt auf Lehrling 1, wurde aber durch Erschöpfungzustand vorübergehend auf Anfänger reduziert",
+      "level_progress": "Lehrling 1 → temporär Anfänger",
+      "mechanic": "Edelstein-Veredelung mit Erschöpfungszustand"
+    },
+    {
+      "name": "Manakern-Veredelung",
+      "class": "Drachenspezial",
+      "first_mention": "Ich gab ungern die Kontrolle über meinen Körper oder mein bewusstes Denken ab, aber diese harmonischen Bewegungen fühlten sich so gut und richtig an. Es war fast wie Tanzen.",
+      "description": "Drachenspezifische Manakern-Veredelung, harmonische Bewegungen, fast wie Tanzen",
+      "level_progress": "Entwicklung über Anfängerniveau hinaus"
+    }
+  ],
+  "events": [
+    {
+      "timestamp": "Zeilen 401-600",
+      "description": "Territorium wurde beansprucht: +728 Verbündete, +5 Drachenessenz",
+      "consequences": "Ben hat jetzt eigenes Territorium, kann es später ausbauen"
+    },
+    {
+      "timestamp": "Zeilen 401-600",
+      "description": "Spruchschmied steigt auf Anfänger 2",
+      "consequences": "Ben kann nun komplexere Runen und Manakern veredeln"
+    },
+    {
+      "timestamp": "Zeilen 401-600",
+      "description": "Edelstein Veredlung steigt auf Lehrling 1 (temporär auf Anfänger reduziert durch Erschöpfung)",
+      "consequences": "Ben kann Manakern veredeln, ist aber durch Erschöpfung eingeschränkt"
+    },
+    {
+      "timestamp": "Zeilen 401-600",
+      "description": "Entscheidung über veredelten Manakern als Territoriumsherz",
+      "consequences": "Entscheidung: 'Jaa-aa' - Manakern wird als Territoriumsherz eingesetzt (5 Punkte Drachenessenz)"
+    },
+    {
+      "timestamp": "Zeilen 401-600",
+      "description": "Runen-Integration in Felsboden",
+      "consequences": "Ben ritzt Runen in Felsboden und verbindet sie nach Instinkt"
+    }
+  ],
+  "litrpg_mechanics": [
+    {
+      "type": "territory_claim",
+      "character": "Ben",
+      "new_territory": true,
+      "details": "+728 Verbündete, +5 Drachenessenz",
+      "mechanic": "Territorium beanspruchen als Dämonenlord"
+    },
+    {
+      "type": "skill_level_up",
+      "character": "Ben",
+      "skill": "Spruchschmied",
+      "from": "Anfänger 1",
+      "to": "Anfänger 2",
+      "mechanic": "Skill-Level-Up durch Veredelungserfahrung"
+    },
+    {
+      "type": "skill_level_up",
+      "character": "Ben",
+      "skill": "Edelstein Veredlung",
+      "from": "unclear",
+      "to": "Lehrling 1 (temporär auf Anfänger reduziert)",
+      "mechanic": "Skill-Level-Up mit Erschöpfungszustand"
+    },
+    {
+      "type": "territory_heart_decision",
+      "character": "Ben",
+      "decision": "Manakern als Territoriumsherz einsetzen",
+      "cost": "5 Punkte Drachenessenz",
+      "decision_result": "Jaa-aa (Ja)",
+      "mechanic": "Territoriumsherz-Weiseitung mit Drachenessenz-Kosten"
+    }
+  ],
+  "key_concepts": [
+    "Territoriumsaufbau",
+    "Manakern-Veredelung",
+    "Spruchschmied-Level-Up",
+    "Edelstein Veredlung",
+    "Mana-Armut und Runen-Probleme",
+    "Territoriumsherz-Entscheidung",
+    "Runen-Integration",
+    "Drachenspezifische Entwicklung"
+  ]
+}
