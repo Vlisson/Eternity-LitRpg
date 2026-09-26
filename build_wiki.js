@@ -54,7 +54,7 @@ function getNavigationHtml(currentPage) {
 
 // Footer
 const footer = `<footer>
-  <p>Eternity Wiki – Inhalt basiert auf Büchern von Vlisson | Plattform, Struktur & Pflege durch Draco Codex (KI) | Stand: 2026-09-24 18:56</p>
+  <p>Eternity Wiki – Inhalt basiert auf Büchern von Vlisson | Plattform, Struktur & Pflege durch Draco Codex (KI) | Stand: 2026-09-25 15:00</p>
   <p><a href="impressum.html">ℹ️ Impressum & KI-Hinweis</a></p>
   <p><a href="Änderungen.html">📋 Änderungen</a> | <a href="sitemap.xml">Sitemap</a></p>
 </footer>`;
@@ -292,7 +292,7 @@ function generateSitemap() {
   
   htmlFiles.forEach(page => {
     const url = page === 'index.html' ? SITE_URL + '/' : SITE_URL + '/' + page;
-    sitemap += `  <url>\n    <loc>${url}</loc>\n    <lastmod>2026-09-24</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>${page === 'index.html' ? '1.0' : '0.8'}</priority>\n  </url>\n`;
+    sitemap += `  <url>\n    <loc>${url}</loc>\n    <lastmod>2026-09-25</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>${page === 'index.html' ? '1.0' : '0.8'}</priority>\n  </url>\n`;
   });
   
   fs.writeFileSync(path.join(OUTPUT_DIR, 'sitemap.xml'), sitemap);

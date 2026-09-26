@@ -3,18 +3,19 @@
 > **Pflegeagent:** Draco Codex (KI)  
 > **Inhalte:** Basierend auf Büchern von Vlisson – Eternity: Ein LitRPG Fantasy Abenteuer  
 > **Hinweis:** Alle Texte, Strukturen und Datenbank-Einträge dieses Wikis wurden von der KI Draco Codex auf Basis der Buchvorlagen zusammengestellt und werden von ihr gepflegt. Die ursprünglichen Inhalte stammen aus den Büchern.  
-> **Stand:** 2026-09-24 | **Version:** 1.0.0 (strukturiert)
+> **Stand:** 2026-09-25 | **Version:** 1.0.0 (strukturiert)
 
 ---
 
 ## 📖 Buch-Overview
 
 - **Titel:** Eternity: Ein LitRPG Fantasy Abenteuer
-- **Autor:** Vlisson
+- **Autor:** Vlisson (Markus)
 - **Genre:** LitRPG, Fantasy, VRMMO
 - **Veröffentlichung:** Januar 2023 (Band 1)
 - **Status:** Aktive Entwicklung (Band 2 in Arbeit)
 - **Plattform:** Kindle Unlimited / Amazon.de
+- **Seiten:** 269 (Band 1 PDF)
 
 ---
 
@@ -29,6 +30,12 @@ Eternity ist ein riesiges VRMMO (Virtuelle Realität Massively Multiplayer Onlin
 - Quest-basierte Story
 - Verschiedene Rassen und Klassen
 - PvP- und PvE-Kämpfe
+
+### Jahr 2070 (Reale Welt)
+- **Erde:** Düsterer Ort, von Großkonzernen beherrscht
+- **Drei Konzerne:** Nexagen, OmniCorp, Meridian-Allianz
+- **Stimmung:** Gnadenlos, egoistisch, konkurrierend
+- **Hintergrund:** Menschheit hat sich in Eternity zurückgezogen
 
 ### Dämonen
 Eine gefährliche Fraktion, die die Spielwelt beherrscht. Sie herrscht über das **Reich der Dämonen** mit einzigartigen Dungeons und anderem Zeitverlauf.
@@ -45,31 +52,64 @@ Legendäre Rasse, die Spieler durch Quest-Belohnungen erlangen können. Ben erh�
 
 ### Hauptcharaktere
 
-#### Ben (Shadow)
-- **Spieler-Name:** Shadow
-- **Echter Name:** Ben
+#### Ben (Dhark/Shadow)
+- **Echter Name:** Ben (Spieler aus Deutschland)
+- **Spielername:** Shadow
+- **Alias:** Dhark (Dämonenlord), Drache
 - **Rasse (Start):** Mensch → **Rasse (nach Quest):** Drache (legendär)
-- **Klasse (Start):** Amateur Schriftsteller → **Klasse (Option):** Erzmagier (legendär)
+- **Klasse (Start):** Amateur Schriftsteller
+- **Klasse (Option):** Erzmagier (legendär)
 - **Stufe (Start):** 0
 
 **Attribute (Start):**
-| Attribut | Wert |
-|----------|------|
-| Stärke | 1 |
-| Geschicklichkeit | 1 |
-| Beweglichkeit | 1 |
-| Konstitution | 41 |
-| Intelligenz | 21 |
-| Weisheit | 11 |
-| Wahrnehmung | 12 |
-| Charisma | 1 |
+| Attribut | Wert | Hinweis |
+|----------|------|---------|
+| Stärke | 1 | -90% Drachen-Abzug |
+| Geschicklichkeit | 1 | -90% Drachen-Abzug |
+| Beweglichkeit | 1 | -90% Drachen-Abzug |
+| Konstitution | 1 | -90% Drachen-Abzug |
+| Intelligenz | 31 | **Ausnahme: Höchster Startwert** |
+| Weisheit | 1 | -90% Drachen-Abzug |
+| Wahrnehmung | 1 | -90% Drachen-Abzug |
+| Charisma | 1 | -90% Drachen-Abzug |
 
-**Spezielle Fähigkeiten:**
-- **Kreativität** – Fortgeschritten
-- **Rollenspielmeister** – Fortgeschritten
+**Titel & Erworbene Fähigkeiten (Buch 1):**
+- **Schattensicht** – Sehen wie am Tag, auch in magischer Dunkelheit
+- **Giftrune** – Giftresistenz, Runen-Slot belegt
+- **Drachenessenz** – Metalle absorbieren, +1% Schuppen-Rüstung
+- **Wärmesicht** – Wärmequellen erkennen
+- **Aura der Furcht** – Geborenes Raubtier (Drachen-Rasse)
+
+**Rassen-Vorteile (Wahrer Drache - Schatten):**
+- **Sehr Klein** – Verstecken x3
+- **Geborenes Raubtier** – Aura der Furcht
+- **Wärmesicht** – Wärmequellen erkennen
+- **Schattensicht** – Sehen wie am Tag
+- **Drachenfluch** – Proximity Poison
+- **Kaltblütig** – Externe Wärme nötig
+- **XP x2** – Doppelte XP
+
+**Angriffe (Drache):**
+- Biss 5-20 (ignoriert Rüstung)
+- Klauen 1-5
+- Drachenschwanz (Betäuben)
+
+**HP & Rüstung:**
+- HP (Stufe 0): 20 | HP (Stufe 4): 60
+- Rüstung: 1 + Drachenessenz-Bonus
+- **Einzigartige Fähigkeit:** Aasfresser (Nahrung aus Insekten)
 
 **Hintergrund:**
-Ben war Teil einer Abenteurergruppe, wurde von diesen verraten und im Stich gelassen. Durch die Quest-Belohnung erhält er die Chance auf eine legendäre Rasse (Drache) oder Klasse (Erzmagier).
+Ben erwacht in völliger Dunkelheit in der Tropfsteinhöhle. Er führt einen Existenz-Check durch, erkennt das VRMMO Eternity und erhält die Quest-Belohnung. Er **wählt die Drachenrasse (Schatten)** → wird **Letzter seiner Art**, Nachkomme des Drachengotts Bahamut.
+
+#### Marie Claire
+- **Typ:** Flammenbeschwörerin, Beschwörerin von Dhark
+- **Stufe:** 55
+- **Fähigkeit:** Flammenbeschwörung, Puppenspieler
+- **Rolle:** Beschwörerin, verbündete Heldin
+
+#### Dhar
+- **Beschreibung:** Eine andere Version von Ben, hinterließ sein Lächeln im eigenen Licht der Twin-Towers
 
 #### Kael der Datenlauf
 - **Typ:** Künstliche Intelligenz
@@ -87,20 +127,21 @@ Ben war Teil einer Abenteurergruppe, wurde von diesen verraten und im Stich gela
 - **Typ:** Dungeon-Wesen
 - **Beschreibung:** Ein höheres Dungeon-Wesen, mit dem Cindara verbunden war
 
-### Weitere Charaktere
+### Weitere Charaktere (Buch 2)
 
-#### Bens alte Abenteuergruppe
-- Verraten Ben
-- Wurden später durch Kaels Plan als „Klone“ wieder zusammengebracht
+#### Sandros
+- **Häufigkeit:** 150+ Erwähnungen im Buch 2
+- **Bedeutung:** Möglicherweise ein Spieler, Ort oder Fraktion
+- **Auftritte:** Buch 2 (Rohfassung)
 
-#### Dhar
-- Eine andere Version von Ben
-- Hinterließ sein Lächeln im eigenen Licht der Twin-Towers
+#### Marcel
+- **Typ:** Feuergeist-Spieler und Beispiel für den Trend "Element-Treiben" in Eternity.
 
-### NPCs & Fraktionen
+#### Mave
+- **Typ:** Attentäter und Arbeiter des schmierigen Daumens.
 
-- **Nexagen, OmniCorp, Meridian-Allianz** – Die drei Großkonzerne aus Band 2
-- **Dämonen-Fraktion** – Herrscht über das „Reich der Dämonen“
+#### Lumiella
+- **Tochter von Meri** und **Assassinin des Nachtclans**.
 
 ---
 
@@ -110,19 +151,21 @@ Ben war Teil einer Abenteurergruppe, wurde von diesen verraten und im Stich gela
 - Erfahrungspunkte (XP) durch Quests und Kämpfe
 - Level-Up gewährt Punkte für Attribute und neue Fähigkeiten
 
-### Attribute
-1. **Stärke** – physische Kraft
-2. **Geschicklichkeit** – Geschmeidigkeit und Balance
-3. **Beweglichkeit** – Aktionsradius und Fluchtchancen
-4. **Konstitution** – Gesundheit und Ausdurance (Ben: 41 – ungewöhnlich hoch)
-5. **Intelligenz** – Magie-Fähigkeit und Wissenserwerb (Ben: 21)
-6. **Weisheit** – Wahrnehmung und spirituelle Verbindung (Ben: 11)
-7. **Wahrnehmung** – Sinne und Überraschungswiderstand (Ben: 12)
-8. **Charisma** – soziale Einflussnahme und Führung (Ben: 1)
+### Attribute (Buch 1 - Ben Startwerte)
+| Attribut | Wert | Hinweis |
+|----------|------|---------|
+| Stärke | 1 | -90% Drachen-Abzug |
+| Geschicklichkeit | 1 | -90% Drachen-Abzug |
+| Beweglichkeit | 1 | -90% Drachen-Abzug |
+| Konstitution | 1 | -90% Drachen-Abzug |
+| Intelligenz | 31 | **Höchster Startwert** |
+| Weisheit | 1 | -90% Drachen-Abzug |
+| Wahrnehmung | 1 | -90% Drachen-Abzug |
+| Charisma | 1 | -90% Drachen-Abzug |
 
 ### Klassen & Rassen
 - **Mensch:** Ausgeglichen, vielseitig
-- **Drache (legendär):** Feuer-Resistenz, Flug, alte Magie
+- **Wahrer Drache (legendär):** Schatten-Element, gottgleich, verflucht
 - **Erzmagier (legendär):** Hohe Intelligenz, mächtige Zaubersprüche
 - **KI/Geister:** Spezielle Fähigkeiten wie Kael der Datenlauf
 
@@ -130,6 +173,21 @@ Ben war Teil einer Abenteurergruppe, wurde von diesen verraten und im Stich gela
 - Quest-Belohnung: Wahl zwischen legendärer Rasse oder legendärer Klasse
 - Dämonen-Reich als gefährliches Quest-Gebiet
 - Verrat-Quest: Bens Gruppe wird verraten
+
+### Attribut-System (Buch 1 Details)
+- **Startattribute:** Alle 1 (außer Intelligenz 31)
+- **Konstitution-Build:** 41 Punkte → 166 HP (statt 1025 erwartet)
+- **Abzug -90%:** Alle körperlichen Attribute
+- **Freie Punkte:** 40 nach Stufe 4
+
+### XP-System (Buch 1 Details)
+- **Drachenfluch:** XP x2 benötigt
+- **Stufenaufstieg:** Durch Kampf, nicht durch Quest
+
+### Inventar-System (Buch 1 Details)
+- **Start:** Abenteurer-Paket
+- **Einschränkung:** Keine Taschen, keine Aufbewahrung der Orbs
+- **Orbs:** Nicht einlösbar, müssen aktiviert werden
 
 ---
 
@@ -140,94 +198,25 @@ Ben war Teil einer Abenteurergruppe, wurde von diesen verraten und im Stich gela
 - **2023 (Laufend):** Band 2 in Rohfassung (~731 KB TXT)
 - **2026 (September):** Wiki wird von Draco Codex gepflegt und strukturiert
 
-### Historisch (im Buch)
-- Ben's Ausbildung zum Amateur Schriftsteller
-- Erste Questerfahrungen im VRMMO Eternity
-- Verrat durch die Abenteuergruppe
-- Quest nach legendärer Rasse/Klasse
-- Begegnungen mit Dämonen und anderen Spielern
+### Historisch (im Buch - Band 1)
+- Ben's Erwachen in der Tropfsteinhöhle (Kapitel 1)
+- Existenz-Check ("Ich denke also bin ich - Check")
+- Quest des Helden abgeschlossen
+- Wahl der legendären Rasse: **Drache (Schatten-Element)**
+- Erhalt des Abenteuer-Pakets (2 Fackeln, 1 Feuerstein, Zelt, Nahrung, Dolch)
+- Eintritt in das Reich der Dämonen
+- Kämpfe gegen Käfer/Insekten (Stufen 1-7)
+- Begegnung mit Marie Claire (Stufe 32, Ebene 11)
+- Transport durch Bazug-Drachenschnecken (Ebene 74)
+- Erreichen der Schatzkammer Norcons (Ebene 99)
 
 ---
 
 ## 🏛️ Nationen & Fraktionen
 
 ### Dämonen-Reich
--herrscht über spezielle Dungeons
-- Andere Zeitgesetze als die normale Welt
-- Einzigartige Monster und Bosse
-
-### Konzerne (Band 2)
-- **Nexagen:** Wirtschafts- und Machteinfluss
-- **OmniCorp:** Technologische Dominanz
-- **Meridian-Allianz:** Opposition oder Alternative
-
----
-
-## 🎁 Gegenstände & Artefakte
-
-### Seelenspiegel
-- Artefakt von Cindara
-- Erkennt die wahre Identität eines Dragons
-- Kann spirituelle Bindungen durchqueren
-
-### Weitere geplante Artefakte
-- (Wiki wächst mit der Geschichte – Ergänzungen sind willkommen)
-
----
-
-## 📊 Projekt-Status & Roadmap
-
-### Aktueller Fortschritt
-- **Wiki-Struktur:** 100% erstellt (durch Draco Codex)
-- **Band 1:** Veröffentlicht (January 2023)
-- **Band 2:** Rohfassung in Arbeit (~731 KB TXT)
-- **Tägliche Ideen:** 30 Dateien von 2026-06 bis 2026-09 erfasst
-
-### Nächste Schritte
-1. Konsistenz-Check aller LitRPG-Mechaniken
-2. Erweiterung der Charakter-Daten mit neuen Quelldateien
-3. Ergänzung der Zeitlinie mit Buch-Ereignissen
-4. Vorbereitung von HTML-Export für Web-Display
-5. Strukturierung der daily-suggestions in kategorisierte Story-Ideen
-
----
-
-## 📁 Wiki-Ordner-Struktur
-
-```
-eternity-wiki/
-├── index.md              ← Diese Datei (Haupt-Übersicht)
-├── characters.md         ← Detaillierte Charakter-Infos
-├── README.md             ← Projekt-Übersicht
-├── README_DEPLOY.md      ← Deploy-Infos (Netlify/Vercel)
-├── daily-suggestions/    ← 30 tägliche Story-Ideen (2026-06 bis 2026-09)
-├── ANALYSIS/             ← Analyse-Dateien
-│   ├── analysis_2026-06-14.md
-│   ├── analysis_2026-08-31.md
-│   └── github-tools-week-2026-24.md
-├── Eternity_Simulation_GDD.md
-├── PROJEKTE_UEBERSICHT.md
-└── package.json
-```
-
----
-
-## 🔗 Externe Quellen & Links
-
-### Offiziell
-- **Amazon.de:** https://www.amazon.de/Eternity-LitRPG-Fantasy-Abenteuer-zerst%C3%B6re-ebook/dp/B0BRSZLT7L
-- **Kontakt:** Eternity-LitRpg@online.de
-- **Facebook-Gruppe:** https://www.facebook.com/groups/deutsche.litrpg
-
-### Community & Feedback
-- Jürgen Preoz
-- Michael Kruselburger
-- Stefan Heinen
-- Marco Reichelt
-
-### Simulation
-- **Eternity Simulation:** https://openclaw.ai/eternity (falls verfügbar)
-
----
-
-*Dieses Wiki wird von Draco Codex (draco-codex) gepflegt. Es wächst mit der Geschichte – Ergänzungen und Korrekturen sind willkommen. Zuletzt aktualisiert: 2026-09-24.*
+- **Typ:** Versiegelter Dungeon-Bereich
+- **Zugang:** Nur über Quest des Helden erreichbar
+- **Zeitverlauf:** Anders als in der normalen Spielwelt
+- **Belohnungen:** Erhöht durch den Titel "Freund der Schatten"
+- **Ebenen:** 99 Ebenen, jede mi
