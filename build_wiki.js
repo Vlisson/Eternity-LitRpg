@@ -323,6 +323,11 @@ function build() {
   if (processMarkdownFile(path.join(SOURCE_DIR, 'index.md'), 'index.html', 'Startseite', true)) successCount++; else errorCount++;
   if (processMarkdownFile(path.join(SOURCE_DIR, 'characters.md'), 'characters.html', 'Charaktere')) successCount++; else errorCount++;
   
+  // Einzelne Charakter-Seiten aus characters/ Verzeichnis
+  console.log('\n⚔️ Charakter-Seiten...');
+  const charCount = generateEntityPages(path.join(SOURCE_DIR, 'characters'), 'Charakter');
+  if (charCount > 0) successCount += charCount; else errorCount++;
+  
   console.log('\n📊 Analyse-Seiten...');
   if (processMarkdownFile(path.join(SOURCE_DIR, 'wiki', 'analysis_buch1.md'), 'analysis_buch1.html', 'Analyse Buch 1')) successCount++; else errorCount++;
   if (processMarkdownFile(path.join(SOURCE_DIR, 'wiki', 'analysis_buch2.md'), 'analysis_buch2.html', 'Analyse Buch 2')) successCount++; else errorCount++;
@@ -352,10 +357,11 @@ function build() {
   if (processMarkdownFile(path.join(SOURCE_DIR, 'lore', 'LORE.md'), 'lore.html', 'Lore / Weltinformationen')) successCount++; else errorCount++;
   
   console.log('\n🏛️ Fraktionen & Artefakte...');
-  // Fraktionen und Artefakte werden aus characters.md generiert über separate Seiten? Wir haben noch keine separat.
-  // Stattdessen überspringen wir, da sie nicht als separate .md-Dateien vorliegen.
-  // Wir könnten sie aus characters.md extrahieren, aber für jetzt lassen wir sie weg.
-  // TODO: Eventuell aus characters.md generieren.
+  // Einzelne Charakter-Seiten aus characters/ Verzeichnis generieren
+  console.log('\n⚔️ Charakter-Seiten...');
+  // charCount bereits oben deklariert (Zeile 328), hier nur addieren
+  const newCharCount = generateEntityPages(path.join(SOURCE_DIR, 'characters'), 'Charakter');
+  if (newCharCount > 0) successCount += newCharCount; else errorCount++;
   
   console.log('\nℹ️ Impressum...');
   const impressum = `# Impressum & KI-Hinweis

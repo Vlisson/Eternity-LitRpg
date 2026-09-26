@@ -6,215 +6,66 @@
 
 ---
 
-## ⚔️ Hauptcharaktere
+## ⚔️ Alle Charaktere
 
-### Ben (Dhark/Shadow)
-- **Echter Name:** Ben (Spieler aus Deutschland)
-- **Spielername:** Shadow
-- **Alias:** Dhark (Dämonenlord), Drache
-- **Rasse (Start):** Mensch → **Rasse (nach Quest):** Drache (legendär, Schatten)
-- **Klasse (Start):** Amateur Schriftsteller
-- **Klasse (Option):** Erzmagier (legendär) — **NICHT gewählt**
-- **Stufe (Start):** 0 → nach Quest Stufe 1
+Klicken Sie auf einen Namen, um die detaillierte Seite des Charakters zu öffnen.
 
-> **Hinweis:** Der Autor Markus alias Vlisson stellt sich im Vorwort als „Amateur Schriftsteller Stufe 1" vor. Das ist die reale Welt – **nicht** der Charakter Ben. Ben ist ein Spielercharakter im VRMMO Eternity, der die legendäre Rasse Drache (Schatten) als Questbelohnung wählt. Der Autor und der Charakter sind **nicht** dieselbe Person.
+### 🔴 Hauptcharaktere
 
-#### Attribute (Start)
-| Attribut | Wert | Hinweis |
-|----------|------|---------|
-| Stärke | 1 | -90% Drachen-Abzug |
-| Geschicklichkeit | 1 | -90% Drachen-Abzug |
-| Beweglichkeit | 1 | -90% Drachen-Abzug |
-| Konstitution | 1 | -90% Drachen-Abzug |
-| Intelligenz | 31 | **Ausnahme: Höchster Startwert** |
-| Weisheit | 1 | -90% Drachen-Abzug |
-| Wahrnehmung | 1 | -90% Drachen-Abzug |
-| Charisma | 1 | -90% Drachen-Abzug |
+| Charakter | Typ/Klasse | Status | Seite |
+|-----------|-----------|--------|-------|
+| **Ben** (Shadow/Dhark) | Drache (Schatten-Element) | Dämonenlord, Territoriumsherrscher | [→ Ben](characters/Ben.html) |
+| **Kael der Datenlauf** | Künstliche Intelligenz | Aktiv | [→ Kael](characters/Kael.html) |
+| **Cindara** | Aschegewebte Wiedergängerin | Revenant | [→ Cindara](characters/Cindara.html) |
+| **Zwiebel** | Dungeon-Wesen | Aktiv | [→ Zwiebel](characters/Zwiebel.html) |
+| **Dhar** | Andere Version von Ben | Unbekannt | [→ Dhar](characters/Dhar.html) |
+| **Anubara** | Dämonenkönig | Aktive Macht in der Schattenwelt | [→ Anubara](characters/anubara.html) |
 
-#### Titel & Erworbene Fähigkeiten (Buch 1)
-- **Schattensicht** – Sehen wie am Tag, auch in magischer Dunkelheit
-- **Giftrune** – Giftresistenz, Runen-Slot belegt
-- **Drachenessenz** – Metalle absorbieren, +1% Schuppen-Rüstung
-- **Wärmesicht** – Wärmequellen erkennen
-- **Aura der Furcht** – Geborenes Raubtier (Drachen-Rasse)
+### 🔵 Weitere Charaktere
 
-#### Rassen-Vorteile (Wahrer Drache - Schatten)
-- **Sehr Klein** – Verstecken x3
-- **Geborenes Raubtier** – Aura der Furcht
-- **Wärmesicht** – Wärmequellen erkennen
-- **Schattensicht** – Sehen wie am Tag
-- **Drachenfluch** – Proximity Poison
-- **Kaltblütig** – Externe Wärme nötig
-- **XP x2** – Doppelte XP
+| Charakter | Typ/Klasse | Status | Seite |
+|-----------|-----------|--------|-------|
+| **Marie Claire** | Flammenbeschwörerin | Stufe 55, verbündete Heldin | [→ Marie Claire](characters/Marie_Claire.html) |
+| **Mave** | Attentäterin | Verbündete, arbeitete für schmierigen Daumen | [→ Mave](characters/Mave.html) |
+| **Lumiella** | Mensch / Assassinin | Aktiv | [→ Lumiella](characters/Lumiella.html) |
+| **Marcel** | Feuergeist-Spieler | Aktiv in Buch 2 | [→ Marcel](characters/marcel.html) |
+| **Meri** | Schattenwesen | Aktiv | [→ Meri](characters/Meri.html) |
 
-#### Angriffe (Drache)
-- Biss 5-20 (ignoriert Rüstung)
-- Klauen 1-5
-- Drachenschwanz (Betäuben)
+### 🟢 NPCs & Fraktionen
 
-#### HP & Rüstung
-- HP (Stufe 0): 20 | HP (Stufe 4): 60
-- Rüstung: 1 + Drachenessenz-Bonus
-- **Einzigartige Fähigkeit:** Aasfresser (Nahrung aus Insekten)
+| Charakter | Typ/Klasse | Status | Seite |
+|-----------|-----------|--------|-------|
+| **Markus alias Vlisson** | Autor / Spieler | Amateur Schriftsteller Stufe 1 | [→ Markus](characters/Markus.html) |
+| **Bahamut** | Drachengott | Vernichtungskrieg gegen Drachen | [→ Bahamut](characters/Bahamut.html) |
+| **KI Argus** | Künstliche Intelligenz | Überwacht alle Spieleraktivitäten | [→ KI Argus](characters/Argus.html) |
+| **JohnXXL** | Axtkämpfer | Verräter | [→ JohnXXL](characters/JohnXXL.html) |
+| **Wächter Bennet** | Wächter | Verräter | [→ Wächter Bennet](characters/Waechter_Bennet.html) |
 
-#### Hintergrund
-Ben erwacht in völliger Dunkelheit in der Tropfsteinhöhle. Er führt einen Existenz-Check durch, erkennt das VRMMO Eternity und erhält die Quest-Belohnung. Er **wählt die Drachenrasse (Schatten)** → wird **Letzter seiner Art**, Nachkomme des Drachengotts Bahamut.
+### 📋 Zusätzliche Charaktere
 
-#### Weitere Hauptcharaktere aus Buch 1
-
-##### Marie Claire
-- **Typ:** Flammenbeschwörerin, Beschwörerin von Dhark
-- **Stufe:** 55
-- **Fähigkeit:** Flammenbeschwörung, Puppenspieler
-- **Rolle:** Beschwörerin, verbündete Heldin
-
-##### Dhar
-- **Beschreibung:** Eine andere Version von Ben, hinterließ sein Lächeln im eigenen Licht der Twin-Towers
-
-### Kael der Datenlauf
-- **Typ:** Künstliche Intelligenz
-- **Ursprung:** Aus den kollektiven Gedanken aller Spieler gespeist
-- **Rolle:** Wächter/Informant im Essence-Nexus
-- **Besonderheit:** Sprachenwechsel von technischem Jargon zu poetischer, antiker Rollenspiel-Sprache
-
-### Cindara
-- **Titel:** Die aschegewebte Wiedergängerin
-- **Fähigkeit:** Kann die verzweifelte Bindung zwischen spirituellen Welten durchqueren
-- **Artefakt:** Seelenspiegel (offenbart wahre Identität eines Drachen)
-- **Hintergrund:** Verlor ihren Körper aufgrund eines Spiel-Tricks, wandelte sich zu einer selbstlosen „zerstörerischen Verzweigung“
-
-### Zwiebel
-- **Typ:** Dungeon-Wesen
-- **Beschreibung:** Ein höheres Dungeon-Wesen, mit dem Cindara verbunden war
+| Charakter | Typ | Seite |
+|-----------|-----|-------|
+| **Sandros** | Spieler / Ort / Fraktion (?) | [→ Sandros](characters/Sandros.html) |
+| **Ausscheider** | — | [→ Ausscheider](characters/Ausscheider.html) |
+| **Belfast** | — | [→ Belfast](characters/Belfast.html) |
+| **Berzerker** | — | [→ Berzerker](characters/Berzerker.html) |
+| **Brom** | — | [→ Brom](characters/Brom.html) |
+| **Die Biester** | — | [→ Die Biester](characters/Die_Biester.html) |
+| **Fafnir** | — | [→ Fafnir](characters/Fafnir.html) |
+| **Ken** | — | [→ Ken](characters/Ken.html) |
+| **Killua** | — | [→ Killua](characters/Killua.html) |
+| **L4RS** | — | [→ L4RS](characters/L4RS.html) |
+| **Magicians** | — | [→ Magicians](characters/Magicians.html) |
+| **Penguins** | — | [→ Penguins](characters/Penguins.html) |
+| **Reoxan** | — | [→ Reoxan](characters/Reoxan.html) |
+| **Tatjana** | — | [→ Tatjana](characters/Tatjana.html) |
+| **Terminus** | — | [→ Terminus](characters/Terminus.html) |
+| **Ulziphor** | — | [→ Ulziphor](characters/Ulziphor.html) |
 
 ---
 
-## 👥 Weitere Charaktere
-
-### Bens alte Abenteuergruppe
-- **Rolle:** Verraten Ben
-- **Spätere Entwicklung:** Wurden durch Kaels Plan als „Klone“ wieder zusammengebracht
-
-### Dhar
-- **Beschreibung:** Eine andere Version von Ben
-- **Besonderheit:** Hinterließ sein Lächeln im eigenen Licht der Twin-Towers
-
-### Sandros
-- **Häufigkeit:** 150+ Erwähnungen im Buch 2
-- **Bedeutung:** Möglicherweise ein Spieler, Ort oder Fraktion
-- **Auftritte:** Buch 2 (Rohfassung)
-
-### Marcel
-- **Typ:** Feuergeist-Spieler und Beispiel für den Trend "Element-Treiben" in Eternity.
-
-#### Basisdaten
-| Eigenschaft | Wert |
-|-------------|------|
-| Status | Spieler / Feuergeist |
-| Element | Feuer |
-| Hintergrund | Hat einen stressigen Tag im Büro |
-
-#### Der Trend: Element-Treiben
-Ein neuer Trend erfasst täglich mehr Spieler in Eternity:
-- Sie loggten sich ein, nicht um zu spielen, sondern um sich von den Elementen treiben zu lassen
-- Wie ein Rausch, ein Loslassen der eigenen Identität
-- Manche nennen es Meditation, andere Flucht, die meisten: Freiheit
-
-#### Marcels Erfahrung
-Marcel hatte einen stressigen Tag im Büro und wollte nur brennen. Er:
-- Fühlt sich geborgen in der Dunkelheit des Vulkans
-- Schleudert regelmäßig Asche und Lava in die Luft
-- Verstreut Feuergeister über das Land
-- Sein Feuer verzehrt Holz und hinterlässt fruchtbare Asche
-
-#### Feuer vs. Wind
-| Aspekt | Feuer | Wind |
-|--------|-------|------|
-| Wirkung | Verändert Umgebung | Lässt sich treiben |
-| Symbolik | Zerstörerisch aber reinigend | Erkundet die Welt |
-| Ergebnis | Fruchtbare Asche | Schöne Orte |
-
-#### Persönlichkeit
-- Auf der Suche nach Freiheit
-- Emotional und intensiv
-- Versteht die Natur und ihre Kreisläufe
-
-### Mave
-- **Typ:** Attentäter und Arbeiter des schmierigen Daumens.
-
-#### Basisdaten
-| Eigenschaft | Wert |
-|-------------|------|
-| Status | Attentäter / Arbeiter des schmirigen Daumens |
-| Welt | Reale Welt (außerhalb von Eternity) |
-| Rolle | Hilft Ben, seine Familie zu befreien |
-
-#### Hintergrund
-- Arbeitet für den schmirigen Daumen im Lagerkomplex
-- Hat eine Familie, die er befreien möchte
-- Kennt sich mit den Sicherheitssystemen aus (Leonardo da Vinci als Passwort)
-- Bietet Ben Hilfe an, um seine eigene Familie zu befreien
-
-#### Fähigkeiten
-- **Giftmechanik:**
-  - Betäubung
-  - Löschung der letzten 5 Minuten
-  - Tötet effektiv
-
-#### Die Geschichte mit Ben
-Maves Aktionsplan:
-1. Den Boss (schmirigen Daumen) in der Hauptstadt ablenken
-2. Chaos in der Hauptstadt verursachen
-3. Ben aus dem Lagerkomplex befreien
-4. Alle Aufzeichnungen und Dateneinträge von Ben löschen
-5. Mit dem System öffnet jede Tür im gesamten Komplex
-
-#### Familiensituation
-- Seine Familie ist in der Gewalt des schmirigen Daumens
-- Er ist bereit, alles zu riskieren, um sie zu befreien
-- Seine Zeit in der "anderen Realität" läuft schneller
-
-#### Persönlichkeit
-- Opportunistisch
-- Mutig
-- Bereit, Risiken einzugehen für seine Familie
-- Versteht den Unterschied zwischen Spielwelt und realer Welt
-
-### Lumiella
-- **Tochter von Meri** und **Assassinin des Nachtclans**.
-
-#### Aussehen
-- Auffallend hübsche junge Frau
-- Dezenter Vanilleduft
-- Kirschrote Lippen (von Maske verdeckt)
-
-#### Fähigkeiten
-- **Tarnung** – Unsichtbar für Beobachter
-- **Diebessprache** – Stumme Kommunikation über Handzeichen
-
-#### Beziehungen
-- **Meri:** Ihr Vater, den sie liebt und respektiert
-- **Dhark:** Sie vertraut ihm nach dem Willen ihres Vaters
-
-#### Persönlichkeit
-- Loyal gegenüber ihrer Familie
-- Intelligent und strategisch denkend
-- Geduldig
+> **Hinweis zum Autor:** Markus alias Vlisson ist der reale Autor der Eternity-Bücher. Er ist **nicht** identisch mit dem fiktiven Charakter Ben/Shadow. Markus stellt sich im Vorwort als „Amateur Schriftsteller Stufe 1" vor – dies ist seine reale Welt-Identität, nicht ein Spielcharakter.
 
 ---
 
-## 🏛️ NPCs & Fraktionen
-
-### Nexagen, OmniCorp, Meridian-Allianz
-- **Kontext:** Die drei Großkonzerne, die im Jahr 2070 die Welt beherrschen (aus Band 2)
-
-### Dämonen-Fraktion
-- **Rolle:** Herrscht über das „Reich der Dämonen“
-- **Besonderheit:** Einzigartige Dungeons und anderer Zeitverlauf
-
-### Bens alte Abenteuergruppe
-- **Mitglieder:** JohnXXL, Wächter Bennet
-- **Status:** Verraten Ben
-
----
-*Dieses Wiki wächst mit der Geschichte. Ergänzungen sind willkommen!*
+*Dieses Wiki wächst mit der Geschichte. Ergänzungen und Korrekturen sind willkommen!*
