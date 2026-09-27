@@ -1,0 +1,27 @@
+plugins = []
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/home/openclaw/.openclaw/workspace-main/1. Eternity LitRpg/DRACO_HANDOFF/wiki/public"
+publishOrigin = "config"
+base = "/home/openclaw/.openclaw/workspace-main/1. Eternity LitRpg/DRACO_HANDOFF/wiki"
+
+[build.environment]
+NODE_VERSION = "18"
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]

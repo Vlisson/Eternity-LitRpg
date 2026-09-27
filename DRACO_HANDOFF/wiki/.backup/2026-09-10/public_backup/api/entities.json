@@ -1,0 +1,183 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-09-07",
+  "source": "Eternity LitRPG Wiki",
+  "totals": {
+    "characters": 3,
+    "locations": 2,
+    "items": 3,
+    "skills": 2,
+    "classes": 2,
+    "races": 2,
+    "quests": 1,
+    "grand_total": 15
+  },
+  "entities": {
+    "characters": [
+      {
+        "id": "char_ben",
+        "name": "Ben",
+        "aliases": ["Shadow", "Vlisson"],
+        "category": "characters",
+        "url": "/characters/ben.html",
+        "role": "Protagonist",
+        "race": "Mensch",
+        "class": "Amateur Schriftsteller",
+        "level": 0,
+        "status": "awakened",
+        "title": "Freund der Schatten",
+        "description": "Spieler im VRMMO Eternity, erwacht in Dunkelheit, wählt Drachenrasse",
+        "first_appearance": "ch001",
+        "skills": ["Kreativität", "Rollenspielmeister"],
+        "quests_completed": ["Quest des Helden"]
+      },
+      {
+        "id": "char_marcel",
+        "name": "Marcel",
+        "aliases": [],
+        "category": "characters",
+        "url": "/characters/marcel.html",
+        "role": "Feuergeist-Spieler",
+        "first_appearance": "ch001",
+        "description": "Spieler im VRMMO Eternity mit Feuergeist-Klasse"
+      },
+      {
+        "id": "char_anubara",
+        "name": "Anubara",
+        "aliases": [],
+        "category": "characters",
+        "url": "/characters/anubara.html",
+        "role": "Besiegter Dämonenkönig",
+        "first_appearance": "ch001",
+        "description": "Ein besiegter Dämonenkönig aus dem Reich der Dämonen"
+      }
+    ],
+    "locations": [
+      {
+        "id": "loc_tropfsteinhoehle",
+        "name": "Tropfsteinhöhle",
+        "category": "locations",
+        "url": "/locations/tropfsteinhoehle.html",
+        "type": "Dungeon",
+        "first_appearance": "ch001",
+        "description": "Dunkle Höhle mit kaltem Steinboden und Wassertropfen-Geräusch"
+      },
+      {
+        "id": "loc_reich_der_daemonen",
+        "name": "Reich der Dämonen",
+        "category": "locations",
+        "url": "/locations/reich_der_daemonen.html",
+        "type": "Quest-Gebiet",
+        "first_appearance": "ch001",
+        "description": "Einzigartiges Dungeon, versiegelt, anderes Zeitgesetz"
+      }
+    ],
+    "items": [
+      {
+        "id": "item_fackel",
+        "name": "Fackel",
+        "category": "items",
+        "url": "/items/fackel.html",
+        "quantity": 2,
+        "rarity": "common",
+        "first_appearance": "ch001"
+      },
+      {
+        "id": "item_feuerstein",
+        "name": "Feuerstein",
+        "category": "items",
+        "url": "/items/feuerstein.html",
+        "quantity": 1,
+        "rarity": "common",
+        "first_appearance": "ch001"
+      },
+      {
+        "id": "item_abenteuer_paket",
+        "name": "Abenteuer-Paket",
+        "category": "items",
+        "url": "/items/abenteuer_paket.html",
+        "quantity": 1,
+        "rarity": "common",
+        "first_appearance": "ch001",
+        "contents": ["Fackel", "Feuerstein"],
+        "description": "Startpaket für neue Abenteurer"
+      }
+    ],
+    "skills": [
+      {
+        "id": "skill_kreativitaet",
+        "name": "Kreativität",
+        "category": "skills",
+        "url": "/skills/kreativitaet.html",
+        "class": "Passiv",
+        "level": "Fortgeschritten",
+        "first_appearance": "ch001"
+      },
+      {
+        "id": "skill_rollenspielmeister",
+        "name": "Rollenspielmeister",
+        "category": "skills",
+        "url": "/skills/rollenspielmeister.html",
+        "class": "Passiv",
+        "level": "Fortgeschritten",
+        "first_appearance": "ch001"
+      }
+    ],
+    "classes": [
+      {
+        "id": "class_amateur_schriftsteller",
+        "name": "Amateur Schriftsteller",
+        "category": "classes",
+        "url": "/classes/amateur_schriftsteller.html",
+        "type": "Startklasse",
+        "first_appearance": "ch001"
+      },
+      {
+        "id": "class_erzmagier",
+        "name": "Erzmagier",
+        "category": "classes",
+        "url": "/classes/erzmagier.html",
+        "type": "Legendär",
+        "title": "Held der Menschheit",
+        "first_appearance": "ch001"
+      }
+    ],
+    "races": [
+      {
+        "id": "race_mensch",
+        "name": "Mensch",
+        "category": "races",
+        "url": "/classes/mensch.html",
+        "type": "Standard",
+        "first_appearance": "ch001"
+      },
+      {
+        "id": "race_drache",
+        "name": "Drache",
+        "category": "races",
+        "url": "/classes/drache.html",
+        "type": "Legendär",
+        "first_appearance": "ch001",
+        "description": "gottgleiche Macht"
+      }
+    ],
+    "quests": [
+      {
+        "id": "quest_helden",
+        "name": "Quest des Helden",
+        "category": "quests",
+        "url": "/quests/quest_des_helden.html",
+        "type": "Main-Quest",
+        "status": "completed",
+        "reward": "Legendäre Rasse (Drache) oder Klasse (Erzmagier)",
+        "title_bonus": "Freund der Schatten",
+        "first_appearance": "ch001"
+      }
+    ]
+  },
+  "endpoints": {
+    "all": "/api/entities.json",
+    "by_category": "/api/entities.json?category={characters|locations|items|skills|classes|races|quests}",
+    "search": "/api/entities.json?q={query}"
+  }
+}

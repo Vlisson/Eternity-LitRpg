@@ -1,0 +1,12 @@
+# robots.txt for Eternity Wiki - https://vlisson.github.io/Eternity-LitRpg/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://vlisson.github.io/Eternity-LitRpg/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 10
+
+# Host directive (optional, for Yandex)
+Host: https://vlisson.github.io

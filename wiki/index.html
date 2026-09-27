@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternity Wiki - Startseite</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); min-height: 100vh; color: #eee; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header { text-align: center; padding: 40px 20px; background: rgba(0,0,0,0.3); border-radius: 15px; margin-bottom: 30px; }
+        h1 { font-size: 2.5em; color: #ffd700; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 10px; }
+        .subtitle { font-style: italic; color: #aaa; font-size: 1.1em; }
+        .quote { background: rgba(255,215,0,0.1); border-left: 4px solid #ffd700; padding: 15px; margin: 20px 0; font-style: italic; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .card { background: rgba(255,255,255,0.05); border-radius: 12px; padding: 25px; transition: transform 0.3s, box-shadow 0.3s; border: 1px solid rgba(255,255,255,0.1); }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.3); border-color: #ffd700; }
+        .card h2 { color: #ffd700; margin-bottom: 15px; font-size: 1.5em; }
+        .card ul { list-style: none; }
+        .card li { padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .card li:last-child { border-bottom: none; }
+        .card a { color: #4fc3f7; text-decoration: none; transition: color 0.3s; }
+        .card a:hover { color: #ffd700; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin: 20px 0; }
+        .stat { background: rgba(79,195,247,0.1); padding: 15px; border-radius: 8px; text-align: center; }
+        .stat-number { font-size: 2em; font-weight: bold; color: #4fc3f7; }
+        .stat-label { font-size: 0.9em; color: #aaa; }
+        .progress { background: rgba(255,255,255,0.1); border-radius: 10px; padding: 20px; margin-bottom: 30px; }
+        .progress-bar { background: rgba(255,255,255,0.2); border-radius: 5px; height: 20px; overflow: hidden; }
+        .progress-fill { background: linear-gradient(90deg, #4fc3f7, #ffd700); height: 100%; transition: width 0.5s ease; }
+        .chapter-badge { background: #ffd700; color: #1a1a2e; padding: 3px 10px; border-radius: 20px; font-size: 0.8em; font-weight: bold; }
+        nav { background: rgba(0,0,0,0.5); border-radius: 10px; padding: 15px; margin-bottom: 30px; }
+        nav a { color: #4fc3f7; text-decoration: none; margin: 0 15px; font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: #ffd700; }
+        footer { text-align: center; padding: 30px; color: #777; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐉 Eternity LitRPG Wiki</h1>
+            <p class="subtitle">Die umfassende Wissensdatenbank für das VRMMO Eternity</p>
+            <div class="quote">
+                "Taucht mit mir in das VRMMO Eternity und lasst uns die Entwicklung dieser 'Scheinrealität' beobachten." — Vlisson (Markus)
+            </div>
+        </header>
+
+        <nav>
+            <a href="index.html">Startseite</a>
+            <a href="wiki/index.html">Wiki-Index</a>
+            <a href="characters.html">Charaktere</a>
+            <a href="world.html">Welt</a>
+            <a href="timeline.html">Zeitlinie</a>
+            <a href="../search.html">🔍 Suche</a>
+            <a href="../admin/index.html">⚙️ Admin</a>
+            <a href="../api/entities.json">📡 API</a>
+        </nav>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">1</div>
+                <div class="stat-label">Kapitel verarbeitet</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Wiki-Seiten</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Charaktere</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">2</div>
+                <div class="stat-label">Orte</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Items/Skills</div>
+            </div>
+        </div>
+
+        <div class="progress">
+            <h3 style="margin-bottom: 10px;">📊 Verarbeitungsfortschritt</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 10%;">Kapitel 1</div>
+            </div>
+            <p style="margin-top: 10px; color: #aaa; font-size: 0.9em;">
+                Buch 1: 663 Wörter <span class="chapter-badge">FERTIG</span> | 
+                Buch 2: 108.716 Wörter <span class="chapter-badge">IN BEARBEITUNG</span>
+            </p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h2>📚 Bücher</h2>
+                <ul>
+                    <li><strong>Buch 1</strong> — 663 Wörter <span class="chapter-badge">FERTIG</span></li>
+                    <li><strong>Buch 2</strong> — 108.716 Wörter <span class="chapter-badge">IN BEARBEITUNG</span></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>👥 Charaktere</h2>
+                <ul>
+                    <li><a href="characters/ben.html">Ben</a> — Protagonist, Drache</li>
+                    <li><a href="characters/marcel.html">Marcel</a> — Feuergeist-Spieler</li>
+                    <li><a href="characters/anubara.html">Anubara</a> — Besiegter Dämonenkönig</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>🗺️ Orte</h2>
+                <ul>
+                    <li><a href="locations/tropfsteinhoehle.html">Tropfsteinhöhle</a> — Startort</li>
+                    <li><a href="locations/reich_der_daemonen.html">Reich der Dämonen</a> — Dungeon</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>⚔️ Gegenstände</h2>
+                <ul>
+                    <li><a href="items/abenteuer_paket.html">Abenteuer-Paket</a> — Startpaket</li>
+                    <li><a href="items/fackel.html">Fackel</a> (×2)</li>
+                    <li><a href="items/feuerstein.html">Feuerstein</a> (×1)</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>✨ Fähigkeiten</h2>
+                <ul>
+                    <li><a href="skills/kreativitaet.html">Kreativität</a> — Passiv</li>
+                    <li><a href="skills/rollenspielmeister.html">Rollenspielmeister</a> — Passiv</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>🏷️ Klassen & Rassen</h2>
+                <ul>
+                    <li><a href="classes/mensch.html">Mensch</a> — Standard</li>
+                    <li><a href="classes/drache.html">Drache</a> — Legendär</li>
+                    <li><a href="classes/amateur_schriftsteller.html">Amateur Schriftsteller</a> — Start</li>
+                    <li><a href="classes/erzmagier.html">Erzmagier</a> — Legendär</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>📜 Quests</h2>
+                <ul>
+                    <li><a href="quests/quest_des_helden.html">Quest des Helden</a> — Main-Quest</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>📖 Lore</h2>
+                <ul>
+                    <li><a href="../world.html">Welt & Setting</a></li>
+                    <li><a href="../index.html">Startseite</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>Erstellt mit Draco Codex — LitRPG Wiki Engine</p>
+            <p>Quellen: Eternity Buch 1 (Januar 2023), Eternity Buch 2 (Rohfassung)</p>
+            <p>Letzte Aktualisierung: 2026-09-07</p>
+        </footer>
+    </div>
+</body>
+</html>

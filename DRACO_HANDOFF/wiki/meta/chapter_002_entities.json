@@ -1,0 +1,110 @@
+{
+  "chapter_id": "ch002",
+  "chapter_title": "Buch 2 - Als Drache (Rohfassung)",
+  "source_file": "Buch_2_Rohfassung.txt",
+  "wordcount": 108716,
+  "extracted_at": "2026-09-06T16:30:00Z",
+  "section_processed": "Prolog (erste 150 Zeilen)",
+  "characters_appeared": [
+    {
+      "name": "Ben",
+      "aliases": ["Shadow", "Dhark"],
+      "role": "Protagonist",
+      "first_mention": "Ben wird von seiner alten Abenteuergruppe betrogen",
+      "status": "active",
+      "description": "Hat die Drachenrasse angenommen, kämpft unter dem Decknamen Shadow"
+    },
+    {
+      "name": "Vlisson",
+      "aliases": ["Markus"],
+      "role": "Autor / Spieler-Avatar",
+      "first_mention": "Hallo ich bin der Markus, es freut mich daß ihr mein zweites Buch in die Hand genommen habt",
+      "status": "narrator",
+      "description": "Der Autor, der die Geschichte erzählt"
+    }
+  ],
+  "factions_mentioned": [
+    {
+      "name": "Nexagen",
+      "type": "Konzern",
+      "description": "Einer der drei Großkonzerne, die 2070 die Welt beherrschen"
+    },
+    {
+      "name": "OmniCorp",
+      "type": "Konzern",
+      "description": "Einer der drei Großkonzerne"
+    },
+    {
+      "name": "Meridian-Allianz",
+      "type": "Konzern",
+      "description": "Einer der drei Großkonzerne, teilt die Welt auf"
+    },
+    {
+      "name": "Externals",
+      "type": "Gilde",
+      "description": "Gilde, die sich die fetteste Beute sichern will"
+    }
+  ],
+  "locations_mentioned": [
+    {
+      "name": "Eternity",
+      "type": "Spielwelt",
+      "description": "Das VRMMO Eternity"
+    },
+    {
+      "name": "Erde 2070",
+      "type": "Reale Welt",
+      "description": "Im Jahr 2070 ist die Erde ein düsterer Ort, beherrscht von Großkonzernen"
+    }
+  ],
+  "events": [
+    {
+      "timestamp": "Buch 2 - Prolog",
+      "description": "Ben wird von seiner alten Abenteuergruppe betrogen",
+      "consequences": "Ben arrangiert sich mit den neuen Umständen, findet neue Freunde"
+    },
+    {
+      "timestamp": "Buch 2 - Prolog",
+      "description": "Unter dem Decknamen Shadow lernt Ben seine Rasse zu beherrschen",
+      "consequences": "Wird zum Drachen"
+    },
+    {
+      "timestamp": "Buch 2 - Prolog",
+      "description": "Im Jahr 2070 ist die Erde von Großkonzernen beherrscht",
+      "consequences": "Düstere Welt mit starren Hierarchien"
+    },
+    {
+      "timestamp": "Buch 2 - Prolog",
+      "description": "Eternity Prime - Streaming-Kanal diskutiert über serverweite Nachrichten",
+      "consequences": "Spekulation über 'Zeitalter der Helden'"
+    }
+  ],
+  "litrpg_mechanics": [
+    {
+      "type": "level_progression",
+      "character": "Ben",
+      "from": 0,
+      "to": "unknown",
+      "description": "Vlisson erwähnt, dass er seine Stufe steigern konnte"
+    },
+    {
+      "type": "guild_level",
+      "guild": "Externals",
+      "level": 143,
+      "description": "Gildenleiter hat Level 143 erreicht"
+    }
+  ],
+  "themes": [
+    "Vertrauen & Verrat",
+    "Macht & Preis",
+    "Menschlichkeit in einer unmenschlichen Welt",
+    "Gemeinsamer Feind als Gesellschaftsvereiniger",
+    "Egoismus vs. Zusammenhalt"
+  ],
+  "key_concepts": [
+    "Zeitalter der Helden",
+    "Serverweite Nachrichten",
+    "Eternity Prime (Streaming-Kanal)",
+    "Konzernherrschaft"
+  ]
+}
