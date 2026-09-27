@@ -55,11 +55,13 @@ function getNavigationHtml(currentPage) {
 }
 
 // Footer
-const footer = `<footer>
+function getFooterHtml(basePath) {
+  return `<footer>
   <p>Eternity Wiki – Inhalt basiert auf Büchern von Vlisson | Plattform, Struktur & Pflege durch Draco Codex (KI) | Stand: 2026-09-25 15:00</p>
-  <p><a href="impressum.html">ℹ️ Impressum & KI-Hinweis</a></p>
-  <p><a href="Änderungen.html">📋 Änderungen</a> | <a href="sitemap.xml">Sitemap</a></p>
+  <p><a href="${basePath}impressum.html">ℹ️ Impressum & KI-Hinweis</a></p>
+  <p><a href="${basePath}Änderungen.html">📋 Änderungen</a> | <a href="${basePath}sitemap.xml">Sitemap</a></p>
 </footer>`;
+}
 
 // Slug für Anker-IDs mit Sicherheit
 function slugify(text) {
@@ -135,6 +137,11 @@ function mdToHtml(md, title, isIndex = false, outputFilename = '') {
   const cssHref = cssPath(currentPage);
   const canonical = siteUrl(currentPage);
   
+  // Determine base path for footer links
+  const depth = (currentPage.match(/\//g) || []).length;
+  const basePath = depth === 0 ? '' : '../'.repeat(depth);
+  const footerHtml = getFooterHtml(basePath);
+
   return `<!DOCTYPE html>
 <html lang="de">
 <head>
@@ -152,7 +159,7 @@ function mdToHtml(md, title, isIndex = false, outputFilename = '') {
     ${tocBlock}
     ${body}
   </main>
-  ${footer}
+  ${footerHtml}
   <script>
   // Cross-host canonical fallback: nutzt SITE_URL aus Umgebungsvariablen,
   // fall back auf window.location.origin fuer Cloudflare Workers
