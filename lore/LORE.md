@@ -4,6 +4,21 @@
 
 ## Buch 1 Lore
 
+### Zusammenfassung der Handlung
+
+**Eternity Buch 1** erzählt die Geschichte einer virtuellen Realität, die als VRMMO (Virtuelle Realität Massively Multiplayer Online) existiert. Die Spieler tauchen ein in eine Welt mit eigenen Regeln, die von der realen Welt abweichen können – die sogenannte **Scheinrealität**.
+
+In dieser Welt herrscht eine gefährliche Fraktion: die **Dämonen**, die das Reich der Dämonen kontrollieren. Sie beherrschen einzigartige Dungeons und folgen einem anderen Zeitverlauf als die Spieler. Die Handlung des ersten Buchs dreht sich um die Auseinandersetzung der Spieler mit dieser Fraktion und den Geheimnissen der Scheinrealität.
+
+Zentrale Elemente der Handlung:
+- Die **Scheinrealität** als virtuelle Welt mit eigenen Mechaniken
+- Die Bedrohung durch die **Dämonen** und ihr Reich
+- Die Entdeckung des magischen **Element-Systems** mit 5 Grundelementen und 14 Knoten
+- Der **Drachenfluch** als Proximity Poison, der soziale Isolation erzwingt
+- Die **Kaltblütigkeit** als lebensbedrohliche Mechanik ohne externe Wärmequelle
+
+Das erste Buch legt die Grundsteine für die gesamte Eternity-Welt und führt die Spieler in die komplexen Systeme der virtuellen Realität ein.
+
 ### Scheinrealität
 - **Definition**: Eternity ist ein VRMMO (Virtuelle Realität Massively Multiplayer Online)
 - **Prinzip**: "Scheinrealität" - Spielwelt mit eigenen Regeln, die von der realen Welt abweichen können

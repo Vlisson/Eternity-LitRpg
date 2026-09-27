@@ -39,6 +39,8 @@ const NAVIGATION_ITEMS = [
   { href: 'factions.html', icon: '🏛️', label: 'Fraktionen' },
   { href: 'artifacts.html', icon: '🎁', label: 'Artefakte' },
   { href: 'entity_report.html', icon: '📊', label: 'Entity-Report' },
+  { href: 'guestbook.html', icon: '✍️', label: 'Gästebuch' },
+  { href: 'comments.html', icon: '💬', label: 'Kommentare' },
   { href: 'impressum.html', icon: 'ℹ️', label: 'Impressum' },
   { href: 'Änderungen.html', icon: '📋', label: 'Änderungen' }
 ];
@@ -57,9 +59,12 @@ function getNavigationHtml(currentPage) {
 // Footer
 function getFooterHtml(basePath) {
   return `<footer>
-  <p>Eternity Wiki – Inhalt basiert auf Büchern von Vlisson | Plattform, Struktur & Pflege durch Draco Codex (KI) | Stand: 2026-09-25 15:00</p>
+  <p>Eternity Wiki – Inhalt basiert auf Büchern von Vlisson | Plattform, Struktur & Pflege durch Draco Codex (KI) | Stand: 2026-09-27 16:18</p>
   <p><a href="${basePath}impressum.html">ℹ️ Impressum & KI-Hinweis</a></p>
-  <p><a href="${basePath}Änderungen.html">📋 Änderungen</a> | <a href="${basePath}sitemap.xml">Sitemap</a></p>
+  <p><a href="${basePath}Änderungen.html">📋 Änderungen</a></p>
+  <p><a href="${basePath}guestbook.html">✍️ Gästebuch</a></p>
+  <p><a href="${basePath}comments.html">💬 Kommentare</a></p>
+  <p><a href="${basePath}sitemap.xml">Sitemap</a></p>
 </footer>`;
 }
 
