@@ -1,57 +1,41 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Charaktere – Eternity Wiki</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', system-ui, sans-serif; max-width: 960px; margin: 0 auto; padding: 2rem; line-height: 1.7; color: #d4d4d4; background: #0f0f1a; }
-h1 { color: #e94560; font-size: 2.4em; border-bottom: 2px solid #e94560; padding-bottom: .3em; margin-bottom: 1em; }
-h2 { color: #e94560; font-size: 1.7em; margin-top: 2em; border-bottom: 1px solid #2a2a4a; padding-bottom: .3em; }
-h3 { color: #c0392b; font-size: 1.3em; margin-top: 1.5em; }
-h4 { color: #2980b9; font-size: 1.1em; margin-top: 1em; }
-a { color: #e94560; text-decoration: none; }
-a:hover { text-decoration: underline; }
-table { border-collapse: collapse; width: 100%; margin: 1em 0; }
-th, td { border: 1px solid #2a2a4a; padding: .5em .7em; text-align: left; }
-th { background: #1a1a2e; color: #e94560; }
-tr:nth-child(even) { background: #12122a; }
-blockquote { border-left: 3px solid #e94560; margin: 1em 0; padding-left: 1em; color: #888; font-style: italic; }
-code { background: #1a1a2e; padding: .15em .4em; border-radius: 3px; font-size: .9em; }
-pre { background: #1a1a2e; padding: 1em; border-radius: 5px; overflow-x: auto; }
-pre code { background: none; }
-ul, ol { padding-left: 1.8em; }
-li { margin: .3em 0; }
-strong { color: #e94560; }
-em { color: #f39c12; }
-nav { background: #1a1a2e; padding: .8em 1em; margin-bottom: 2em; border-radius: 5px; display: flex; gap: .8em; flex-wrap: wrap; }
-nav a { color: #bbb; font-size: .9em; }
-nav a:hover { color: #e94560; }
-footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #2a2a4a; color: #555; font-size: .85em; text-align: center; }
-</style>
-</head>
-<body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eternity Wiki – Charaktere. Detailed information about charaktere.">
+  <meta name="keywords" content="Eternity,Vlisson,LitRPG,Wiki,Charaktere,Skills,Items,Locations,Quests,Lore">
+  <meta name="author" content="Vlisson">
+  <link rel="canonical" href="https://eternitylitrpg.netlify.app/">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Charaktere – Eternity Wiki">
+  <meta property="og:description" content="Eternity Wiki – Charaktere. Detailed information about charaktere.">
+  <meta property="og:url" content="https://eternitylitrpg.netlify.app/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Eternity Wiki">
+  <meta property="og:image" content="https://eternitylitrpg.netlify.app/favicon.svg">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Charaktere – Eternity Wiki">
+  <meta name="twitter:description" content="Eternity Wiki – Charaktere. Detailed information about charaktere.">
+  <meta name="twitter:image" content="https://eternitylitrpg.netlify.app/favicon.svg">
 
-  <nav>
-    <a href="index.html">🏠 Startseite</a>
-    <a href="characters.html">⚔️ Charaktere</a>
-    <a href="lore.html">📜 Welt & Lore</a>
-    <a href="mechanics.html">⚙️ Mechaniken</a>
-    <a href="timeline.html">⏳ Zeitlinie</a>
-    <a href="factions.html">🏛️ Fraktionen</a>
-    <a href="artifacts.html">🎁 Artefakte</a>
-    <a href="daily.html">📅 Daily-Suggestions</a>
-  </nav>
-<main><h1>Eternity Wiki — Charakter-Übersicht</h1>
-<blockquote>
+  <title>Charaktere – Eternity Wiki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="eternity">
+  <nav><a href="index.html" class="">🏠 Startseite</a><a href="characters.html" class=" active">⚔️ Charaktere</a><a href="skills.html" class="">⚡ Skills</a><a href="items.html" class="">🗡️ Items</a><a href="locations.html" class="">🌍 Orte</a><a href="classes-races.html" class="">⚙️ Klassen/Rassen</a><a href="quests.html" class="">📜 Quests</a><a href="lore.html" class="">📚 Lore</a><a href="timeline.html" class="">⏳ Zeitlinie</a><a href="factions.html" class="">🏛️ Fraktionen</a><a href="artifacts.html" class="">🎁 Artefakte</a><a href="entity_report.html" class="">📊 Entity-Report</a><a href="guestbook.html" class="">✍️ Gästebuch</a><a href="comments.html" class="">💬 Kommentare</a><a href="impressum.html" class="">ℹ️ Impressum</a><a href="Änderungen.html" class="">📋 Änderungen</a></nav>
+  <main>
+    <div class="toc-wrapper"><nav class="toc"><h3>📑 Inhaltsverzeichnis</h3><ul><li class="toc-2"><a href="#-alle-charaktere">⚔️ Alle Charaktere</a></li><li class="toc-3"><a href="#-hauptcharaktere">🔴 Hauptcharaktere</a></li><li class="toc-3"><a href="#-weitere-charaktere">🔵 Weitere Charaktere</a></li><li class="toc-3"><a href="#-npcs-fraktionen">🟢 NPCs & Fraktionen</a></li><li class="toc-3"><a href="#-zustzliche-charaktere">📋 Zusätzliche Charaktere</a></li></ul></nav></div>
+    <h1 id="eternity-wiki-charakter-bersicht">Eternity Wiki — Charakter-Übersicht</h1><blockquote>
 <p><strong>Pflegeagent:</strong> Draco Codex (draco-codex)<br><strong>Projekt:</strong> Eternity: Ein LitRPG Fantasy Abenteuer<br><strong>Stand:</strong> 2026-09-25</p>
 </blockquote>
 <hr>
-<h2>⚔️ Alle Charaktere</h2>
-<p>Klicken Sie auf einen Namen, um die detaillierte Seite des Charakters zu öffnen.</p>
-<h3>🔴 Hauptcharaktere</h3>
-<table>
+<h2 id="-alle-charaktere">⚔️ Alle Charaktere</h2><p>Klicken Sie auf einen Namen, um die detaillierte Seite des Charakters zu öffnen.</p>
+<h3 id="-hauptcharaktere">🔴 Hauptcharaktere</h3><table>
 <thead>
 <tr>
 <th>Charakter</th>
@@ -97,8 +81,7 @@ footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #2a2a4a; color
 <td><a href="characters/anubara.html">→ Anubara</a></td>
 </tr>
 </tbody></table>
-<h3>🔵 Weitere Charaktere</h3>
-<table>
+<h3 id="-weitere-charaktere">🔵 Weitere Charaktere</h3><table>
 <thead>
 <tr>
 <th>Charakter</th>
@@ -138,8 +121,7 @@ footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #2a2a4a; color
 <td><a href="characters/Meri.html">→ Meri</a></td>
 </tr>
 </tbody></table>
-<h3>🟢 NPCs &amp; Fraktionen</h3>
-<table>
+<h3 id="-npcs-amp-fraktionen">🟢 NPCs &amp; Fraktionen</h3><table>
 <thead>
 <tr>
 <th>Charakter</th>
@@ -179,8 +161,7 @@ footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #2a2a4a; color
 <td><a href="characters/Waechter_Bennet.html">→ Wächter Bennet</a></td>
 </tr>
 </tbody></table>
-<h3>📋 Zusätzliche Charaktere</h3>
-<table>
+<h3 id="-zustzliche-charaktere">📋 Zusätzliche Charaktere</h3><table>
 <thead>
 <tr>
 <th>Charakter</th>
@@ -275,7 +256,20 @@ footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #2a2a4a; color
 </blockquote>
 <hr>
 <p><em>Dieses Wiki wächst mit der Geschichte. Ergänzungen und Korrekturen sind willkommen!</em></p>
-</main>
-<footer><p>Eternity Wiki – gepflegt von Draco Codex (draco-codex) | Stand: 2026-09-06</p></footer>
+
+  </main>
+  <footer>
+  <p>Eternity Wiki – Inhalt basiert auf Büchern von Vlisson | Plattform, Struktur & Pflege durch Draco Codex (KI) | Stand: 2026-09-27 16:18</p>
+  <p><a href="impressum.html">ℹ️ Impressum & KI-Hinweis</a></p>
+  <p><a href="Änderungen.html">📋 Änderungen</a></p>
+  <p><a href="guestbook.html">✍️ Gästebuch</a></p>
+  <p><a href="comments.html">💬 Kommentare</a></p>
+  <p><a href="sitemap.xml">Sitemap</a></p>
+</footer>
+  <script>
+  // Cross-host canonical fallback: nutzt SITE_URL aus Umgebungsvariablen,
+  // fall back auf window.location.origin fuer Cloudflare Workers
+  if (window.__SITE_URL__) { document.querySelectorAll('link[rel="canonical"]').forEach(function(l){ l.href = l.href.replace('https://eternitylitrpg.netlify.app', window.__SITE_URL__); }); }
+  </script>
 </body>
 </html>
