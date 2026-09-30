@@ -1,0 +1,154 @@
+{
+  "chapter_id": "ch001",
+  "chapter_title": "Buch 1 - Der Anfang",
+  "source_file": "Eternity_Buch_1_excerpt.txt",
+  "wordcount": 663,
+  "extracted_at": "2026-09-06T16:25:00Z",
+  "characters_appeared": [
+    {
+      "name": "Ben",
+      "aliases": ["Shadow", "Vlisson"],
+      "role": "Protagonist",
+      "first_mention": "Wo bin ich hier? Völlige Dunkelheit umschloss mich",
+      "status": "awakened",
+      "description": "Spieler im VRMMO Eternity, startet auf Level 0 als Amateur Schriftsteller"
+    }
+  ],
+  "locations_mentioned": [
+    {
+      "name": "Tropfsteinhöhle",
+      "type": "Dungeon",
+      "description": "Dunkle Höhle mit kaltem Steinboden und Wassertropfen-Geräusch, Startort des Protagonisten"
+    },
+    {
+      "name": "Reich der Dämonen",
+      "type": "Dungeon/Quest-Gebiet",
+      "description": "Einzigartiges Dungeon-Gebiet, versiegelt und nur über Quest erreichbar, mit anderem Zeitverlauf"
+    }
+  ],
+  "items_introduced": [
+    {
+      "name": "Fackel",
+      "quantity": 2,
+      "rarity": "common",
+      "description": "Standardausrüstung im Abenteuer-Paket",
+      "stats": {}
+    },
+    {
+      "name": "Feuerstein",
+      "quantity": 1,
+      "rarity": "common",
+      "description": "Standardausrüstung im Abenteuer-Paket",
+      "stats": {}
+    },
+    {
+      "name": "Abenteuer-Paket",
+      "quantity": 1,
+      "rarity": "common",
+      "description": "Startpaket mit 2 Fackeln und 1 Feuerstein",
+      "stats": {}
+    }
+  ],
+  "skills_used": [
+    {
+      "name": "Kreativität",
+      "class": "Passiv",
+      "description": "Spezielle Fähigkeit - Fortgeschritten",
+      "cooldown": "N/A"
+    },
+    {
+      "name": "Rollenspielmeister",
+      "class": "Passiv",
+      "description": "Spezielle Fähigkeit - Fortgeschritten",
+      "cooldown": "N/A"
+    }
+  ],
+  "quests": [
+    {
+      "name": "Quest des Helden",
+      "type": "Main-Quest",
+      "status": "completed",
+      "goal": "Belohnung einfordern",
+      "reward": "Wahl zwischen legendärer Rasse (Drache) oder legendärer Klasse (Erzmagier)",
+      "title_bonus": "Freund der Schatten"
+    }
+  ],
+  "events": [
+    {
+      "timestamp": "Kapitel 1",
+      "description": "Ben erwacht in völlig Dunkelheit, führt Existenz-Check durch",
+      "consequences": "Erstes Verständnis der Situation"
+    },
+    {
+      "timestamp": "Kapitel 1",
+      "description": "Ben erkennt die Tropfsteinhöhle durch Wassertropfen-Geräusch",
+      "consequences": "Orientierung im Dungeon"
+    },
+    {
+      "timestamp": "Kapitel 1",
+      "description": "System-Nachricht erscheint: Quest des Helden abgeschlossen",
+      "consequences": "Belohnungsauswahl: Drache oder Erzmagier"
+    },
+    {
+      "timestamp": "Kapitel 1",
+      "description": "Ben öffnet Inventar und sieht Abenteuer-Paket",
+      "consequences": "Startausrüstung erhalten"
+    }
+  ],
+  "litrpg_mechanics": [
+    {
+      "type": "level_up",
+      "character": "Ben",
+      "from": 0,
+      "to": 0,
+      "description": "Startlevel 0"
+    },
+    {
+      "type": "attribute_check",
+      "character": "Ben",
+      "attributes": {
+        "Stärke": 1,
+        "Geschicklichkeit": 1,
+        "Beweglichkeit": 1,
+        "Konstitution": 41,
+        "Intelligenz": 21,
+        "Weisheit": 11,
+        "Wahrnehmung": 12,
+        "Charisma": 1
+      },
+      "description": "Startattribute des Protagonisten"
+    },
+    {
+      "type": "system_message",
+      "content": "Achtung: Du befindest dich in einem einzigartigen Dungeon innerhalb des Reichs der Dämonen. Dieser Ort ist versiegelt und nur über eine Quest erreichbar, auch der Zeitverlauf ist hier anders als gewöhnlich. Alle Belohnungen werden durch den Titel 'Freund der Schatten' erhöht"
+    },
+    {
+      "type": "quest_reward",
+      "content": "Gratulation: Du hast die Quest des Helden erfolgreich abgeschlossen. Bitte wähle deine Belohnung: Legendäre Rasse: Drache oder alternativ Legendäre Klasse: Erzmagiers, Titel 'Held der Menschheit', Rückführung in eine Starter Stadt der Menschen"
+    }
+  ],
+  "races": [
+    {
+      "name": "Mensch",
+      "type": "Standard",
+      "description": "Ausgangsrasse des Protagonisten"
+    },
+    {
+      "name": "Drache",
+      "type": "Legendär",
+      "description": "Legendäre Rasse als Quest-Belohnung, gottgleiche Macht"
+    }
+  ],
+  "classes": [
+    {
+      "name": "Amateur Schriftsteller",
+      "type": "Startklasse",
+      "description": "Ausgangsklasse des Protagonisten"
+    },
+    {
+      "name": "Erzmagier",
+      "type": "Legendär",
+      "description": "Legendäre Klasse als Quest-Belohnung, Titel 'Held der Menschheit'"
+    }
+  ]
+}

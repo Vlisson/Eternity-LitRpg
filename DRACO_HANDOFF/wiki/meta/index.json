@@ -1,0 +1,7 @@
+{
+  "book": "Projekt 1 Eternity",
+  "chapters": [
+    {"id": "ch001", "file": "Eternity_Buch_1_excerpt.txt", "status": "processed", "wordcount": 663, "entities_file": "meta/chapter_001_entities.json"},
+    {"id": "ch002", "file": "Buch_2_Rohfassung.txt", "status": "in_progress", "wordcount": 108716, "note": "Kapitel wird in Abschnitten verarbeitet"}
+  ]
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Welt & Lore - Eternity Wiki</title><style>* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #e0e0e0; min-height: 100vh; padding: 0; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+nav { background: rgba(255, 215, 0, 0.15); border-bottom: 2px solid #ffd700; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 100; }
+nav .logo { font-size: 1.5em; font-weight: bold; color: #ffd700; text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); }
+nav ul { display: flex; list-style: none; gap: 5px; }
+nav ul li a { color: #4fc3f7; text-decoration: none; padding: 8px 16px; border-radius: 5px; transition: all 0.3s ease; font-weight: 500; }
+nav ul li a:hover { background: rgba(255, 215, 0, 0.2); color: #ffd700; transform: translateY(-2px); }
+main { background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 30px; margin-top: 20px; border: 1px solid rgba(255, 215, 0, 0.2); backdrop-filter: blur(5px); }
+h1 { color: #ffd700; border-bottom: 3px solid #ffd700; padding-bottom: 15px; margin-bottom: 25px; font-size: 2.2em; text-shadow: 0 2px 4px rgba(255, 215, 0, 0.3); }
+h2 { color: #4fc3f7; margin-top: 35px; margin-bottom: 15px; border-left: 4px solid #ffd700; padding-left: 15px; }
+h3 { color: #e0e0e0; margin-top: 25px; margin-bottom: 10px; }
+p { line-height: 1.8; margin-bottom: 15px; color: #c8c8c8; }
+a { color: #ffd700; text-decoration: none; transition: color 0.3s ease; }
+a:hover { color: #4fc3f7; text-decoration: underline; }
+table { width: 100%; border-collapse: collapse; margin: 15px 0; background: rgba(255, 255, 255, 0.05); border-radius: 8px; overflow: hidden; }
+th { background: linear-gradient(135deg, #ffd700 0%, #ffaa00 100%); color: #1a1a2e; padding: 12px 15px; text-align: left; font-weight: 600; }
+td { padding: 10px 15px; border-bottom: 1px solid rgba(255, 215, 0, 0.1); color: #c8c8c8; }
+tr:hover td { background: rgba(255, 215, 0, 0.05); }
+ul, ol { margin: 10px 0 10px 20px; }
+li { margin-bottom: 8px; line-height: 1.6; color: #c8c8c8; }
+code, pre { background: rgba(255, 215, 0, 0.1); border: 1px solid rgba(255, 215, 0, 0.3); border-radius: 5px; padding: 10px; color: #ffd700; font-family: 'Courier New', monospace; }
+pre code { background: none; border: none; }
+footer { text-align: center; padding: 20px; margin-top: 30px; border-top: 1px solid rgba(255, 215, 0, 0.2); color: #888; font-size: 0.9em; }
+.card { background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 215, 0, 0.2); border-radius: 10px; padding: 20px; margin: 15px 0; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.card:hover { transform: translateY(-3px); box-shadow: 0 5px 20px rgba(255, 215, 0, 0.15); }
+.badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; font-weight: 600; }
+.badge-gold { background: rgba(255, 215, 0, 0.2); color: #ffd700; }
+.badge-blue { background: rgba(79, 195, 247, 0.2); color: #4fc3f7; }
+.badge-green { background: rgba(76, 175, 80, 0.2); color: #4caf50; }
+.badge-red { background: rgba(244, 67, 54, 0.2); color: #f44336; }
+.search-box { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 215, 0, 0.3); border-radius: 10px; padding: 30px; margin: 20px 0; text-align: center; }
+.search-box input[type="text"] { width: 70%; padding: 12px 20px; border: 2px solid rgba(255, 215, 0, 0.3); border-radius: 8px; background: rgba(255, 255, 255, 0.08); color: #e0e0e0; font-size: 1.1em; outline: none; transition: border-color 0.3s ease; }
+.search-box input[type="text"]:focus { border-color: #ffd700; }
+.search-box button { padding: 12px 30px; background: linear-gradient(135deg, #ffd700 0%, #ffaa00 100%); color: #1a1a2e; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; margin-left: 10px; transition: transform 0.3s ease; }
+.search-box button:hover { transform: scale(1.05); }
+.search-results { margin-top: 20px; }
+.result-item { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 215, 0, 0.15); border-radius: 8px; padding: 15px; margin: 10px 0; transition: all 0.3s ease; }
+.result-item:hover { background: rgba(255, 215, 0, 0.08); border-color: #ffd700; }
+.result-title { color: #ffd700; font-weight: bold; font-size: 1.1em; }</style></head><body><nav><div class="logo">🐉 Eternity Wiki</div><ul><li><a href="/">🏠 Startseite</a></li><li><a href="/characters.html">👥 Charaktere</a></li><li><a href="/world.html">🌍 Welt</a></li><li><a href="/timeline.html">📅 Zeitlinie</a></li><li><a href="/search.html">🔍 Suche</a></li></ul></nav><main class="container"><h1>Welt &amp; Lore</h1>
+<p>Die Welt von Eternity – ein umfassender Überblick über alle wichtigen Orte, Konzepte und Systeme.</p>
+<hr>
+<h2>🌍 Die Hauptspielwelt Eternity</h2>
+<h3>Überblick</h3>
+<p><strong>Eternity</strong> ist ein riesiges VRMMO (Virtual Reality Massively Multiplayer Online) Spiel, das die Spieler in eine immersive Fantasiewelt eintauchen lässt.</p>
+<h3>Grundprinzip</h3>
+<p>Die Welt funktioniert als <strong>„Scheinrealität“</strong> – ein Ort, an dem die Regeln der realen Welt durch die des Spiels überlagert werden.</p>
+<hr>
+<h2>🏰 Regionen</h2>
+<h3>Reich der Dämonen</h3>
+<ul>
+<li><strong>Typ:</strong> Versiegelter Dungeon-Bereich</li>
+<li><strong>Besonderheit:</strong> Nur über Quest erreichbar</li>
+<li><strong>Zeitverlauf:</strong> Anders als in der normalen Spielwelt</li>
+<li><strong>Belohnungen:</strong> Erhöht durch den Titel „Freund der Schatten“</li>
+<li><strong>Hauptquest:</strong> Die legendäre Quest des Helden</li>
+</ul>
+<h3>Starter Städte der Menschen</h3>
+<ul>
+<li><strong>Typ:</strong> Sicherer Hafen für neue Spieler</li>
+<li><strong>Funktion:</strong> Rückkehr nach gescheiterten Quests</li>
+</ul>
+<h3>Essence-Nexus</h3>
+<ul>
+<li><strong>Beschreibung:</strong> Schimmernde Höhle im Herzen des Spiels</li>
+<li><strong>Besonderheit:</strong> Permanente, flackernde Spiegel-Aura</li>
+<li><strong>Quests:</strong> Essenz-Durchgang (Kreis aus Daten-Sphären)</li>
+</ul>
+<hr>
+<h2>⚔️ Spielmechaniken</h2>
+<h3>Charakterklassen</h3>
+<h4>Legendäre Klassen</h4>
+<ul>
+<li><strong>Drache:</strong> Legendäre Rasse, mächtig und gottgleich</li>
+<li><strong>Erzmagier:</strong> Legendäre Klasse, mit Titel „Held der Menschheit“</li>
+</ul>
+<h4>Reguläre Klassen</h4>
+<ul>
+<li><strong>Amateur Schriftsteller</strong> (Startklasse für Ben)</li>
+<li>Verschiedene andere Klassen je nach Spielerverteilung</li>
+</ul>
+<h3>Rassen-System</h3>
+<ul>
+<li><strong>Menschen:</strong> Standard-Spielerrasse</li>
+<li><strong>Drachen:</strong> Legendäre Rasse (selten)</li>
+<li><strong>Weitere Rassen:</strong> In der Community spekuliert, jedoch nicht bestätigt</li>
+</ul>
+<h3>Attribute</h3>
+<table>
+<thead>
+<tr>
+<th>Attribut</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Stärke</td>
+<td>Physische Kraft</td>
+</tr>
+<tr>
+<td>Geschicklichkeit</td>
+<td>Hand-Auge-Koordination</td>
+</tr>
+<tr>
+<td>Beweglichkeit</td>
+<td>Bewegungsgeschwindigkeit</td>
+</tr>
+<tr>
+<td>Konstitution</td>
+<td>Ausdauer und Gesundheit</td>
+</tr>
+<tr>
+<td>Intelligenz</td>
+<td>Magische Fähigkeiten und Lernfähigkeit</td>
+</tr>
+<tr>
+<td>Weisheit</td>
+<td>Erfahrung und Intuition</td>
+</tr>
+<tr>
+<td>Wahrnehmung</td>
+<td>Sinneswahrnehmung</td>
+</tr>
+<tr>
+<td>Charisma</td>
+<td>Soziale Interaktion</td>
+</tr>
+</tbody></table>
+<h3>Skills &amp; Fähigkeiten</h3>
+<ul>
+<li><strong>Kreativität (Fortgeschritten):</strong> Für kreative Lösungen</li>
+<li><strong>Rollenspielmeister (Fortgeschritten):</strong> Beherrscht verschiedene Rollen</li>
+</ul>
+<hr>
+<h2>🔮 Quests</h2>
+<h3>Die legendäre Quest des Helden</h3>
+<ul>
+<li><strong>Questgeber:</strong> System (automatisch)</li>
+<li><strong>Belohnung:</strong> Wahl zwischen<ul>
+<li>Legendärer Rasse: Drache</li>
+<li>Legendärer Klasse: Erzmagier (mit Titel „Held der Menschheit“)</li>
+</ul>
+</li>
+<li><strong>Folgequest:</strong> Start im Reich der Dämonen</li>
+</ul>
+<h3>Das Preis-Paradox</h3>
+<ul>
+<li><strong>Beschreibung:</strong> Kapitel, in dem Ben ein legendäres Item erhalten soll</li>
+<li><strong>Forderung:</strong> „Sinnloser“ Opfer-Entscheid (z.B. Familienmitglied)</li>
+<li><strong>Auswirkung:</strong> Vertieft die moralischen Konflikte der Geschichte</li>
+</ul>
+<hr>
+<h2>🌑 Die Dämonen</h2>
+<h3>Eigenschaften</h3>
+<ul>
+<li>Mächtige Gegner</li>
+<li>Eigene Dungeons</li>
+<li>Einzigartige Spielmechaniken</li>
+</ul>
+<hr>
+<h2>🏛️ Schatten-Welt</h2>
+<ul>
+<li><strong>Beschreibung:</strong> Parallel-Universum innerhalb von Eternity</li>
+<li><strong>Zugang:</strong> Nur für Spieler mit legendärer Rasse</li>
+<li><strong>Inhalt:</strong> Verborgene Quest-Linien</li>
+<li><strong>Bedeutung:</strong> Vertieft den Preis der Macht des Protagonisten</li>
+</ul>
+<hr>
+<h2>📖 Zentrale Themen</h2>
+<h3>Vertrauen &amp; Verrat</h3>
+<ul>
+<li>Bens Verrat durch seine alte Abenteurergruppe</li>
+<li>Das langsame Wiederaufbauen von Vertrauen</li>
+</ul>
+<h3>Identität &amp; Schatten</h3>
+<ul>
+<li>Bens Wandlung von „Ben“ zu „Shadow“</li>
+<li>Der Preis der Macht und Verkleidung</li>
+</ul>
+<h3>Macht &amp; Preis</h3>
+<ul>
+<li>Legendäre Rasse/Klasse nur bei „gemeinsamer Gefahr“</li>
+<li>Jedes Upgrade hat einen moralischen/spielbezogenen Preis</li>
+</ul>
+<hr>
+<h2>🕰️ Zukunft der Spielwelt (Band 2)</h2>
+<h3>Jahr 2070</h3>
+<ul>
+<li>Die Erde ist ein düsterer Ort</li>
+<li>Großkonzerne beherrschen die Gesellschaft</li>
+<li><strong>Nexagen, OmniCorp, Meridian-Allianz</strong> – die drei Hauptkonzerne</li>
+</ul>
+<hr>
+<p><em>Weitere Details folgen mit jedem neuen Band der Eternity-Reihe.</em></p>
+</main><footer><p>Erstellt mit Draco Codex — LitRPG Wiki Engine | Letzte Aktualisierung: 2026-09-10</p></footer></body></html>

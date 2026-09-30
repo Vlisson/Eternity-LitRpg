@@ -1,92 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://eternitylitrpg.netlify.app/analysis_buch1.html</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eternitylitrpg.netlify.app/analysis_buch2.html</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eternitylitrpg.netlify.app/characters.html</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eternitylitrpg.netlify.app/classes-races.html</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eternitylitrpg.netlify.app/entity_report.html</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eternitylitrpg.netlify.app/impressum.html</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eternitylitrpg.netlify.app/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <loc>https://vlisson.github.io/Eternity-LitRpg/</loc>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vlisson.github.io/Eternity-LitRpg/"/>
   </url>
   <url>
-    <loc>https://eternitylitrpg.netlify.app/items.html</loc>
-    <lastmod>2026-09-25</lastmod>
+    <loc>https://vlisson.github.io/Eternity-LitRpg/index.html</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://vlisson.github.io/Eternity-LitRpg/index.html"/>
+  </url>
+  <url>
+    <loc>https://vlisson.github.io/Eternity-LitRpg/characters.html</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://vlisson.github.io/Eternity-LitRpg/skills.html</loc>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://eternitylitrpg.netlify.app/locations.html</loc>
-    <lastmod>2026-09-25</lastmod>
+    <loc>https://vlisson.github.io/Eternity-LitRpg/items.html</loc>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://eternitylitrpg.netlify.app/lore.html</loc>
-    <lastmod>2026-09-25</lastmod>
+    <loc>https://vlisson.github.io/Eternity-LitRpg/lore.html</loc>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://eternitylitrpg.netlify.app/quests.html</loc>
-    <lastmod>2026-09-25</lastmod>
+    <loc>https://vlisson.github.io/Eternity-LitRpg/quests.html</loc>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://eternitylitrpg.netlify.app/skills.html</loc>
-    <lastmod>2026-09-25</lastmod>
+    <loc>https://vlisson.github.io/Eternity-LitRpg/timeline.html</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vlisson.github.io/Eternity-LitRpg/factions.html</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vlisson.github.io/Eternity-LitRpg/artifacts.html</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vlisson.github.io/Eternity-LitRpg/classes-races.html</loc>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://eternitylitrpg.netlify.app/timeline_buch1.html</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://vlisson.github.io/Eternity-LitRpg/world.html</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://eternitylitrpg.netlify.app/timeline_buch2.html</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://vlisson.github.io/Eternity-LitRpg/search.html</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
-  <url>
-    <loc>https://eternitylitrpg.netlify.app/Änderungen.html</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+</urlset>

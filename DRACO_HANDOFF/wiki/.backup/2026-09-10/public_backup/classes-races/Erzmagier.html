@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Erzmagier - Eternity Wiki</title><style>* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #e0e0e0; min-height: 100vh; padding: 0; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+nav { background: rgba(255, 215, 0, 0.15); border-bottom: 2px solid #ffd700; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; backdrop-filter: blur(10px); position: sticky; top: 0; z-index: 100; }
+nav .logo { font-size: 1.5em; font-weight: bold; color: #ffd700; text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); }
+nav ul { display: flex; list-style: none; gap: 5px; }
+nav ul li a { color: #4fc3f7; text-decoration: none; padding: 8px 16px; border-radius: 5px; transition: all 0.3s ease; font-weight: 500; }
+nav ul li a:hover { background: rgba(255, 215, 0, 0.2); color: #ffd700; transform: translateY(-2px); }
+main { background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 30px; margin-top: 20px; border: 1px solid rgba(255, 215, 0, 0.2); backdrop-filter: blur(5px); }
+h1 { color: #ffd700; border-bottom: 3px solid #ffd700; padding-bottom: 15px; margin-bottom: 25px; font-size: 2.2em; text-shadow: 0 2px 4px rgba(255, 215, 0, 0.3); }
+h2 { color: #4fc3f7; margin-top: 35px; margin-bottom: 15px; border-left: 4px solid #ffd700; padding-left: 15px; }
+h3 { color: #e0e0e0; margin-top: 25px; margin-bottom: 10px; }
+p { line-height: 1.8; margin-bottom: 15px; color: #c8c8c8; }
+a { color: #ffd700; text-decoration: none; transition: color 0.3s ease; }
+a:hover { color: #4fc3f7; text-decoration: underline; }
+table { width: 100%; border-collapse: collapse; margin: 15px 0; background: rgba(255, 255, 255, 0.05); border-radius: 8px; overflow: hidden; }
+th { background: linear-gradient(135deg, #ffd700 0%, #ffaa00 100%); color: #1a1a2e; padding: 12px 15px; text-align: left; font-weight: 600; }
+td { padding: 10px 15px; border-bottom: 1px solid rgba(255, 215, 0, 0.1); color: #c8c8c8; }
+tr:hover td { background: rgba(255, 215, 0, 0.05); }
+ul, ol { margin: 10px 0 10px 20px; }
+li { margin-bottom: 8px; line-height: 1.6; color: #c8c8c8; }
+code, pre { background: rgba(255, 215, 0, 0.1); border: 1px solid rgba(255, 215, 0, 0.3); border-radius: 5px; padding: 10px; color: #ffd700; font-family: 'Courier New', monospace; }
+pre code { background: none; border: none; }
+footer { text-align: center; padding: 20px; margin-top: 30px; border-top: 1px solid rgba(255, 215, 0, 0.2); color: #888; font-size: 0.9em; }
+.card { background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 215, 0, 0.2); border-radius: 10px; padding: 20px; margin: 15px 0; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.card:hover { transform: translateY(-3px); box-shadow: 0 5px 20px rgba(255, 215, 0, 0.15); }
+.badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; font-weight: 600; }
+.badge-gold { background: rgba(255, 215, 0, 0.2); color: #ffd700; }
+.badge-blue { background: rgba(79, 195, 247, 0.2); color: #4fc3f7; }
+.badge-green { background: rgba(76, 175, 80, 0.2); color: #4caf50; }
+.badge-red { background: rgba(244, 67, 54, 0.2); color: #f44336; }
+.search-box { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 215, 0, 0.3); border-radius: 10px; padding: 30px; margin: 20px 0; text-align: center; }
+.search-box input[type="text"] { width: 70%; padding: 12px 20px; border: 2px solid rgba(255, 215, 0, 0.3); border-radius: 8px; background: rgba(255, 255, 255, 0.08); color: #e0e0e0; font-size: 1.1em; outline: none; transition: border-color 0.3s ease; }
+.search-box input[type="text"]:focus { border-color: #ffd700; }
+.search-box button { padding: 12px 30px; background: linear-gradient(135deg, #ffd700 0%, #ffaa00 100%); color: #1a1a2e; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; margin-left: 10px; transition: transform 0.3s ease; }
+.search-box button:hover { transform: scale(1.05); }
+.search-results { margin-top: 20px; }
+.result-item { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 215, 0, 0.15); border-radius: 8px; padding: 15px; margin: 10px 0; transition: all 0.3s ease; }
+.result-item:hover { background: rgba(255, 215, 0, 0.08); border-color: #ffd700; }
+.result-title { color: #ffd700; font-weight: bold; font-size: 1.1em; }</style></head><body><nav><div class="logo">🐉 Eternity Wiki</div><ul><li><a href="/">🏠 Startseite</a></li><li><a href="/characters.html">👥 Charaktere</a></li><li><a href="/world.html">🌍 Welt</a></li><li><a href="/timeline.html">📅 Zeitlinie</a></li><li><a href="/search.html">🔍 Suche</a></li></ul></nav><main class="container"><h1>Erzmagier</h1>
+<h2>Typ</h2>
+<p>Legendäre Klasse</p>
+<h2>Seltenheit</h2>
+<p>Legendär</p>
+<h2>Beschreibung</h2>
+<p>Eine der legendären Klassen im VRMMO Eternity. Wird als Belohnung für das Abschließen der Quest des Helden angeboten. Erzmagier sind mächtige Zauberer mit enormer magischer Kraft.</p>
+<h2>Vorteile</h2>
+<ul>
+<li>Hohe Intelligenz</li>
+<li>Mächtige Zaubersprüche</li>
+<li>Zugang zu fortgeschrittener Magie</li>
+<li>Titel &quot;Held der Menschheit&quot;</li>
+</ul>
+<h2>Voraussetzungen</h2>
+<ul>
+<li>Abschluss der Quest des Helden</li>
+<li>Wahl der Klasse statt der Rasse</li>
+</ul>
+<h2>Beziehungen</h2>
+<ul>
+<li>[[Reich der Dämonen]]: Quest-Gebiet, in dem die Klasse erhältlich ist</li>
+</ul>
+<h2>Auftreten</h2>
+<ul>
+<li><strong>Kapitel 1:</strong> Wird als alternative Belohnung zur Drachenrasse angeboten</li>
+</ul>
+</main><footer><p>Erstellt mit Draco Codex — LitRPG Wiki Engine | Letzte Aktualisierung: 2026-09-10</p></footer></body></html>

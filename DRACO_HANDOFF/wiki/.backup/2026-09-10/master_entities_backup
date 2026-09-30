@@ -1,0 +1,399 @@
+{
+  "last_updated": "2026-09-10",
+  "total_chapters_processed": 2,
+  "characters_master": {
+    "Ben": {
+      "name": "Ben",
+      "aliases": [
+        "Shadow",
+        "Dhark",
+        "Dämonenlord"
+      ],
+      "role": "Protagonist",
+      "first_mention": "[Gratulation! Erstes Territorium beansprucht. +728 Verbündete, Drachenessenz +5.]",
+      "status": "active",
+      "description": "Neuer Dämonenlord mit Territorium, kämpft mit Mana-Armut und Runen-Integration",
+      "first_appearance": "ch001",
+      "level": 143248,
+      "title": "Verräter (Skarabäus)",
+      "new_abilities": [
+        "Territoriumsaufbau",
+        "Runen-Integration",
+        "Manakern-Veredelung"
+      ]
+    },
+    "Vlisson": {
+      "name": "Vlisson",
+      "aliases": [
+        "Markus"
+      ],
+      "role": "Autor / Spieler-Avatar",
+      "first_mention": "Hallo ich bin der Markus, es freut mich daß ihr mein zweites Buch in die Hand genommen habt",
+      "status": "narrator",
+      "description": "Der Autor, der die Geschichte erzählt",
+      "first_appearance": "ch002"
+    },
+    "Marcel": {
+      "name": "Marcel",
+      "role": "Spieler / Feuergeist",
+      "first_mention": "Ein neuer Trend erfasste täglich mehr Spieler in Eternity... Marcel",
+      "status": "active",
+      "description": "Wählt den Weg des Feuers, erlebt Elementarkollektive, wird zu Kohle, wärmt ein Mädchen",
+      "abilities": [
+        "Feuergeist-Form",
+        "Flächenbrand",
+        "Kohle-Form",
+        "Elementarverschmelzung"
+      ],
+      "first_appearance": "ch002"
+    },
+    "Anubara": {
+      "name": "Anubara",
+      "role": "Dämonenkönig / Boss",
+      "first_mention": "[Gratulation: Dämonenlord Anubara besiegt",
+      "status": "defeated",
+      "description": "Dämonenkönig, bot Ben Posten an, wurde durch Duell besiegt",
+      "first_appearance": "ch002"
+    },
+    "Marie-Claire": {
+      "name": "Marie-Claire",
+      "aliases": [],
+      "role": "Meisterin / Beschwörerin",
+      "first_mention": "Wie es ihrer Meisterin Marie Claire wohl gerade geht.",
+      "status": "mentioned",
+      "description": "Ben's Mentorin/Beschwörerin, wird erwähnt im Kontext von Bens neuem Status",
+      "first_appearance": "ch002_part3"
+    },
+    "Schmieriger Daumen": {
+      "name": "Schmieriger Daumen",
+      "aliases": [],
+      "role": "Antagonist",
+      "first_mention": "Mein unfreiwilliger Job in der Sklavenfabrik des Schmierigen Daumens",
+      "status": "mentioned",
+      "description": "Ben's ehemaliger Arbeitgeber in der Sklavenfabrik, wird im Kontext seiner Freiheit erwähnt",
+      "first_appearance": "ch002_part3"
+    }
+  },
+  "locations_master": {
+    "Tropfsteinhöhle": {
+      "name": "Tropfsteinhöhle",
+      "type": "Dungeon",
+      "description": "Dunkle Höhle mit kaltem Steinboden und Wassertropfen-Geräusch, Startort des Protagonisten",
+      "first_appearance": "ch001"
+    },
+    "Reich der Dämonen": {
+      "name": "Reich der Dämonen",
+      "type": "Dungeon/Quest-Gebiet",
+      "description": "Einzigartiges Dungeon-Gebiet, versiegelt und nur über Quest erreichbar, mit anderem Zeitverlauf",
+      "first_appearance": "ch001"
+    },
+    "Eternity": {
+      "name": "Eternity",
+      "type": "Spielwelt",
+      "description": "Das VRMMO Eternity",
+      "first_appearance": "ch002"
+    },
+    "Erde 2070": {
+      "name": "Erde 2070",
+      "type": "Reale Welt",
+      "description": "Im Jahr 2070 ist die Erde ein düsterer Ort, beherrscht von Großkonzernen",
+      "first_appearance": "ch002"
+    },
+    "Vulkan": {
+      "name": "Vulkan",
+      "type": "Ort",
+      "description": "Marcel's Startort als Feuergeist, schleudert Asche und Lava",
+      "first_appearance": "ch002"
+    },
+    "Wald": {
+      "name": "Wald",
+      "type": "Ort",
+      "description": "Marcel's Feuer verschlingt Büsche und Bäume, hinterlässt fruchtbare Asche",
+      "first_appearance": "ch002"
+    },
+    "Höhle (unter der Erde)": {
+      "name": "Höhle (unter der Erde)",
+      "type": "Dungeon",
+      "description": "Ort des Kampfes gegen Anubara, Ben erwacht hier als Drache",
+      "first_appearance": "ch002"
+    },
+    "Schäbiges Apartment am Stadtrand": {
+      "name": "Schäbiges Apartment am Stadtrand",
+      "type": "Realwelt-Ort",
+      "description": "Bens Realwelt-Aufenthaltsort",
+      "first_appearance": "ch002"
+    },
+    "Eternity Prime": {
+      "name": "Eternity Prime",
+      "type": "Streaming-Kanal",
+      "description": "Kanal, der über serverweite Nachrichten diskutiert",
+      "first_appearance": "ch002"
+    },
+    "Territorium": {
+      "name": "Territorium",
+      "type": "Dämonen-Territorium",
+      "first_mention": "[Gratulation! Erstes Territorium beansprucht. +728 Verbündete, Drachenessenz +5.]",
+      "description": "Ben's neues Territorium mit +728 Verbündeten und +5 Drachenessenz",
+      "features": [
+        "+728 Verbündete",
+        "Drachemessenz +5",
+        "Territoriumsherz"
+      ],
+      "first_appearance": "ch002_part3"
+    },
+    "Sklavenfabrik des Schmierigen Daumens": {
+      "name": "Sklavenfabrik des Schmierigen Daumens",
+      "type": "Realwelt-Ort",
+      "first_mention": "Mein unfreiwilliger Job in der Sklavenfabrik des Schmierigen Daumens",
+      "description": "Ben's ehemaliger Arbeitsort, aus dem er nun frei ist",
+      "first_appearance": "ch002_part3"
+    },
+    "Manakern": {
+      "name": "Manakern",
+      "type": "Magisches Objekt",
+      "first_mention": "[??? Manakern — Dämonenlord-Qualität. Kann weder magisch transportiert noch eingelagert werden.]",
+      "description": "Aussergewöhnlicher Manakern von Dämonenlord-Qualität, kann nicht magisch transportiert oder eingelagert werden",
+      "special_features": [
+        "Dämonenlord-Qualität",
+        "Kann nicht magisch transportiert werden",
+        "Kann nicht eingelagert werden"
+      ],
+      "first_appearance": "ch002_part3"
+    }
+  },
+  "items_master": {
+    "Fackel": {
+      "name": "Fackel",
+      "quantity": 2,
+      "rarity": "common",
+      "description": "Standardausrüstung im Abenteuer-Paket",
+      "stats": {},
+      "first_appearance": "ch001"
+    },
+    "Feuerstein": {
+      "name": "Feuerstein",
+      "quantity": 1,
+      "rarity": "common",
+      "description": "Standardausrüstung im Abenteuer-Paket",
+      "stats": {},
+      "first_appearance": "ch001"
+    },
+    "Abenteuer-Paket": {
+      "name": "Abenteuer-Paket",
+      "quantity": 1,
+      "rarity": "common",
+      "description": "Startpaket mit 2 Fackeln und 1 Feuerstein",
+      "stats": {},
+      "first_appearance": "ch001"
+    },
+    "Goldene Kugel": {
+      "name": "Goldene Kugel",
+      "quantity": 1,
+      "rarity": "legendary",
+      "description": "Gefunden in Anubaras Kadaver, strahlt hell, verdampft Schattenaura, doppelt so groß wie Drachenskopf",
+      "stats": {
+        "effect": "verdampft Schattenaura",
+        "size": "doppelt so groß wie Drachenkopf"
+      },
+      "first_appearance": "ch002"
+    },
+    "Chitinpanzer": {
+      "name": "Chitinpanzer",
+      "quantity": 1,
+      "rarity": "rare",
+      "description": "Anubaras Rüstung, unter der die goldene Kugel lag",
+      "first_appearance": "ch002"
+    },
+    "Veredelter Manakern": {
+      "name": "Veredelter Manakern",
+      "quantity": 1,
+      "rarity": "Dämonenlord",
+      "first_mention": "[??? Manakern — Dämonenlord-Qualität]",
+      "description": "Aussergewöhnlicher Manakern von Dämonenlord-Qualität",
+      "special_properties": [
+        "Kann nicht magisch transportiert werden",
+        "Kann nicht eingelagert werden"
+      ],
+      "quest_decision": "Möchtest du diesen veredelten Manakern als neues Territoriumsherz einsetzen? Kosten: 5 Punkte Drachenessenz.",
+      "first_appearance": "ch002_part3"
+    },
+    "Runen (diverse)": {
+      "name": "Runen (diverse)",
+      "quantity": "mehrere",
+      "rarity": "Runen",
+      "first_mention": "[Gratulation: Spruchschmied steigt auf Anfänger 2]",
+      "description": "Verschiedene Runen wurden in den Felsboden geritzt und untereinander verbunden",
+      "special_features": [
+        "Wurden in Felsboden geritzt",
+        "Untereinander verbunden",
+        "Nach Instinkt des Charakters"
+      ],
+      "first_appearance": "ch002_part3"
+    }
+  },
+  "skills_master": {
+    "Kreativität": {
+      "name": "Kreativität",
+      "class": "Passiv",
+      "description": "Spezielle Fähigkeit - Fortgeschritten",
+      "cooldown": "N/A",
+      "first_appearance": "ch001"
+    },
+    "Rollenspielmeister": {
+      "name": "Rollenspielmeister",
+      "class": "Passiv",
+      "description": "Spezielle Fähigkeit - Fortgeschritten",
+      "cooldown": "N/A",
+      "first_appearance": "ch001"
+    },
+    "Feuergeist-Form": {
+      "name": "Feuergeist-Form",
+      "class": "Elementar",
+      "description": "Marcel wird Feuergeist, kann brennen, fliegen, Flächenbrand erzeugen",
+      "cooldown": "N/A",
+      "first_appearance": "ch002"
+    },
+    "Schattenaura": {
+      "name": "Schattenaura",
+      "class": "Passiv/Defensiv",
+      "description": "Bens Schattenaura wird von goldener Kugel verdampft",
+      "cooldown": "N/A",
+      "first_appearance": "ch002"
+    },
+    "Drachengier": {
+      "name": "Drachengier",
+      "class": "Passiv",
+      "description": "Drachengier in Ben erwacht bei Anblick der goldenen Kugel",
+      "cooldown": "N/A",
+      "first_appearance": "ch002"
+    },
+    "Elementarverschmelzung": {
+      "name": "Elementarverschmelzung",
+      "class": "Elementar",
+      "description": "Feuer-, Wind-, Erdgeister verschmelzen zu Kollektiv",
+      "first_appearance": "ch002"
+    },
+    "Spruchschmied": {
+      "name": "Spruchschmied",
+      "class": "Handwerklich",
+      "first_mention": "[Gratulation: Spruchschmied steigt auf Anfänger 2]",
+      "description": "Ben steigt auf Anfänger 2 im Spruchschmied auf, nachdem er Mikrofehler am Manakern ausgemerzt hat",
+      "level_progress": "Anfänger 2",
+      "mechanic": "Veredlung von Manakernen und Runen",
+      "first_appearance": "ch002_part3"
+    },
+    "Edelstein Veredlung": {
+      "name": "Edelstein Veredlung",
+      "class": "Handwerklich",
+      "first_mention": "[Gratulation: Edelstein Veredlung steigt auf Lehrling 1. Achtung: Fertigkeit durch Zustand \"Erschöpft\" temporär auf Anfänger reduziert.]",
+      "description": "Edelstein Veredlung steigt auf Lehrling 1, wurde aber durch Erschöpfungzustand vorübergehend auf Anfänger reduziert",
+      "level_progress": "Lehrling 1 → temporär Anfänger",
+      "mechanic": "Edelstein-Veredelung mit Erschöpfungszustand",
+      "first_appearance": "ch002_part3"
+    },
+    "Manakern-Veredelung": {
+      "name": "Manakern-Veredelung",
+      "class": "Drachenspezial",
+      "first_mention": "Ich gab ungern die Kontrolle über meinen Körper oder mein bewusstes Denken ab, aber diese harmonischen Bewegungen fühlten sich so gut und richtig an. Es war fast wie Tanzen.",
+      "description": "Drachenspezifische Manakern-Veredelung, harmonische Bewegungen, fast wie Tanzen",
+      "level_progress": "Entwicklung über Anfängerniveau hinaus",
+      "first_appearance": "ch002_part3"
+    }
+  },
+  "quests_master": {
+    "Quest des Helden": {
+      "name": "Quest des Helden",
+      "type": "Main-Quest",
+      "status": "completed",
+      "goal": "Belohnung einfordern",
+      "reward": "Wahl zwischen legendärer Rasse (Drache) oder legendärer Klasse (Erzmagier)",
+      "title_bonus": "Freund der Schatten",
+      "first_appearance": "ch001"
+    }
+  },
+  "races_master": {
+    "Mensch": {
+      "type": "Standard",
+      "first_appearance": "ch001"
+    },
+    "Drache": {
+      "type": "Legendär",
+      "first_appearance": "ch001",
+      "description": "gottgleiche Macht"
+    },
+    "Tiermensch": {
+      "type": "Standard",
+      "first_appearance": "ch002",
+      "description": "Neue Rasse nach globalem Event"
+    },
+    "Dämon": {
+      "type": "Boss",
+      "first_appearance": "ch002",
+      "description": "Mächtige Gegner mit eigenen Dungeons"
+    }
+  },
+  "classes_master": {
+    "Amateur Schriftsteller": {
+      "type": "Startklasse",
+      "first_appearance": "ch001"
+    },
+    "Erzmagier": {
+      "type": "Legendär",
+      "title": "Held der Menschheit",
+      "first_appearance": "ch001"
+    },
+    "Dämonenlord": {
+      "type": "Legendär",
+      "first_appearance": "ch002",
+      "description": "Neue Klasse nach Anubara-Sieg"
+    },
+    "Spruchschmied": {
+      "type": "Handwerklich",
+      "first_appearance": "ch002",
+      "description": "Runen- und Manakern-Veredelung"
+    },
+    "Edelstein Veredlung": {
+      "type": "Handwerklich",
+      "first_appearance": "ch002",
+      "description": "Edelstein-Veredelung mit Erschöpfungszustand"
+    }
+  },
+  "factions_master": {
+    "Nexagen": {
+      "name": "Nexagen",
+      "type": "Konzern",
+      "description": "Einer der drei Großkonzerne, die 2070 die Welt beherrschen",
+      "first_appearance": "ch002"
+    },
+    "OmniCorp": {
+      "name": "OmniCorp",
+      "type": "Konzern",
+      "description": "Einer der drei Großkonzerne",
+      "first_appearance": "ch002"
+    },
+    "Meridian-Allianz": {
+      "name": "Meridian-Allianz",
+      "type": "Konzern",
+      "description": "Einer der drei Großkonzerne, teilt die Welt auf",
+      "first_appearance": "ch002"
+    },
+    "Externals": {
+      "name": "Externals",
+      "type": "Gilde",
+      "description": "Gildenleiter Level 143, Elite dicht auf Fersen",
+      "first_appearance": "ch002"
+    },
+    "Skarabäus": {
+      "name": "Skarabäus",
+      "type": "Fraktion / Feind",
+      "description": "Jagt Ben nun als Verräter",
+      "first_appearance": "ch002"
+    },
+    "Ratten und Käfer": {
+      "name": "Ratten und Käfer",
+      "type": "Dämonenminions",
+      "description": "Minions von Anubara, wechselten die Seite zu Ben",
+      "first_appearance": "ch002"
+    }
+  }
+}

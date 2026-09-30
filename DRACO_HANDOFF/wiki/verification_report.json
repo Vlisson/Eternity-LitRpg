@@ -1,0 +1,29 @@
+{
+  "status": "success",
+  "timestamp": "2026-09-27T07:54:34.742Z+02:00",
+  "link_check": {
+    "total": 1036,
+    "broken": 538,
+    "details": []
+  },
+  "design_check": {
+    "consistent": false,
+    "issues": [
+      "0 out of 141 pages have body class=\"eternity\"",
+      "141 pages missing required body class",
+      "5 pages missing CSS stylesheet links"
+    ]
+  },
+  "page_check": {
+    "source_files": 144,
+    "generated_pages": 141,
+    "match": false,
+    "missing_html": 76,
+    "extra_html": 83
+  },
+  "deployment": {
+    "github_pages": "operational",
+    "cloudflare_workers": "unreachable - network error",
+    "notes": "GitHub Pages accessible (HTTP 200), Cloudflare Workers unreachable"
+  }
+}
