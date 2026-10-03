@@ -1,0 +1,17 @@
+# robots.txt for Eternity Wiki
+
+Sitemap: https://example.com/sitemap.xml
+
+Allowed:
+  /
+  /wiki/
+  /api/
+  /search/
+  /admin/
+  /robots.txt
+
+Disallowed:
+  /private/
+  /admin/backup/
+
+*  Indexing disabled for private areas.

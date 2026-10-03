@@ -5,7 +5,9 @@ const path = require('path');
 
 const WIKI_DIR = __dirname;
 const PUBLIC_DIR = path.join(WIKI_DIR, 'public');
-const CSS_PATH = '/css/wiki-style.css'; // external CSS
+const CSS_PATH = '/css/wiki-style.css';
+const SITE_URL = 'https://vlisson.github.io/Eternity-LitRpg';
+const CURRENT_DATE = '2026-09-30';
 
 // Unified CSS from optimize.sh (we'll keep it as a string for potential inline use, but we are linking externally)
 const UNIFIED_CSS = `* { margin: 0; padding: 0; box-sizing: border-box; }
@@ -90,43 +92,36 @@ footer { text-align: center; padding: 20px; margin-top: 30px; border-top: 1px so
 `;
 
 const NAV = `<nav><div class="logo">🐉 Eternity Wiki</div><ul><li><a href="/">🏠 Startseite</a></li><li><a href="/characters.html">👥 Charaktere</a></li><li><a href="/world.html">🌍 Welt</a></li><li><a href="/timeline.html">📅 Zeitlinie</a></li><li><a href="/search.html">🔍 Suche</a></li></ul></nav>`;
-const FOOTER = `<footer><p>Erstellt mit Draco Codex — LitRPG Wiki Engine | Letzte Aktualisierung: 2026-09-10</p></footer>`;
+const FOOTER = `<footer><p>Erstellt mit Draco Codex — LitRPG Wiki Engine | Letzte Aktualisierung: ${CURRENT_DATE}</p></footer>`;
 
-function renderPage(title, content) {
-  return `<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title} - Eternity Wiki</title><link rel="stylesheet" href="${CSS_PATH}"></head><body>${NAV}<main class="container">${content}</main>${FOOTER}</body></html>`;
+function renderPage(title, content, outputFilename = null) {
+  const canonical = outputFilename
+    ? `${SITE_URL}/${outputFilename.replace(/\//g, '/')}`
+    : `${SITE_URL}/`;
+  return `<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title} - Eternity Wiki</title><link rel="stylesheet" href="${CSS_PATH}"><link rel="canonical" href="${canonical}"><meta name="last-modified" content="${CURRENT_DATE}"></head><body>${NAV}<main class="container">${content}</main>${FOOTER}</body></html>`;
 }
 
-// Function to convert [[Link]] to HTML link based on known entity directories
-function resolveWikiLinks(text) {
-  // Map of entity types to their public directory
-  const entityMap = {
-    'characters': 'characters',
-    'skills': 'skills',
-    'items': 'items',
-    'locations': 'locations',
-    'quests': 'quests',
-    'classes-races': 'classes-races',
-    'lore': 'lore',
-    'chapters': 'chapters'
-  };
-
-  // Replace [[Name]] with <a href="/dir/Name.html">Name</a> if the file exists in the corresponding directory
-  // We'll do a simple regex replacement and then check existence (but for speed, we assume if the entity type is known, the file exists)
-  // Note: This does not handle links with custom text like [[Name|Display Text]] - we ignore for now.
+function resolveWikiLinksWithSet(text, entityNames) {
   return text.replace(/\[\[([^\]]+)\]\]/g, (match, p1) => {
-    // Trim whitespace
     const name = p1.trim();
-    // Check if the name matches any known entity type prefix? Not reliable.
-    // Instead, we will try to see if there is a file in any of the entity directories with this name (case-insensitive? we'll use exact)
-    // For simplicity, we will try each directory and see if the file exists (without extension) and if so, return the link.
-    // However, doing a filesystem check for every replacement is heavy. We'll do a two-pass approach: first collect all possible entity names from the filesystem.
-    // Since we are in a build step, we can precompute a set of all entity names (without extension) from the source markdown files in each entity directory.
-    // We'll do that once at the beginning.
-    return match; // placeholder, we'll replace after precomputation
+    if (entityNames.has(name)) {
+      const entityDirs = ['characters', 'skills', 'items', 'locations', 'quests', 'classes-races', 'lore', 'chapters'];
+      for (const dir of entityDirs) {
+        const filePath = path.join(WIKI_DIR, dir, `${name}.md`);
+        if (fs.existsSync(filePath)) {
+          return `<a href="/${dir}/${name}.html">${name}</a>`;
+        }
+      }
+      const rootPages = ['index', 'world', 'timeline', 'search', 'skills', 'quests', 'items', 'lore'];
+      if (rootPages.includes(name)) {
+        return `<a href="/${name}.html">${name}</a>`;
+      }
+      return match;
+    }
+    return match;
   });
 }
 
-// Precompute all entity names (without .md extension) from the source directories
 function getEntityNames() {
   const entityDirs = ['characters', 'skills', 'items', 'locations', 'quests', 'classes-races', 'lore', 'chapters'];
   const names = new Set();
@@ -136,7 +131,7 @@ function getEntityNames() {
       const files = fs.readdirSync(dirPath);
       for (const file of files) {
         if (file.endsWith('.md')) {
-          const name = file.slice(0, -3); // remove .md
+          const name = file.slice(0, -3);
           names.add(name);
         }
       }
@@ -145,118 +140,68 @@ function getEntityNames() {
   return names;
 }
 
-// Replace [[Name]] with link if the name is in the entity set, otherwise leave as is (or maybe try to link to a page like Name.html in root?)
-function resolveWikiLinksWithSet(text, entityNames) {
-  return text.replace(/\[\[([^\]]+)\]\]/g, (match, p1) => {
-    const name = p1.trim();
-    if (entityNames.has(name)) {
-      // We don't know which directory it belongs to, so we need to search.
-      // For simplicity, we will try to find the directory by checking each entity directory for a file name.md
-      // We'll do a linear search (there are only 8 directories, so it's fine).
-      const entityDirs = ['characters', 'skills', 'items', 'locations', 'quests', 'classes-races', 'lore', 'chapters'];
-      for (const dir of entityDirs) {
-        const filePath = path.join(WIKI_DIR, dir, `${name}.md`);
-        if (fs.existsSync(filePath)) {
-          return `<a href="/${dir}/${name}.html">${name}</a>`;
-        }
-      }
-      // If not found in any entity directory, check if it's a root page (like index, world, timeline, search, skills, quests, items, lore)
-      const rootPages = ['index', 'world', 'timeline', 'search', 'skills', 'quests', 'items', 'lore'];
-      if (rootPages.includes(name)) {
-        return `<a href="/${name}.html">${name}</a>`;
-      }
-      // Fallback: leave as is (or maybe link to a search? we'll leave as is)
-      return match;
-    }
-    return match;
-  });
-}
-
-function processMD(dir, subdir, outDir = 'public') {
-  const dirPath = path.join(WIKI_DIR, dir);
-  if (!fs.existsSync(dirPath)) return [];
-  const files = fs.readdirSync(dirPath).filter(f => f.endsWith('.md') && f !== 'README.md');
-  const results = [];
-  
-  // Precompute entity names for this directory? Actually we want global entity names for link resolution.
-  // We'll compute once outside and pass in.
-  const entityNames = getEntityNames(); // Note: this is called for each dir, but we can move it out. We'll leave it for now and optimize later.
-  
-  for (const file of files) {
-    let md = fs.readFileSync(path.join(dirPath, file), 'utf-8');
-    // Resolve [[Name]] links
-    md = resolveWikiLinksWithSet(md, entityNames);
-    const html = marked.parse(md);
-    const name = file.replace('.md', '');
-    const title = name.replace(/_/g, ' ');
-    const outPath = path.join(PUBLIC_DIR, outDir, `${name}.html`);
-    fs.writeFileSync(outPath, renderPage(title, html));
-    results.push({ file, title, outPath, html });
-    console.log(`  ✅ ${dir}/${file} → ${outDir}/${name}.html`);
-  }
-  return results;
-}
-
 function generateIndex() {
   const md = fs.readFileSync(path.join(WIKI_DIR, 'index.md'), 'utf-8');
   const html = marked.parse(md);
-  fs.writeFileSync(path.join(PUBLIC_DIR, 'index.html'), renderPage('Eternity Wiki', html));
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'index.html'), renderPage('Eternity Wiki', html, 'index.html'));
   console.log('✅ index.md → index.html');
 }
 
 function generateWorld() {
   const md = fs.readFileSync(path.join(WIKI_DIR, 'world.md'), 'utf-8');
   const html = marked.parse(md);
-  fs.writeFileSync(path.join(PUBLIC_DIR, 'world.html'), renderPage('Welt & Lore', html));
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'world.html'), renderPage('Welt & Lore', html, 'world.html'));
   console.log('✅ world.md → world.html');
 }
 
 function generateCharacters() {
   const md = fs.readFileSync(path.join(WIKI_DIR, 'characters.md'), 'utf-8');
   const html = marked.parse(md);
-  fs.writeFileSync(path.join(PUBLIC_DIR, 'characters.html'), renderPage('Charaktere', html));
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'characters.html'), renderPage('Charaktere', html, 'characters.html'));
   console.log('✅ characters.md → characters.html');
 }
 
 function generateTimeline() {
   const md = fs.readFileSync(path.join(WIKI_DIR, 'timeline_buch1.md'), 'utf-8');
   const html = marked.parse(md);
-  fs.writeFileSync(path.join(PUBLIC_DIR, 'timeline.html'), renderPage('Zeitlinie', html));
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'timeline.html'), renderPage('Zeitlinie', html, 'timeline.html'));
   console.log('✅ timeline_buch1.md → timeline.html');
 }
 
 function generateSearch() {
   const md = fs.readFileSync(path.join(WIKI_DIR, 'wiki_index.md'), 'utf-8');
-  const html = marked.parse(md);
-  fs.writeFileSync(path.join(PUBLIC_DIR, 'search.html'), renderPage('Suche', html));
+  const entityNames = getEntityNames();
+  let html = marked.parse(md);
+  html = resolveWikiLinksWithSet(html, entityNames);
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'search.html'), renderPage('Suche', html, 'search.html'));
   console.log('✅ wiki_index.md → search.html');
 }
 
 function generateSkills() {
   const md = fs.readFileSync(path.join(WIKI_DIR, 'skills/README.md'), 'utf-8');
   const html = marked.parse(md);
-  fs.writeFileSync(path.join(PUBLIC_DIR, 'skills.html'), renderPage('Fähigkeiten', html));
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'skills.html'), renderPage('Fähigkeiten', html, 'skills.html'));
   console.log('✅ skills/README.md → skills.html');
 }
 
 function generateQuests() {
   const md = fs.readFileSync(path.join(WIKI_DIR, 'quests/README.md'), 'utf-8');
   const html = marked.parse(md);
-  fs.writeFileSync(path.join(PUBLIC_DIR, 'quests.html'), renderPage('Quests', html));
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'quests.html'), renderPage('Quests', html, 'quests.html'));
   console.log('✅ quests/README.md → quests.html');
 }
 
 function generateItems() {
   const md = fs.readFileSync(path.join(WIKI_DIR, 'items/README.md'), 'utf-8');
   const html = marked.parse(md);
-  fs.writeFileSync(path.join(PUBLIC_DIR, 'items.html'), renderPage('Items', html));
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'items.html'), renderPage('Items', html, 'items.html'));
   console.log('✅ items/README.md → items.html');
 }
 
 function generateLore() {
   const md = fs.readFileSync(path.join(WIKI_DIR, 'lore/README.md'), 'utf-8');
   const html = marked.parse(md);
-  fs.writeFileSync(path.join(PUBLIC_DIR, 'lore.html'), renderPage('Lore', html));
+  fs.writeFileSync(path.join(PUBLIC_DIR, 'lore.html'), renderPage('Lore', html, 'lore.html'));
   console.log('✅ lore/README.md → lore.html');
 }
 
@@ -272,7 +217,6 @@ function generateEntityPages() {
     { dir: 'chapters', outDir: 'chapters' }
   ];
   
-  // Precompute entity names once
   const entityNames = getEntityNames();
   
   for (const { dir, outDir } of dirs) {
@@ -283,20 +227,19 @@ function generateEntityPages() {
       const files = fs.readdirSync(dirPath).filter(f => f.endsWith('.md') && f !== 'README.md');
       for (const file of files) {
         let md = fs.readFileSync(path.join(dirPath, file), 'utf-8');
-        // Resolve [[Name]] links using the precomputed entityNames
         md = resolveWikiLinksWithSet(md, entityNames);
         const html = marked.parse(md);
         const name = file.replace('.md', '');
         const title = name.replace(/_/g, ' ');
         const outFilePath = path.join(outPath, `${name}.html`);
-        fs.writeFileSync(outFilePath, renderPage(title, html));
+        const relPath = `${outDir}/${name}.html`;
+        fs.writeFileSync(outFilePath, renderPage(title, html, relPath));
         console.log(`  ✅ ${dir}/${file} → ${outDir}/${name}.html`);
       }
     }
   }
 }
 
-// Main
 console.log('🔨 Building Eternity Wiki with link resolution...');
 console.log('📄 Generating main pages...');
 generateIndex();
