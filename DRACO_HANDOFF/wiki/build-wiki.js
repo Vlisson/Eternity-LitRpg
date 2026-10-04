@@ -5,9 +5,9 @@ const path = require('path');
 
 const WIKI_DIR = __dirname;
 const PUBLIC_DIR = path.join(WIKI_DIR, 'public');
-const CSS_PATH = '../css/wiki-style.css';
+const CSS_PATH = '/css/wiki-style.css';
 const SITE_URL = 'https://vlisson.github.io/Eternity-LitRpg';
-const CURRENT_DATE = '2026-09-30';
+const CURRENT_DATE = '2026-10-04';
 
 // Unified CSS from optimize.sh (we'll keep it as a string for potential inline use, but we are linking externally)
 const UNIFIED_CSS = `* { margin: 0; padding: 0; box-sizing: border-box; }
