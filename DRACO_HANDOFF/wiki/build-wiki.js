@@ -90,7 +90,7 @@ footer { text-align: center; padding: 20px; margin-top: 30px; border-top: 1px so
 `;
 
 const NAV = `<nav><div class="logo">🐉 Eternity Wiki</div><ul><li><a href="/">🏠 Startseite</a></li><li><a href="/characters.html">👥 Charaktere</a></li><li><a href="/world.html">🌍 Welt</a></li><li><a href="/timeline.html">📅 Zeitlinie</a></li><li><a href="/search.html">🔍 Suche</a></li></ul></nav>`;
-const FOOTER = `<footer><p>Erstellt mit Draco Codex — LitRPG Wiki Engine | Letzte Aktualisierung: 2026-09-10</p></footer>`;
+const FOOTER = `<footer><p>Erstellt mit Draco Codex — LitRPG Wiki Engine | Letzte Aktualisierung: 2026-10-04</p></footer>`;
 
 function renderPage(title, content) {
   return `<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title} - Eternity Wiki</title><link rel="stylesheet" href="${CSS_PATH}"></head><body>${NAV}<main class="container">${content}</main>${FOOTER}</body></html>`;
