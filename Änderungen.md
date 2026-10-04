@@ -4,6 +4,14 @@
 
 ## 🔄 Aktualisierungen
 
+### 2026-10-04
+- **Footer-Datum aktualisiert**: Alle 148 HTML-Dateien erhalten neues Datum `2026-10-04` statt altem `2026-09-27 16:18`
+- **Build-Skript erweitert**: Dynamische `getCurrentDate()`-Funktion für automatisches Datum
+- **FOOTER in DRACO_HANDOFF**: `build-wiki.js` Datum von `2026-09-10` → `2026-10-04` aktualisiert
+- **Navigation korrigiert**: Relativen Links (`index.html`, `../index.html`) auf allen Seiten
+- **GitHub Actions Workflow**: Trigger erweitert um `gh-pages` Branch
+- **Deploy-Status**: Commit `c6ad501e` – alle Seiten neu aufgebaut und gepushed
+
 ### 2026-09-24
 - **Wiki-Konfiguration aktualisiert**: Workflow (`deploy.yml`) auf `main`-Branch hinzugefügt und von `gh-pages` entfernt
 - **GitHub Pages-Pipeline korrigiert**: `netlify-cli`-Abhängigkeit aus `package.json` entfernt → Build-Fehler behoben
