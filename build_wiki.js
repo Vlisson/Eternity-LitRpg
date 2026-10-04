@@ -57,9 +57,17 @@ function getNavigationHtml(currentPage) {
 }
 
 // Footer
+function getCurrentDate() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  const day = String(now.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
 function getFooterHtml(basePath) {
   return `<footer>
-  <p>Eternity Wiki – Inhalt basiert auf Büchern von Vlisson | Plattform, Struktur & Pflege durch Draco Codex (KI) | Stand: 2026-09-27 16:18</p>
+  <p>Eternity Wiki – Inhalt basiert auf Büchern von Vlisson | Plattform, Struktur & Pflege durch Draco Codex (KI) | Stand: ${getCurrentDate()}</p>
   <p><a href="${basePath}impressum.html">ℹ️ Impressum & KI-Hinweis</a></p>
   <p><a href="${basePath}Änderungen.html">📋 Änderungen</a></p>
   <p><a href="${basePath}guestbook.html">✍️ Gästebuch</a></p>
