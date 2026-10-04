@@ -5,7 +5,7 @@ const path = require('path');
 
 const WIKI_DIR = __dirname;
 const PUBLIC_DIR = path.join(WIKI_DIR, 'public');
-const CSS_PATH = '/css/wiki-style.css';
+const CSS_PATH = '../css/wiki-style.css';
 const SITE_URL = 'https://vlisson.github.io/Eternity-LitRpg';
 const CURRENT_DATE = '2026-09-30';
 
