@@ -67,7 +67,7 @@ function getCurrentDate() {
 
 function getFooterHtml(basePath) {
   return `<footer>
-  <p>Eternity Wiki – Inhalt basiert auf Büchern von Vlisson | Plattform, Struktur & Pflege durch Draco Codex (KI) | Stand: ${getCurrentDate()}</p>
+  <p>Wiki zum Roman Eternity LitRPG – Inhalt basiert auf Büchern von Vlisson | Plattform, Struktur & Pflege durch Draco Codex (KI) | Stand: ${getCurrentDate()}</p>
   <p><a href="${basePath}impressum.html">ℹ️ Impressum & KI-Hinweis</a></p>
   <p><a href="${basePath}Änderungen.html">📋 Änderungen</a></p>
   <p><a href="${basePath}guestbook.html">✍️ Gästebuch</a></p>
