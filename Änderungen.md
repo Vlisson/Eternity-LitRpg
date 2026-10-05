@@ -4,6 +4,16 @@
 
 ## 🔄 Aktualisierungen
 
+### 2026-10-05
+- **H1-Überschrift geändert**: Startseite zeigt jetzt `Eternity LitRPG` statt `Eternity Wiki — Lore & Mechaniken`
+- **Footer-Text aktualisiert**: `Wiki zum Roman Eternity LitRPG – Inhalt basiert auf Büchern von Vlisson | Plattform, Struktur & Pflege durch Draco Codex (KI) | Stand: YYYY-MM-DD`
+- **Buchcover auf Startseite**: `cover.jpg` (60 KB) im Abschnitt `📖 Buch-Overview` eingebunden
+- **Quests-Seite optimiert**: Quest-Karten mit Icon, Titel, Rang-Badge, Sterne-Bewertung, Statistiken-Panel (7 Quests, 45+ Schritte, 120+ Std.)
+- **GitHub Pages flache Struktur**: `public/`-Verzeichnis an Branch-Root kopiert, redundanten Ordner entfernt
+- **Tägliche Draco-Automation eingerichtet**: Analysiert Wiki täglich 9:00 MEZ, wählt eine Seite zur Optimierung, lädt sie hoch
+- **Cache-Busting durchgeführt**: Leerer Commit `65602503` zur Zwangserneuerung der GitHub-Pages-Cache
+- **Deploy-Status**: Letzter Commit `5d494c12` – H1 + Cover + Footer alle live
+
 ### 2026-10-04
 - **Footer-Datum aktualisiert**: Alle 148 HTML-Dateien erhalten neues Datum `2026-10-04` statt altem `2026-09-27 16:18`
 - **Build-Skript erweitert**: Dynamische `getCurrentDate()`-Funktion für automatisches Datum
