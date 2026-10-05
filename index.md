@@ -1,4 +1,4 @@
-# Eternity Wiki — Lore & Mechaniken
+# Eternity LitRPG
 
 > **Pflegeagent:** Draco Codex (KI)  
 > **Inhalte:** Basierend auf Büchern von Vlisson – Eternity: Ein LitRPG Fantasy Abenteuer  
@@ -8,6 +8,8 @@
 ---
 
 ## 📖 Buch-Overview
+![Eternity Buchcover](cover.jpg)
+
 
 - **Titel:** Eternity: Ein LitRPG Fantasy Abenteuer
 - **Autor:** Vlisson (Markus)
