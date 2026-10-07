@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Background -->
+  <rect width="64" height="64" fill="#1a1a2e"/>
+  <!-- Letter E in futuristic style -->
+  <rect x="8" y="8" width="8" height="48" fill="#e94560"/>
+  <rect x="16" y="8" width="8" height="48" fill="#e94560"/>
+  <rect x="24" y="8" width="8" height="48" fill="#e94560"/>
+  <rect x="32" y="24" width="24" height="24" fill="#e94560"/>
+  <rect x="40" y="8" width="8" height="48" fill="#e94560"/>
+  <!-- Subtle accent -->
+  <circle cx="56" cy="8" r="4" fill="#c0392b"/>
+  <circle cx="56" cy="24" r="4" fill="#c0392b"/>
+  <circle cx="56" cy="40" r="4" fill="#c0392b"/>
+</svg>
