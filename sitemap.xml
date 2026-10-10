@@ -13,12 +13,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://vlisson.github.io/Eternity-LitRpg//artifacts.html</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://vlisson.github.io/Eternity-LitRpg//characters.html</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -31,25 +25,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://vlisson.github.io/Eternity-LitRpg//comments.html</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://vlisson.github.io/Eternity-LitRpg//entity_report.html</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vlisson.github.io/Eternity-LitRpg//factions.html</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vlisson.github.io/Eternity-LitRpg//guestbook.html</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -85,12 +61,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://vlisson.github.io/Eternity-LitRpg//mechanics.html</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://vlisson.github.io/Eternity-LitRpg//quests.html</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -98,12 +68,6 @@
   </url>
   <url>
     <loc>https://vlisson.github.io/Eternity-LitRpg//skills.html</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vlisson.github.io/Eternity-LitRpg//timeline.html</loc>
     <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
