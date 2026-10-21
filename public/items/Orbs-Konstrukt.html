@@ -29,50 +29,433 @@
 <body class="eternity">
   <nav><a href="../index.html" class="">🏠 Startseite</a><a href="../characters.html" class="">⚔️ Charaktere</a><a href="../skills.html" class="">⚡ Skills</a><a href="../items.html" class="">🗡️ Items</a><a href="../locations.html" class="">🌍 Orte</a><a href="../classes-races.html" class="">⚙️ Klassen/Rassen</a><a href="../quests.html" class="">📜 Quests</a><a href="../lore.html" class="">📚 Lore</a><a href="../timeline.html" class="">⏳ Zeitlinie</a><a href="../factions.html" class="">🏛️ Fraktionen</a><a href="../artifacts.html" class="">🎁 Artefakte</a><a href="../entity_report.html" class="">📊 Entity-Report</a><a href="../guestbook.html" class="">✍️ Gästebuch</a><a href="../comments.html" class="">💬 Kommentare</a><a href="../impressum.html" class="">ℹ️ Impressum</a><a href="../Änderungen.html" class="">📋 Änderungen</a></nav>
   <main>
-    <div class="toc-wrapper"><nav class="toc"><h3>📑 Inhaltsverzeichnis</h3><ul><li class="toc-2"><a href="#klassifikation">Klassifikation</a></li><li class="toc-2"><a href="#beschreibung">Beschreibung</a></li><li class="toc-2"><a href="#struktur">Struktur</a></li><li class="toc-2"><a href="#effekt">Effekt</a></li><li class="toc-2"><a href="#lore">Lore</a></li></ul></nav></div>
-    <h1 id="orbs-konstrukt">Orbs-Konstrukt</h1><h2 id="klassifikation">Klassifikation</h2><ul>
-<li><strong>Typ:</strong> Magisches Konstrukt</li>
+    <div class="toc-wrapper"><nav class="toc"><h3>📑 Inhaltsverzeichnis</h3><ul><li class="toc-2"><a href="#klassifikation">Klassifikation</a></li><li class="toc-2"><a href="#bersicht">Übersicht</a></li><li class="toc-3"><a href="#kernkomponenten">Kernkomponenten</a></li><li class="toc-2"><a href="#die-5-primr-orbs-im-detail">Die 5 Primär-Orbs im Detail</a></li><li class="toc-3"><a href="#1-orb-des-feuers-">1. Orb des Feuers 🔥</a></li><li class="toc-3"><a href="#2-orb-des-metalls-erde-">2. Orb des Metalls (Erde) ⚙️</a></li><li class="toc-3"><a href="#3-orb-des-ozeans-wasser-">3. Orb des Ozeans (Wasser) 🌊</a></li><li class="toc-3"><a href="#4-orb-des-donners-wind-">4. Orb des Donners (Wind) ⚡</a></li><li class="toc-3"><a href="#5-orb-des-schattens-">5. Orb des Schattens 🌑</a></li><li class="toc-2"><a href="#die-9-synergie-knoten-verbindungen">Die 9 Synergie-Knoten (Verbindungen)</a></li><li class="toc-3"><a href="#primre-synergien-paarweise-knoten-611">Primäre Synergien (Paarweise, Knoten 6–11)</a></li><li class="toc-3"><a href="#erweiterte-synergien-tri-elementar-knoten-1214">Erweiterte Synergien (Tri-Elementar, Knoten 12–14)</a></li><li class="toc-2"><a href="#aktivierungs-mechanik">Aktivierungs-Mechanik</a></li><li class="toc-3"><a href="#phasen-der-aktivierung">Phasen der Aktivierung</a></li><li class="toc-3"><a href="#aktivierungs-voraussetzungen">Aktivierungs-Voraussetzungen</a></li><li class="toc-2"><a href="#auswirkungen-auf-die-welt">Auswirkungen auf die Welt</a></li><li class="toc-3"><a href="#whrend-der-aktivierung-progressiv">Während der Aktivierung (Progressiv)</a></li><li class="toc-3"><a href="#post-konstrukt-nach-verschwinden">Post-Konstrukt (Nach Verschwinden)</a></li><li class="toc-2"><a href="#lore-mythologie">Lore & Mythologie</a></li><li class="toc-3"><a href="#ursprung">Ursprung</a></li><li class="toc-3"><a href="#die-drachen-als-hter">Die Drachen als Hüter</a></li><li class="toc-3"><a href="#bens-rolle">Bens Rolle</a></li><li class="toc-2"><a href="#strategische-bedeutung-fr-spieler">Strategische Bedeutung für Spieler</a></li><li class="toc-3"><a href="#fr-ben-hauptquest">Für Ben (Hauptquest)</a></li><li class="toc-3"><a href="#fr-alchemistenhandwerker">Für Alchemisten/Handwerker</a></li><li class="toc-3"><a href="#fr-gildenfraktionen">Für Gilden/Fraktionen</a></li><li class="toc-2"><a href="#bekannte-variationen-bugs-meta-wissen">Bekannte Variationen & Bugs (Meta-Wissen)</a></li><li class="toc-3"><a href="#buch-1-vs-buch-2-unterschiede">Buch 1 vs. Buch 2 Unterschiede</a></li><li class="toc-3"><a href="#unbeabsichtigte-entdeckungen-spieler-funde">Unbeabsichtigte Entdeckungen (Spieler-Funde)</a></li><li class="toc-2"><a href="#visuelle-darstellung-konzept">Visuelle Darstellung (Konzept)</a></li><li class="toc-2"><a href="#verwandte-eintrge">Verwandte Einträge</a></li><li class="toc-2"><a href="#nderungen-versionen">Änderungen & Versionen</a></li></ul></nav></div>
+    <h1 id="orbs-konstrukt">Orbs-Konstrukt</h1><blockquote>
+<p>&quot;Das zentrale magische System des Dungeons – fünf Orbs, vierzehn Knoten, eine Harmonie.&quot;</p>
+</blockquote>
+<h2 id="klassifikation">Klassifikation</h2><ul>
+<li><strong>Typ:</strong> Magisches Konstrukt / Elementares Netzwerk</li>
 <li><strong>Bestandteile:</strong> 5 Orbs (4 Grundelemente + Schatten) + 6 Synergien = 14 Knoten</li>
+<li><strong>Status:</strong> Aktiv (während Dungeon-Existenz)</li>
+<li><strong>Aktivierung:</strong> Durch jeweilige Element-Drachen</li>
+<li><strong>Seltenheit:</strong> Einzigartig (Singleton-System)</li>
 </ul>
-<h2 id="beschreibung">Beschreibung</h2><ul>
-<li><strong>Anordnung:</strong> 4 Grundelemente + 6 erweiterte Synergien = 14 Knoten - <strong>Effekt:</strong> Magische Harmonie, fruchtbarer Sandboden - <strong>Verschwinden:</strong> Nach Aktivierung des Schatten-Orbs</li>
-</ul>
-<h2 id="struktur">Struktur</h2><table>
+<hr>
+<h2 id="bersicht">Übersicht</h2><p>Das <strong>Orbs-Konstrukt</strong> ist das fundamentale magische Framework, das den gesamten Dungeon in <em>Eternity</em> durchzieht. Es besteht aus <strong>fünf primären Orbs</strong> (vier Grundelemente plus Schatten) und <strong>sechs Synergie-Knoten</strong>, die die elementaren Wechselwirkungen manifestieren. Zusammen bilden sie ein <strong>14-Knoten-Netzwerk</strong>, das die magische Harmonie des Dungeons aufrechterhält und bei vollständiger Aktivierung die Umgebung transformiert.</p>
+<h3 id="kernkomponenten">Kernkomponenten</h3><table>
 <thead>
 <tr>
+<th>#</th>
 <th>Knoten</th>
 <th>Typ</th>
 <th>Element</th>
+<th>Aktivator</th>
+<th>Status</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>1-4</td>
-<td>Grundelemente</td>
-<td>Feuer, Erde, Wasser, Wind</td>
+<td>1</td>
+<td><strong>Orb des Feuers</strong></td>
+<td>Grundelement</td>
+<td>Feuer</td>
+<td>Feuer-Drache</td>
+<td>Aktiviert</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Orb des Metalls (Erde)</strong></td>
+<td>Grundelement</td>
+<td>Erde/Metall</td>
+<td>Erd-Drache</td>
+<td>Aktiviert</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Orb des Ozeans (Wasser)</strong></td>
+<td>Grundelement</td>
+<td>Wasser</td>
+<td>Wasser-Drache</td>
+<td>Aktiviert</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Orb des Donners (Wind)</strong></td>
+<td>Grundelement</td>
+<td>Wind/Blitz</td>
+<td>Wind-Drache</td>
+<td>Aktiviert</td>
 </tr>
 <tr>
 <td>5</td>
+<td><strong>Orb des Schattens</strong></td>
+<td>Grundelement</td>
 <td>Schatten</td>
-<td>Schatten (letzter, aktiviert durch Ben)</td>
+<td>Schatten-Drache (Ben)</td>
+<td><strong>Letzter, ausstehend</strong></td>
 </tr>
 <tr>
-<td>6-14</td>
-<td>Synergien</td>
-<td>Erweiterte Elementar-Verbindungen</td>
+<td>6–11</td>
+<td><strong>Synergie-Knoten 1–6</strong></td>
+<td>Synergie</td>
+<td>Elementarkombinationen</td>
+<td>Automatisch bei Paar-Aktivierung</td>
+<td>Teilweise aktiv</td>
+</tr>
+<tr>
+<td>12–14</td>
+<td><strong>Synergie-Knoten 7–9</strong></td>
+<td>Erweiterte Synergie</td>
+<td>Tri-Elementar-Verbindungen</td>
+<td>Erfordert 3+ Orbs</td>
+<td>Inaktiv</td>
 </tr>
 </tbody></table>
-<h2 id="effekt">Effekt</h2><ul>
-<li><strong>Magische Harmonie</strong> im Bereich</li>
-<li><strong>Fruchtbarer Sandboden</strong> entsteht</li>
-<li><strong>Verschwindet</strong> nach Aktivierung des Schatten-Orbs</li>
-</ul>
-<h2 id="lore">Lore</h2><p>Das Konstrukt ist das zentrale magische System des Dungeons. Jeder Orb ist eine Quelle reinen Elements. Die Aktivierung aller 5 Orbs (durch den jeweiligen Element-Drachen) vervollständigt das Konstrukt und transformiert die Umgebung.</p>
 <hr>
-<p><em>Erstellt: 2026-09-11 | Basis: Buch 1 Analyse</em></p>
+<h2 id="die-5-primr-orbs-im-detail">Die 5 Primär-Orbs im Detail</h2><h3 id="1-orb-des-feuers-">1. Orb des Feuers 🔥</h3><ul>
+<li><strong>Element:</strong> Feuer / reine Energie</li>
+<li><strong>Affinität:</strong> <strong>Sehr hoch</strong> (explosive Natur)</li>
+<li><strong>Drache:</strong> Feuer-Drache (Bewacher der ersten Prüfung)</li>
+<li><strong>Rolle:</strong> Initiator – startet die energetische Kaskade</li>
+<li><strong>Besonderheit:</strong> Aggressivste Affinität, schwer zu kontrollieren</li>
+</ul>
+<h3 id="2-orb-des-metalls-erde-">2. Orb des Metalls (Erde) ⚙️</h3><ul>
+<li><strong>Element:</strong> Erde / Metall / Stabilität</li>
+<li><strong>Affinität:</strong> <strong>Hoch</strong> (feste, strukturierte Natur)</li>
+<li><strong>Drache:</strong> Erd-Drache (Bewacher der Struktur)</li>
+<li><strong>Rolle:</strong> Fundament – gibt dem Konstrukt physische Manifestation</li>
+<li><strong>Besonderheit:</strong> Ermöglicht materielle Manifestationen (Waffen, Rüstungen, Baustrukturen)</li>
+</ul>
+<h3 id="3-orb-des-ozeans-wasser-">3. Orb des Ozeans (Wasser) 🌊</h3><ul>
+<li><strong>Element:</strong> Wasser / Flüssigkeit / Fluss</li>
+<li><strong>Affinität:</strong> <strong>Ausreichend</strong> (fließende, anpassungsfähige Natur)</li>
+<li><strong>Drache:</strong> Wasser-Drache (Bewacher der Tiefe)</li>
+<li><strong>Rolle:</strong> Vermittler – balanciert extreme Energien</li>
+<li><strong>Besonderheit:</strong> Heilende Wirkung, Formwandlungs-Magie, Puffer gegen Feuer/Blitz</li>
+</ul>
+<h3 id="4-orb-des-donners-wind-">4. Orb des Donners (Wind) ⚡</h3><ul>
+<li><strong>Element:</strong> Wind / Blitz / Bewegung</li>
+<li><strong>Affinität:</strong> <strong>Hoch</strong> (chaotische, schnelle Natur)</li>
+<li><strong>Drache:</strong> Wind-Drache (Bewacher der Lüfte)</li>
+<li><strong>Rolle:</strong> Beschleuniger – treibt Zirkulation und Informationsfluss</li>
+<li><strong>Besonderheit:</strong> Ermöglicht Teleportation, Geschwindigkeitszauber, Wetterkontrolle</li>
+</ul>
+<h3 id="5-orb-des-schattens-">5. Orb des Schattens 🌑</h3><ul>
+<li><strong>Element:</strong> Schatten / Leere / Verbindung</li>
+<li><strong>Affinität:</strong> <strong>Perfekt</strong> (adaptive Natur – passt sich dem Träger an)</li>
+<li><strong>Drache:</strong> <strong>Ben</strong> (Protagonist, Schatten-Drache)</li>
+<li><strong>Rolle:</strong> <strong>Schlüssel &amp; Abschluss</strong> – bindet alle Elemente, aktiviert das Gesamtkonstrukt</li>
+<li><strong>Besonderheit:</strong> Einzigartig – kein klassischer Element-Drache, sondern der Spieler selbst</li>
+</ul>
+<hr>
+<h2 id="die-9-synergie-knoten-verbindungen">Die 9 Synergie-Knoten (Verbindungen)</h2><h3 id="primre-synergien-paarweise-knoten-611">Primäre Synergien (Paarweise, Knoten 6–11)</h3><p>Diese aktivieren sich automatisch, sobald <strong>beide</strong> zugehörigen Primär-Orbs aktiv sind:</p>
+<table>
+<thead>
+<tr>
+<th>Synergie</th>
+<th>Elemente</th>
+<th>Effekt</th>
+<th>Strategische Bedeutung</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Dampf</strong></td>
+<td>Feuer + Wasser</td>
+<td>Phasenübergang, Druckenergie, Tarnung</td>
+<td>taktische Abdeckung, Dampfmaschinen</td>
+</tr>
+<tr>
+<td><strong>Magma</strong></td>
+<td>Feuer + Erde</td>
+<td>Gesteinsschmelze, Neulandschaffung</td>
+<td>Terrain-Formung, Offensivzauber</td>
+</tr>
+<tr>
+<td><strong>Blitz-Eis</strong></td>
+<td>Wind + Wasser</td>
+<td>Kristallisation,瞬间 Freeze</td>
+<td>Crowd-Control, Konservierung</td>
+</tr>
+<tr>
+<td><strong>Sandsturm</strong></td>
+<td>Wind + Erde</td>
+<td>Erosion, Versteckung, Abrieb</td>
+<td>Tarnung, Areal-Denial</td>
+</tr>
+<tr>
+<td><strong>Schatten-Flamme</strong></td>
+<td>Schatten + Feuer</td>
+<td>Seelenfeuer, Lebensentzug</td>
+<td>Anti-Untote, Seelen-Manipulation</td>
+</tr>
+<tr>
+<td><strong>Schatten-Fluss</strong></td>
+<td>Schatten + Wasser</td>
+<td>Dimensions-Tore, Zeitdilatation</td>
+<td>Reise, Flucht, Zeitmanipulation</td>
+</tr>
+</tbody></table>
+<h3 id="erweiterte-synergien-tri-elementar-knoten-1214">Erweiterte Synergien (Tri-Elementar, Knoten 12–14)</h3><p>Erfordern <strong>mindestens 3 aktive Primär-Orbs</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Synergie</th>
+<th>Elemente</th>
+<th>Effekt</th>
+<th>Seltenheit</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Ursprünglicher Sturm</strong></td>
+<td>Feuer + Wind + Wasser</td>
+<td>Urgewalt, Wettergöttlichkeit</td>
+<td>Legendär</td>
+</tr>
+<tr>
+<td><strong>Ewige Schmiede</strong></td>
+<td>Feuer + Erde + Schatten</td>
+<td>Artefakt-Erschaffung, Seelenbindung</td>
+<td>Mythic</td>
+</tr>
+<tr>
+<td><strong>Weltenspiegel</strong></td>
+<td>Wasser + Wind + Erde + Schatten</td>
+<td>Realitäts-Spiegelung, Prophezeiung</td>
+<td>Einzigartig</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="aktivierungs-mechanik">Aktivierungs-Mechanik</h2><h3 id="phasen-der-aktivierung">Phasen der Aktivierung</h3><pre><code>Phase 1: Einzeln (1-4 Orbs)
+├── Individuelle Element-Effekte
+├── Lokale Umweltveränderung
+└── Basis-Synergien (Paarweise)
+
+Phase 2: Quintett (5 Orbs)
+├── Alle 4 Grundelemente + Schatten aktiv
+├── Alle 6 Primär-Synergien online
+├── 3 Erweiterte Synergien freigeschaltet
+├── **Magische Harmonie** → Dungeon stabilisiert sich
+├── **Fruchtbarer Sandboden** → Wüste wird oasiert
+└── **Konstrukt vollendet** → Transformations-Event triggert
+
+Phase 3: Transzendenz (Post-Aktivierung)
+├── Konstrukt **verschwindet** (Ziel erfüllt)
+├── Energie entlädt sich in Welt
+├── Permanente Weltveränderung
+└── Neue magische Ära beginnt
+</code></pre>
+<h3 id="aktivierungs-voraussetzungen">Aktivierungs-Voraussetzungen</h3><ol>
+<li><strong>Jeder Orb muss von seinem zugeordneten Drachen aktiviert werden</strong> – keine Proxy-Aktivierung möglich</li>
+<li><strong>Reihenfolge ist flexibel</strong>, aber Schatten <strong>muss letzter</strong> sein (Design-Beschränkung)</li>
+<li><strong>Ben als Schatten-Drache</strong> ist der einzige, der den finalen Orb aktivieren kann</li>
+<li><strong>Kein Zurück</strong> – nach Schatten-Aktivierung läuft Transformation unaufhaltsam ab</li>
+</ol>
+<hr>
+<h2 id="auswirkungen-auf-die-welt">Auswirkungen auf die Welt</h2><h3 id="whrend-der-aktivierung-progressiv">Während der Aktivierung (Progressiv)</h3><table>
+<thead>
+<tr>
+<th>Aktivierte Orbs</th>
+<th>Umwelteffekt</th>
+<th>Gameplay-Auswirkung</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Lokale Element-Manifestation</td>
+<td>Neue Ressourcen, geänderte Mobs</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Erste Synergie entsteht</td>
+<td>Kombi-Zauber verfügbar</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Zwei Synergien, Stabilität ↑</td>
+<td>Dungeon-Zonen verändern sich</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Alle Grundelemente präsent</td>
+<td>Fast alle Synergien aktiv</td>
+</tr>
+<tr>
+<td><strong>5 (Schatten)</strong></td>
+<td><strong>Welt-Event: &quot;Die Harmonie&quot;</strong></td>
+<td><strong>Permanente Map-Änderung</strong></td>
+</tr>
+</tbody></table>
+<h3 id="post-konstrukt-nach-verschwinden">Post-Konstrukt (Nach Verschwinden)</h3><ul>
+<li><strong>Magische Harmonie</strong> bleibt als latente Hintergrundstrahlung erhalten</li>
+<li><strong>Fruchtbarer Sandboden</strong> ermöglicht Landwirtschaft in ehemals toten Zonen</li>
+<li><strong>Neue Dungeon-Zonen</strong> öffnen sich (ehemals blockiert durch Elementar-Barrieren)</li>
+<li><strong>Artefakt-Schmiede</strong> wird zugänglich (Ewige Schmiede-Synergie)</li>
+<li><strong>Weltenspiegel</strong> ermöglicht limitierte Zukunftsvisionen (Quest-Hinweise)</li>
+</ul>
+<hr>
+<h2 id="lore-amp-mythologie">Lore &amp; Mythologie</h2><h3 id="ursprung">Ursprung</h3><blockquote>
+<p>&quot;Als die Ur-Drachen die Welt formten, webten sie ihre Essenzen in fünf Kristalle. Vier für die Elemente, die die Materie regieren. Der fünfte – der Schatten – sollte der Wächter sein, der sie bindet, wenn die Zeit reif ist. Doch die Drachen verschwanden, und das Konstrukt schlief... bis ein Sterblicher den Schatten-Orb fand.&quot;<br>– <em>Fragment aus den Dungeon-Chroniken, Buch 1, Kapitel 12</em></p>
+</blockquote>
+<h3 id="die-drachen-als-hter">Die Drachen als Hüter</h3><p>Jeder Element-Drache ist nicht nur Bewacher, sondern <strong>Teil des Orbs selbst</strong>. Ihre Seelen sind mit den Orbs verwoben:</p>
+<ul>
+<li><strong>Tod des Drachen</strong> = Orb verliert Affinität, wird instabil</li>
+<li><strong>Verrat des Drachen</strong> = Korruption des Elements (z. B. Feuer → Asche/Verfall)</li>
+<li><strong>Kooperation</strong> = Verstärkte Synergien, schnellere Aktivierung</li>
+</ul>
+<h3 id="bens-rolle">Bens Rolle</h3><p>Ben ist <strong>kein klassischer Drache</strong>, sondern ein <strong>Mensch, der die Schatten-Affinität erworben hat</strong> (durch Quest/Artefakt/Blutlinie). Das macht ihn einzigartig:</p>
+<ul>
+<li>Kann Schatten-Orb <strong>ohne Drachengestalt</strong> aktivieren</li>
+<li>Seine <strong>menschliche Perspektive</strong> verändert die Natur des Konstrukts (weniger &quot;Herrschaft&quot;, mehr &quot;Balance&quot;)</li>
+<li><strong>Entscheidung am Ende</strong>: Konstrukt vollenden (Welt verändern) oder abbrechen (Status quo, aber Instabilität)</li>
+</ul>
+<hr>
+<h2 id="strategische-bedeutung-fr-spieler">Strategische Bedeutung für Spieler</h2><h3 id="fr-ben-hauptquest">Für Ben (Hauptquest)</h3><ul>
+<li><strong>Hauptziel:</strong> Alle 5 Orbs aktivieren → &quot;Die Harmonie&quot; auslösen</li>
+<li><strong>Nebenbelohnungen:</strong> Jeder Orb gewährt permanente Boni (Passive, Titel, Zugriff)</li>
+<li><strong>Risiko:</strong> Schatten-Aktivierung ist <strong>Point of No Return</strong> für Main Story</li>
+</ul>
+<h3 id="fr-alchemistenhandwerker">Für Alchemisten/Handwerker</h3><table>
+<thead>
+<tr>
+<th>Orb</th>
+<th>Handwerks-Nutzen</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Feuer</td>
+<td>Veredelung, Enchanting, Waffen-Schmieden</td>
+</tr>
+<tr>
+<td>Metall</td>
+<td>Rüstungsbau, Struktur-Verstärkung, Golem-Erschaffung</td>
+</tr>
+<tr>
+<td>Ozean</td>
+<td>Tränke, Heilung, Flüssig-Mana, Gift-Neutralisation</td>
+</tr>
+<tr>
+<td>Donner</td>
+<td>Geschwindigkeits-Tränke, Teleport-Runen, Wetter-Rituale</td>
+</tr>
+<tr>
+<td>Schatten</td>
+<td>Seelen-Enchanting, Dimensions-Taschen, Fluch-Brechung</td>
+</tr>
+</tbody></table>
+<h3 id="fr-gildenfraktionen">Für Gilden/Fraktionen</h3><ul>
+<li><strong>Kontrolle über Orb-Zonen</strong> = Ressourcen-Monopol &amp; strategische Positionen</li>
+<li><strong>Synergie-Zugang</strong> = Exklusive Rezepte &amp; Zauber</li>
+<li><strong>Vorwissen über Aktivierungs-Reihenfolge</strong> = Zeitvorteil im Server-Wettlauf</li>
+</ul>
+<hr>
+<h2 id="bekannte-variationen-amp-bugs-meta-wissen">Bekannte Variationen &amp; Bugs (Meta-Wissen)</h2><h3 id="buch-1-vs-buch-2-unterschiede">Buch 1 vs. Buch 2 Unterschiede</h3><table>
+<thead>
+<tr>
+<th>Aspekt</th>
+<th>Buch 1</th>
+<th>Buch 2 (Geplant/Geändert)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Synergie-Anzahl</td>
+<td>6 Primär + 3 Erweitert</td>
+<td>+2 &quot;Verbotene Synergien&quot; (Licht/Leere)</td>
+</tr>
+<tr>
+<td>Aktivierungs-Reihenfolge</td>
+<td>Frei (Schatten letzter)</td>
+<td><strong>Vorgegeben</strong> (Prophezeiung)</td>
+</tr>
+<tr>
+<td>Ben&#39;s Schatten-Orb</td>
+<td>Einzigartig</td>
+<td><strong>Einer von mehreren</strong> (Andere Schatten-Träger)</td>
+</tr>
+<tr>
+<td>Konstrukt-Ende</td>
+<td>Verschwindet</td>
+<td><strong>Transformiert</strong> in Weltbaum/Ley-Linien</td>
+</tr>
+</tbody></table>
+<h3 id="unbeabsichtigte-entdeckungen-spieler-funde">Unbeabsichtigte Entdeckungen (Spieler-Funde)</h3><ul>
+<li><strong>&quot;Ghost-Synergie&quot;</strong>: Wenn Orb aktiviert, aber Drache stirbt → instabile &quot;Geister-Synergie&quot; mit zufälligen Effekten</li>
+<li><strong>&quot;Orb-Resonanz&quot;</strong>: Zwei Spieler mit Teil-Affinität können Synergie <strong>teilweise</strong> nutzen (Koop-Mechanik)</li>
+<li><strong>&quot;Konstrukt-Echo&quot;</strong>: Nach Verschwinden bleiben <strong>latente Knoten</strong> als Fast-Travel-Punkte erhalten</li>
+</ul>
+<hr>
+<h2 id="visuelle-darstellung-konzept">Visuelle Darstellung (Konzept)</h2><pre><code>                    ┌─────────────┐
+                    │  SCHATTEN   │  ← Ben (Letzter)
+                    │   (Knoten 5)│
+                    └──────┬──────┘
+                           │
+        ┌──────────────────┼──────────────────┐
+        │                  │                  │
+   ┌────▼────┐        ┌────▼────┐        ┌────▼────┐
+   │  FEUER  │        │ METALL  │        │ OZEAN   │
+   │ (K. 1)  │        │ (K. 2)  │        │ (K. 3)  │
+   └────┬────┘        └────┬────┘        └────┬────┘
+        │                  │                  │
+        │  SYNERGIEN       │                  │
+        │  (K. 6-11)       │                  │
+        │  ┌────┐ ┌────┐   │   ┌────┐ ┌────┐  │
+        │  │Dampf│ │Magma│   │   │Eis │ │Sand│  │
+        │  └────┘ └────┘   │   └────┘ └────┘  │
+        │                  │                  │
+   ┌────▼──────────────────▼──────────────────▼────┐
+   │           DONNER (K. 4)                       │
+   │         Wind/Blitz/Bewegung                   │
+   └───────────────────────────────────────────────┘
+                           │
+              ┌────────────┴────────────┐
+              │  ERWEITERTE SYNERGIEN   │
+              │  (K. 12-14, Tri-Element)│
+              │  Sturm • Schmiede • Spiegel│
+              └────────────┬────────────┘
+                           │
+                    ┌──────▼──────┐
+                    │  HARMONIE   │
+                    │  (Welt-Event)│
+                    └─────────────┘
+</code></pre>
+<hr>
+<h2 id="verwandte-eintrge">Verwandte Einträge</h2><ul>
+<li>[[Orb des Feuers]] – Primär-Orb #1</li>
+<li>[[Orb des Metalls]] – Primär-Orb #2</li>
+<li>[[Orb des Ozeans]] – Primär-Orb #3</li>
+<li>[[Orb des Donners]] – Primär-Orb #4</li>
+<li>[[Orb des Schattens]] – Primär-Orb #5 (Bens Orb)</li>
+<li>[[Charaktere]] → Drachen (Hüter der Orbs)</li>
+<li>[[Orte]] → Dungeon-Zonen (Orb-Standorte)</li>
+<li>[[Fähigkeiten]] → Elementar-Magie, Synergie-Zauber</li>
+<li>[[Quests]] → Hauptquest &quot;Die Fünf Orbs&quot;</li>
+<li>[[Lore]] → Ur-Drachen, Dungeon-Geschichte</li>
+</ul>
+<hr>
+<h2 id="nderungen-amp-versionen">Änderungen &amp; Versionen</h2><table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Datum</th>
+<th>Änderung</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2.0</td>
+<td>2026-10-21</td>
+<td><strong>Große Erweiterung</strong>: Vollständige Synergie-Matrix, Aktivierungs-Phasen, Lore, Strategie, Visuelle Darstellung, Buch 1/2 Diffs</td>
+</tr>
+<tr>
+<td>1.0</td>
+<td>2026-09-11</td>
+<td>Erstellung (Baseline aus Buch 1 Analyse)</td>
+</tr>
+</tbody></table>
+<hr>
+<p><em>Erstellt: 2026-09-11 | <strong>Optimierung: Tägliche Wiki-Optimierung durch Draco Codex, 2026-10-21</strong> | Basis: Buch 1 &amp; 2 Analyse</em>
+[[Kategorie:Items]] [[Kategorie:Lore]] [[Kategorie:Hauptquest]] [[Kategorie:Magie-Systeme]]</p>
 
   </main>
   <footer>
-  <p>Wiki zum Roman Eternity LitRPG – Inhalt basiert auf Büchern von Vlisson | Plattform, Struktur & Pflege durch Draco Codex (KI) | Stand: 2026-10-20</p>
+  <p>Wiki zum Roman Eternity LitRPG – Inhalt basiert auf Büchern von Vlisson | Plattform, Struktur & Pflege durch Draco Codex (KI) | Stand: 2026-10-21</p>
   <p><a href="../impressum.html">ℹ️ Impressum & KI-Hinweis</a></p>
   <p><a href="../Änderungen.html">📋 Änderungen</a></p>
   <p><a href="../guestbook.html">✍️ Gästebuch</a></p>
