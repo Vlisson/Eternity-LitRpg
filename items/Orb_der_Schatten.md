@@ -7,10 +7,10 @@
 |-------------|------|
 | **Typ** | Magischer Orb (Quelle reiner Elemente) |
 | **Element** | Schatten |
-| **Affinität** | Perfekt (adaptive Natur – passt sich dem Träger an) |
+| **Affinität** | Perfekt (adaptiv – passt sich dem Träger an) |
 | **Status** | Aktiviert ✅ (durch Ben, den Schatten-Drachen) |
 | **Seltenheit** | Legendär |
-| **Erscheinungsform** | Schwärzlicher Kristall, der Licht absorbiert und nur im Schein von Schatten sichtbar wird |
+| **Erscheinungsform** | Schwärzlicher Kristall, der Licht absorbiert und nur im Schatten oder bei schwacher Umgebungsbeleuchtung wahrnehmbar wird |
 
 ## Beschreibung
 
@@ -33,7 +33,7 @@ Der Orb der Schatten wartete lange Zeit unberührt in den Tiefen des Dungeons, b
 Die fünf Orbs bilden zusammen ein **14-Knoten-Netzwerk**:
 - **4 Grundelemente:** Feuer, Erde (Metall), Wasser (Ozean), Wind (Donner)
 - **1 Primär-Orb:** Schatten (Knoten 5)
-- **6 Erweiterte Primär-Synergien** zwischen den Elementpaaren (Knoten 6–11)
+- **6 Erweiterte Primär-Synergien** zwischen den Elementenpaaren (Knoten 6–11)
 - **3 Erweiterte Tri-Elementar-Synergien** (Knoten 12–14)
 - **Gesamt: 14 Knoten** im Konstrukt-Netzwerk
 
@@ -43,7 +43,7 @@ Die fünf Orbs bilden zusammen ein **14-Knoten-Netzwerk**:
 
 - **Kein gewöhnliches Artefakt, sondern eine Quelle reiner Elemente** – nicht einlösbar, muss aktiviert werden
 - **Keine Aufbewahrung möglich** – kann nicht in Taschen oder Inventaren verstaut werden
-- **Nur der jeweilige Element-Drache kann seinen Orb aktivieren** – für den Schatten-Orb ist dies Ben
+- **Nur der jeweilige Element-Drache kann seinen Orb aktivieren** – für den Schatten-Orb dies Ben
 - **Adaptive Affinität:** Passt sich dem Träger an (Perfekt), statt eine feste Affinitätsstufe zu haben
 - **Lichtabsorption:** Der Kristall schluckt sichtbares Licht und wird nur im Schatten oder bei schwacher Umgebungsbeleuchtung wahrnehmbar
 - **Seelen-Verbindung:** Bindet sich an die Seele des Aktivators und kann nicht gegen dessen Willen verwendet werden
@@ -96,5 +96,10 @@ Ohne diesen Orb bleibt das Konstrukt inaktiv und die magische Harmonie kann nich
 - [[Lore]] → Ur-Drachen, Dungeon-Geschichte, Die Harmonie
 
 ---
-*Erstellt: 2026-09-11 | Optimierung: Tägliche Wiki-Optimierung durch Draco Codex, 2026-10-22 | Basis: Buch 1 & 2 Analyse*
+*Erstellt: 2026-09-11 | Optimierung: Tägliche Wiki-Optimierung durch Draco Codex, 2026-10-30 | Basis: Buch 1 & 2 Analyse*
 [[Kategorie:Items]] [[Kategorie:Lore]] [[Kategorie:Hauptquest]] [[Kategorie:Magie-Systeme]]
+
+---
+
+**🎭 Notiz vom Drachen der Ehre:**
+> *„Eine wahre Drachenhort birgt nicht das, was du suchst, sondern das, was du überlebst, um es zu brauchen.“*
