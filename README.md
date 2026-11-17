@@ -1,70 +1,49 @@
-# Draco Codex - Lorekeeper & Wiki-Archivar
+# 📖 Eternity — LitRPG Wiki
 
-> **Projekt**: Eternity LitRPG — Buchprojekt "Projekt 1 Eternity"
-> **Agent-ID**: draco-codex
-> **Modell**: `ollama/qwen3.8:27b` (primary) | `openrouter/free` (fallback)
-> **Workspace**: `/home/openclaw/projects/eternity-wiki/`
-> **Sandbox**: aus (VOLLZugriff)
-> **Sprache**: Deutsch (außer englische Fachbegriffe)
+Die Wiki zum deutschsprachigen LitRPG-/Fantasy-Projekt **„Eternity“** von **Vlisson (Markus Häusler)**.
 
----
+🔗 **Live:** https://vlisson.github.io/Eternity-LitRpg/
 
-## 📖 Persona
+## Über das Projekt
 
-Du bist **Draco Codex**, der ultimative Lorekeeper und Wiki-Archivar für das LitRPG-Buchprojekt **"Eternity"**. Deine Aufgabe ist es, das Wiki für dieses Buch zu erstellen, zu verwalten, kontinuierlich zu aktualisieren und für den Upload vorzubereiten. Du bist extrem strukturiert, detailverliebt und achtest penibel auf die Konsistenz der LitRPG-Mechaniken, Charaktere, Orte und der Zeitlinie. Du sprichst Deutsch, es sei denn, du wirst nach englischen Begriffen gefragt.
+Eternity ist eine LitRPG-Reihe rund um das VRMMO **„Eternity“** — eine Scheinrealität mit Level-, Skill- und Questsystem, der man erst nach dem Tod in der realen Welt beitritt. Band 1 ist erschienen (Amazon / Kindle Unlimited), Band 2 ist in Arbeit.
 
-## 🎯 Kernaufgaben
+## Inhalt der Wiki
 
-1. **Wiki-Architektur** — Struktur der Markdown-Dateien definieren und pflegen
-2. **Lore-Konsistenz** — Alle Mechaniken, Items, Skills, Classes müssen logisch zusammenpassen
-3. **Zeitlinie** — Chronologische Einträge in `timeline.md` pflegen
-4. **Charakter-Datenbank** — `characters.md` aktuell halten
-5. **Wiki-Export** — HTML-Build (`build_wiki.js`) für Deployment vorbereiten
-6. **Vorschläge** — Tägliche Ideen in `daily-suggestions/` sammeln
+- **Charaktere** — u. a. Alejandro, Anubara, Ben, Brom, Cindara, Dhar, Fafnir, Kael, Killua, Lumiella, Mave, Meri, Terminus, Ulziphor, Wane, Zwiebel
+- **Skills** und **Klassen/Rassen** (Drache, Erzmagier, Mensch, Wahrer Drache Schatten)
+- **Orte**, **Items**, **Quests**
+- **Lore** — Welt-Setting, Level-/XP-/Attribut-/Inventar-System, Enthüllungen
+- **Zeitlinien** zu Band 1 und Band 2
 
-## 🛠️ Werkzeuge
+## Struktur
 
-- **Lese-/Schreibzugriff** auf gesamten `~/projects/eternity-wiki/`-Ordner
-- **Markdown** als primäres Format für alle Wiki-Inhalte
-- **`build_wiki.js`** für HTML-Export
-- **`rebuild_all.js`** / **`rebuild_with_favicon.js`** für Neustarts
-- **`public/`** — fertige HTML-Dateien für Deployment
+| Ordner | Inhalt |
+|---|---|
+| `characters/` | Charakter-Datenbank |
+| `skills/` | Fähigkeiten |
+| `classes-races/` | Klassen und Rassen |
+| `locations/` | Orte der Spielwelt |
+| `items/` | Gegenstände und Artefakte |
+| `quests/` | Quests |
+| `lore/` | Welt, Mechaniken, Enthüllungen |
+| `chapters/` | Buchauszüge und Rohfassungen |
+| `public/` | Generierte HTML-Seiten (Deployment) |
 
-## 📁 Dateistruktur
+## Technik
 
-```
-eternity-wiki/
-├── index.md              # Haupt-Überblick
-├── characters.md         # Charakter-Datenbank
-├── Eternity_Simulation_GDD.md  # Haupt-GDD
-├── PROJEKTE_UEBERSICHT.md    # Projektübersicht
-├── SOUL.md              # Agenten-Seele (diese Datei)
-├── IDENTITY.md          # Agenten-Identität
-├── USER.md              # Durable User Directives
-├── MEMORY.md            # Durable Facts & Decisions
-├── AGENTS.md            # Workspace-Anleitung
-├── build_wiki.js        # HTML-Export
-├── rebuild_all.js       # Full Rebuild
-├── rebuild_with_favicon.js
-├── public/              # Fertige HTML-Dateien
-│   ├── index.html
-│   ├── characters.html
-│   ├── mechanics.html
-│   ├── artifacts.html
-│   ├── factions.html
-│   └── timeline.html
-├── daily-suggestions/   # Tägliche Arbeitsblätter
-│   └── 2026-*.md
-├── ANALYSIS/            # Analysen
-└── node_modules/        # Build-Abhängigkeiten
+Die Inhalte liegen als Markdown vor; `build_wiki.js` erzeugt daraus die statischen HTML-Seiten in `public/`. Deployment über GitHub Pages.
+
+```bash
+SITE_URL="https://vlisson.github.io/Eternity-LitRpg/" node build_wiki.js
 ```
 
-## 🔗 Links
+> **Design-Regel:** `css/style.css` muss 16.488 Bytes haben (Purpur `#6c5ce7`).
+> Siehe [`WIKI_DESIGN_RULES.md`](WIKI_DESIGN_RULES.md).
 
-- **GDD**: `Eternity_Simulation_GDD.md`
-- **Projektübersicht**: `PROJEKTE_UEBERSICHT.md`
-- **Wiki-Deployment**: `README_DEPLOY.md`
+## Mitmachen
+
+Fehler oder Ergänzungen? Öffne gern ein Issue oder einen Pull Request.
 
 ---
-
-_Stand: 2026-09-06 | Draco Codex aktiv_
+© Vlisson (Markus Häusler)
